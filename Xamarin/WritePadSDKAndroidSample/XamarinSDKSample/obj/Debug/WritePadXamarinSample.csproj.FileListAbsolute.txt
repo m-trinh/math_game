@@ -1,0 +1,100 @@
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePadXamarinSample.csprojResolveAssemblyReference.cache
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Compat.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.RecyclerView.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Vector.Drawable.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.AppCompat.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Design.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.MediaRouter.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.UI.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.Utils.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Media.Compat.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Fragment.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v4.dll
+F:\Users\Mike\documents\visual studio 2015\Projects\WritePadSDK-master\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.CardView.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\WritePad SDK Xamarin Sample.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\WritePad SDK Xamarin Sample.pdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\com.phatware.writepad_sample_xamarin.apk
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\com.phatware.writepad_sample_xamarin-Signed.apk
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\FormsViewGroup.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.Compat.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.Core.UI.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.Core.Utils.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.Design.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.Fragment.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.Media.Compat.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.v4.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Core.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Platform.Android.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Platform.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Xaml.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\FormsViewGroup.pdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\FormsViewGroup.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Core.pdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Core.xml
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Core.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Xaml.pdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Xaml.xml
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePadXamarinSample.csprojResolveAssemblyReference.cache
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Compat.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.RecyclerView.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Vector.Drawable.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.AppCompat.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Design.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.MediaRouter.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.UI.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.Utils.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Media.Compat.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Fragment.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v4.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.CardView.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePad SDK Xamarin Sample.dll
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePad SDK Xamarin Sample.pdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\bin\com.phatware.writepad_sample_xamarin.apk
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\res\layout\home.xml
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\res\layout\main.xml
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\res\layout\options.xml
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\res\values\strings.xml
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\res\drawable\icon.png
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\R.cs.flag
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\uploadflags.txt
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\WritePad SDK Xamarin Sample.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Java.Interop.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Mono.Android.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\mscorlib.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.ComponentModel.Composition.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Core.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Net.Http.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Runtime.Serialization.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.ServiceModel.Internals.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Xml.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Xml.Linq.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Java.Interop.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Mono.Android.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\mscorlib.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Core.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Net.Http.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Xml.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\WritePad SDK Xamarin Sample.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePad SDK Xamarin Sample.dll.mdb
+F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\WritePad SDK Xamarin Sample.dll.mdb

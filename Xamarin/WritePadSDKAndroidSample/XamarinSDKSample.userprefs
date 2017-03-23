@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{08F40573-8B1B-43C5-AB7F-ED8CC2E34043}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.AVD_GalaxyNexus_ToolsForApacheCordova" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="XamarinSDKSample\Activity1.cs" Line="63" Column="35" />
+      <File FileName="XamarinSDKSample\Activity2.cs" Line="25" Column="40" />
+      <File FileName="XamarinSDKSample\Resources\AboutResources.txt" Line="1" Column="1" />
+      <File FileName="XamarinSDKSample\Resources\Resource.Designer.cs" Line="1" Column="1" />
+      <File FileName="XamarinSDKSample\Properties\AndroidManifest.xml" Line="9" Column="47" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
