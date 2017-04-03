@@ -58,7 +58,6 @@
   <ItemGroup>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
-    <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
@@ -120,6 +119,26 @@
     <Reference Include="System.Data">
       <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Data.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Bolts.AppLinks">
+      <HintPath>..\packages\Bolts.1.4.0.1\lib\MonoAndroid403\Bolts.AppLinks.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolts.Tasks">
+      <HintPath>..\packages\Bolts.1.4.0.1\lib\MonoAndroid403\Bolts.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.CustomTabs">
+      <HintPath>..\packages\Xamarin.Android.Support.CustomTabs.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.CustomTabs.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Facebook">
+      <HintPath>..\packages\Xamarin.Facebook.Android.4.16.1\lib\MonoAndroid403\Xamarin.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="ExoPlayer">
+      <HintPath>..\packages\Xam.Plugins.Android.ExoPlayer.1.5.8\lib\MonoAndroid\ExoPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Facebook.AudienceNetwork">
+      <HintPath>..\packages\Xamarin.Facebook.AudienceNetwork.Android.4.16.1\lib\MonoAndroid41\Xamarin.Facebook.AudienceNetwork.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity1.cs" />
@@ -133,6 +152,10 @@
     <Compile Include="WritePadAPI.cs" />
     <Compile Include="Activity3.cs" />
     <Compile Include="Question.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="MadMinute.cs" />
+    <Compile Include="LoginActivity.cs" />
+    <Compile Include="ConnectToDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -154,6 +177,8 @@
     <AndroidResource Include="Resources\drawable\stars0.png" />
     <AndroidResource Include="Resources\Layout\Question.axml" />
     <AndroidResource Include="Resources\drawable\algebra_1_0.png" />
+    <AndroidResource Include="Resources\Layout\MadMinute.axml" />
+    <AndroidResource Include="Resources\Layout\LoginPage.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\Main.axml" />
@@ -253,6 +278,12 @@
       <Link>libs\x86_64\libWritePadReco.so</Link>
     </AndroidNativeLibrary>
   </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="facebookandroid">
+      <Version>4.16.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
@@ -287,4 +318,6 @@
   <Import Project="..\packages\Xamarin.Android.Support.Fragment.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Fragment.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.v4.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.v4.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v4.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.v4.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.v7.CardView.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v7.CardView.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.CustomTabs.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.CustomTabs.targets" Condition="Exists('..\packages\Xamarin.Android.Support.CustomTabs.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.CustomTabs.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />
 </Project>

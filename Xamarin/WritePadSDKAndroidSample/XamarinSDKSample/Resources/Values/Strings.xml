@@ -11,5 +11,9 @@
   <string name="Learner">Enable Automatic Learner</string>
   <string name="Title">Recognized text:</string>
   <string name="DictWordsOnly">Recognize Only Dictionary Words</string>
-  <string name="ApplicationName">WritePad SDK Xamarin Sample</string>
+  	<string name="ApplicationName">Math Attack</string>
+	<string name="app_name">Math Attack</string>
+	<string name="facebook_app_id">1264358966985794</string>
+	<string name="submitanswer">Submit</string>
+	<string name="validateAnswer">Check</string>
 </resources>

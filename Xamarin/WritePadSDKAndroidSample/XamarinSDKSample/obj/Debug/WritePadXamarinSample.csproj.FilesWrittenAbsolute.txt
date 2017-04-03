@@ -1,0 +1,54 @@
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/MonoAndroid,Version=v7.1.AssemblyAttribute.cs
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.Compat.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.v7.RecyclerView.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.Vector.Drawable.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.Animated.Vector.Drawable.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.Design.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.v7.MediaRouter.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.Core.UI.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.Core.Utils.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.Media.Compat.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.Fragment.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.v4.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.v7.CardView.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/XbdMerge/Xamarin.Android.Support.CustomTabs.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/WritePad SDK Xamarin Sample.dll.mdb
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/WritePad SDK Xamarin Sample.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/com.phatware.writepad_sample_xamarin.apk
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/bin/com.phatware.writepad_sample_xamarin.apk
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/home.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/levelchoose.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/drawable/stars0.png
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/question.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/drawable/algebra_1_0.png
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/madminute.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/loginpage.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/main.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/options.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/values/strings.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/drawable/icon.png
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/R.cs.flag
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/com.phatware.writepad_sample_xamarin-Signed.apk
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/uploadflags.txt
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/WritePad SDK Xamarin Sample.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/WritePad SDK Xamarin Sample.dll.mdb
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.Compat.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.Core.UI.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.Core.Utils.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.Design.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.Fragment.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.Media.Compat.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.v4.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.v7.CardView.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.v7.MediaRouter.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.Vector.Drawable.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Bolts.AppLinks.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Bolts.Tasks.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Android.Support.CustomTabs.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Facebook.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/ExoPlayer.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Xamarin.Facebook.AudienceNetwork.dll

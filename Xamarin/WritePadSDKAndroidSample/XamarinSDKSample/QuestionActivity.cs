@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.SqlClient;
-//using System.Drawing;
+using System.Data;
 
 using Android.App;
 using Android.Content;
@@ -12,6 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Graphics;
+using System.Data.SqlClient;
 
 namespace WritePadXamarinSample
 {
@@ -31,11 +31,16 @@ namespace WritePadXamarinSample
             SetContentView(Resource.Layout.Question);
 
 			//Connect String here
+			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder ();
+			builder.DataSource = "teamred.database.windows.net";
+			builder.UserID = "teamredadmin";
+			builder.Password = "c$503teamred";
+			builder.InitialCatalog = "TeamRedMath";
 
-			using (SqlConnection conn = new SqlConnection (builder.ConnectionString)) {
-				conn.Open ();
+			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
+				connection.Open ();
 				string query = "SELECT * FROM SAT_QUESTIONS WHERE DIFFICULTY = 'EASY' AND CATEGORY = 'ALGEBRA' AND END_DATE IS NULL";
-				SqlCommand cmd = new SqlCommand (query, conn);
+				SqlCommand cmd = new SqlCommand (query, connection);
 				using (SqlDataReader reader = cmd.ExecuteReader ()) 
 				{
 					while (reader.Read ()) 
@@ -44,7 +49,7 @@ namespace WritePadXamarinSample
 					}
 				}
 
-				conn.Close ();
+				connection.Close ();
 			}
 
 			populateButtonsArray ();

@@ -22,6 +22,98 @@ WritePadXamarinSample.Activity3, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cf
 WritePadXamarinSample.Activity3, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.Activity3
 WritePadXamarinSample.Activity3;md51e5a67ed1fcf13cff747b9ea3148811f.Activity3
 writepadxamarinsample.Activity3;md51e5a67ed1fcf13cff747b9ea3148811f.Activity3
+WritePadXamarinSample.MadMinute, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.MadMinute
+WritePadXamarinSample.MadMinute, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.MadMinute
+WritePadXamarinSample.MadMinute;md51e5a67ed1fcf13cff747b9ea3148811f.MadMinute
+writepadxamarinsample.MadMinute;md51e5a67ed1fcf13cff747b9ea3148811f.MadMinute
+WritePadXamarinSample.LoginActivity, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.LoginActivity
+WritePadXamarinSample.LoginActivity, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.LoginActivity
+WritePadXamarinSample.LoginActivity;md51e5a67ed1fcf13cff747b9ea3148811f.LoginActivity
+writepadxamarinsample.LoginActivity;md51e5a67ed1fcf13cff747b9ea3148811f.LoginActivity
+WritePadXamarinSample.MyProfileTracker, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.MyProfileTracker
+WritePadXamarinSample.MyProfileTracker, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.MyProfileTracker
+WritePadXamarinSample.MyProfileTracker;md51e5a67ed1fcf13cff747b9ea3148811f.MyProfileTracker
+writepadxamarinsample.MyProfileTracker;md51e5a67ed1fcf13cff747b9ea3148811f.MyProfileTracker
+Xamarin.Facebook.Share.Widget.LikeView/IOnErrorListenerImplementor, Xamarin.Facebook;mono.com.facebook.share.widget.LikeView_OnErrorListenerImplementor
+Xamarin.Facebook.Share.Widget.LikeView+IOnErrorListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.share.widget.LikeView_OnErrorListenerImplementor
+Xamarin.Facebook.Share.Widget.LikeView.IOnErrorListenerImplementor;mono.com.facebook.share.widget.LikeView_OnErrorListenerImplementor
+mono.com.facebook.share.widget.LikeView_OnErrorListenerImplementor;mono.com.facebook.share.widget.LikeView_OnErrorListenerImplementor
+Xamarin.Facebook.Internal.CollectionMapper/IOnErrorListenerImplementor, Xamarin.Facebook;mono.com.facebook.internal.CollectionMapper_OnErrorListenerImplementor
+Xamarin.Facebook.Internal.CollectionMapper+IOnErrorListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.internal.CollectionMapper_OnErrorListenerImplementor
+Xamarin.Facebook.Internal.CollectionMapper.IOnErrorListenerImplementor;mono.com.facebook.internal.CollectionMapper_OnErrorListenerImplementor
+mono.com.facebook.internal.CollectionMapper_OnErrorListenerImplementor;mono.com.facebook.internal.CollectionMapper_OnErrorListenerImplementor
+Xamarin.Facebook.Internal.PlatformServiceClient/ICompletedListenerImplementor, Xamarin.Facebook;mono.com.facebook.internal.PlatformServiceClient_CompletedListenerImplementor
+Xamarin.Facebook.Internal.PlatformServiceClient+ICompletedListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.internal.PlatformServiceClient_CompletedListenerImplementor
+Xamarin.Facebook.Internal.PlatformServiceClient.ICompletedListenerImplementor;mono.com.facebook.internal.PlatformServiceClient_CompletedListenerImplementor
+mono.com.facebook.internal.PlatformServiceClient_CompletedListenerImplementor;mono.com.facebook.internal.PlatformServiceClient_CompletedListenerImplementor
+Xamarin.Facebook.Internal.WebDialog/IOnCompleteListenerImplementor, Xamarin.Facebook;mono.com.facebook.internal.WebDialog_OnCompleteListenerImplementor
+Xamarin.Facebook.Internal.WebDialog+IOnCompleteListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.internal.WebDialog_OnCompleteListenerImplementor
+Xamarin.Facebook.Internal.WebDialog.IOnCompleteListenerImplementor;mono.com.facebook.internal.WebDialog_OnCompleteListenerImplementor
+mono.com.facebook.internal.WebDialog_OnCompleteListenerImplementor;mono.com.facebook.internal.WebDialog_OnCompleteListenerImplementor
+Xamarin.Facebook.Login.Widget.ProfilePictureView/IOnErrorListenerImplementor, Xamarin.Facebook;mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor
+Xamarin.Facebook.Login.Widget.ProfilePictureView+IOnErrorListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor
+Xamarin.Facebook.Login.Widget.ProfilePictureView.IOnErrorListenerImplementor;mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor
+mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor;mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor
+Com.Google.Android.Exoplayer.Audio.AudioCapabilitiesReceiver/IListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.audio.AudioCapabilitiesReceiver_ListenerImplementor
+Com.Google.Android.Exoplayer.Audio.AudioCapabilitiesReceiver+IListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.audio.AudioCapabilitiesReceiver_ListenerImplementor
+Com.Google.Android.Exoplayer.Audio.AudioCapabilitiesReceiver.IListenerImplementor;mono.com.google.android.exoplayer.audio.AudioCapabilitiesReceiver_ListenerImplementor
+mono.com.google.android.exoplayer.audio.AudioCapabilitiesReceiver_ListenerImplementor;mono.com.google.android.exoplayer.audio.AudioCapabilitiesReceiver_ListenerImplementor
+Com.Google.Android.Exoplayer.Chunk.IBaseChunkSampleSourceEventListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.chunk.BaseChunkSampleSourceEventListenerImplementor
+Com.Google.Android.Exoplayer.Chunk.IBaseChunkSampleSourceEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.chunk.BaseChunkSampleSourceEventListenerImplementor
+Com.Google.Android.Exoplayer.Chunk.IBaseChunkSampleSourceEventListenerImplementor;mono.com.google.android.exoplayer.chunk.BaseChunkSampleSourceEventListenerImplementor
+mono.com.google.android.exoplayer.chunk.BaseChunkSampleSourceEventListenerImplementor;mono.com.google.android.exoplayer.chunk.BaseChunkSampleSourceEventListenerImplementor
+Com.Google.Android.Exoplayer.Dash.DashChunkSource/IEventListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.dash.DashChunkSource_EventListenerImplementor
+Com.Google.Android.Exoplayer.Dash.DashChunkSource+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.dash.DashChunkSource_EventListenerImplementor
+Com.Google.Android.Exoplayer.Dash.DashChunkSource.IEventListenerImplementor;mono.com.google.android.exoplayer.dash.DashChunkSource_EventListenerImplementor
+mono.com.google.android.exoplayer.dash.DashChunkSource_EventListenerImplementor;mono.com.google.android.exoplayer.dash.DashChunkSource_EventListenerImplementor
+Com.Google.Android.Exoplayer.DefaultLoadControl/IEventListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.DefaultLoadControl_EventListenerImplementor
+Com.Google.Android.Exoplayer.DefaultLoadControl+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.DefaultLoadControl_EventListenerImplementor
+Com.Google.Android.Exoplayer.DefaultLoadControl.IEventListenerImplementor;mono.com.google.android.exoplayer.DefaultLoadControl_EventListenerImplementor
+mono.com.google.android.exoplayer.DefaultLoadControl_EventListenerImplementor;mono.com.google.android.exoplayer.DefaultLoadControl_EventListenerImplementor
+Com.Google.Android.Exoplayer.Drm.StreamingDrmSessionManager/IEventListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.drm.StreamingDrmSessionManager_EventListenerImplementor
+Com.Google.Android.Exoplayer.Drm.StreamingDrmSessionManager+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.drm.StreamingDrmSessionManager_EventListenerImplementor
+Com.Google.Android.Exoplayer.Drm.StreamingDrmSessionManager.IEventListenerImplementor;mono.com.google.android.exoplayer.drm.StreamingDrmSessionManager_EventListenerImplementor
+mono.com.google.android.exoplayer.drm.StreamingDrmSessionManager_EventListenerImplementor;mono.com.google.android.exoplayer.drm.StreamingDrmSessionManager_EventListenerImplementor
+Com.Google.Android.Exoplayer.IExoPlayerListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.ExoPlayer_ListenerImplementor
+Com.Google.Android.Exoplayer.IExoPlayerListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.ExoPlayer_ListenerImplementor
+Com.Google.Android.Exoplayer.IExoPlayerListenerImplementor;mono.com.google.android.exoplayer.ExoPlayer_ListenerImplementor
+mono.com.google.android.exoplayer.ExoPlayer_ListenerImplementor;mono.com.google.android.exoplayer.ExoPlayer_ListenerImplementor
+Com.Google.Android.Exoplayer.MediaCodecTrackRenderer/IEventListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.MediaCodecTrackRenderer_EventListenerImplementor
+Com.Google.Android.Exoplayer.MediaCodecTrackRenderer+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.MediaCodecTrackRenderer_EventListenerImplementor
+Com.Google.Android.Exoplayer.MediaCodecTrackRenderer.IEventListenerImplementor;mono.com.google.android.exoplayer.MediaCodecTrackRenderer_EventListenerImplementor
+mono.com.google.android.exoplayer.MediaCodecTrackRenderer_EventListenerImplementor;mono.com.google.android.exoplayer.MediaCodecTrackRenderer_EventListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.Cache.CacheDataSource/IEventListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.upstream.cache.CacheDataSource_EventListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.Cache.CacheDataSource+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.upstream.cache.CacheDataSource_EventListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.Cache.CacheDataSource.IEventListenerImplementor;mono.com.google.android.exoplayer.upstream.cache.CacheDataSource_EventListenerImplementor
+mono.com.google.android.exoplayer.upstream.cache.CacheDataSource_EventListenerImplementor;mono.com.google.android.exoplayer.upstream.cache.CacheDataSource_EventListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.Cache.ICacheListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.upstream.cache.Cache_ListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.Cache.ICacheListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.upstream.cache.Cache_ListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.Cache.ICacheListenerImplementor;mono.com.google.android.exoplayer.upstream.cache.Cache_ListenerImplementor
+mono.com.google.android.exoplayer.upstream.cache.Cache_ListenerImplementor;mono.com.google.android.exoplayer.upstream.cache.Cache_ListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.IBandwidthMeterEventListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.upstream.BandwidthMeter_EventListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.IBandwidthMeterEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.upstream.BandwidthMeter_EventListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.IBandwidthMeterEventListenerImplementor;mono.com.google.android.exoplayer.upstream.BandwidthMeter_EventListenerImplementor
+mono.com.google.android.exoplayer.upstream.BandwidthMeter_EventListenerImplementor;mono.com.google.android.exoplayer.upstream.BandwidthMeter_EventListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.ITransferListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.upstream.TransferListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.ITransferListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.upstream.TransferListenerImplementor
+Com.Google.Android.Exoplayer.Upstream.ITransferListenerImplementor;mono.com.google.android.exoplayer.upstream.TransferListenerImplementor
+mono.com.google.android.exoplayer.upstream.TransferListenerImplementor;mono.com.google.android.exoplayer.upstream.TransferListenerImplementor
+Com.Google.Android.Exoplayer.Util.ManifestFetcher/IEventListenerImplementor, ExoPlayer;mono.com.google.android.exoplayer.util.ManifestFetcher_EventListenerImplementor
+Com.Google.Android.Exoplayer.Util.ManifestFetcher+IEventListenerImplementor, ExoPlayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.exoplayer.util.ManifestFetcher_EventListenerImplementor
+Com.Google.Android.Exoplayer.Util.ManifestFetcher.IEventListenerImplementor;mono.com.google.android.exoplayer.util.ManifestFetcher_EventListenerImplementor
+mono.com.google.android.exoplayer.util.ManifestFetcher_EventListenerImplementor;mono.com.google.android.exoplayer.util.ManifestFetcher_EventListenerImplementor
+Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.AdListenerImplementor
+Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.AdListenerImplementor
+Xamarin.Facebook.Ads.IAdListenerImplementor;mono.com.facebook.ads.AdListenerImplementor
+mono.com.facebook.ads.AdListenerImplementor;mono.com.facebook.ads.AdListenerImplementor
+Xamarin.Facebook.Ads.IImpressionListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.ImpressionListenerImplementor
+Xamarin.Facebook.Ads.IImpressionListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.ImpressionListenerImplementor
+Xamarin.Facebook.Ads.IImpressionListenerImplementor;mono.com.facebook.ads.ImpressionListenerImplementor
+mono.com.facebook.ads.ImpressionListenerImplementor;mono.com.facebook.ads.ImpressionListenerImplementor
+Xamarin.Facebook.Ads.NativeAdsManager/IListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
+Xamarin.Facebook.Ads.NativeAdsManager+IListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
+Xamarin.Facebook.Ads.NativeAdsManager.IListenerImplementor;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
+mono.com.facebook.ads.NativeAdsManager_ListenerImplementor;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
 Android.Support.V4.App.SharedElementCallback/IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback+IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback.IOnSharedElementsReadyListenerImplementor;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
@@ -234,3 +326,15 @@ Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, X
 Android.Support.V4.App.FragmentManager+IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.Fragment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
+Android.Support.CustomTabs.CustomTabsClient/CustomTabsCallbackImpl, Xamarin.Android.Support.CustomTabs;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
+Android.Support.CustomTabs.CustomTabsClient+CustomTabsCallbackImpl, Xamarin.Android.Support.CustomTabs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
+Android.Support.CustomTabs.CustomTabsClient.CustomTabsCallbackImpl;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
+android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
+Android.Support.CustomTabs.KeepAliveService, Xamarin.Android.Support.CustomTabs;md59f70a99687498e7ba187118950981d26.KeepAliveService
+Android.Support.CustomTabs.KeepAliveService, Xamarin.Android.Support.CustomTabs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f70a99687498e7ba187118950981d26.KeepAliveService
+Android.Support.CustomTabs.KeepAliveService;md59f70a99687498e7ba187118950981d26.KeepAliveService
+android.support.customtabs.KeepAliveService;md59f70a99687498e7ba187118950981d26.KeepAliveService
+Android.Support.CustomTabs.CustomTabsServiceConnectionImpl, Xamarin.Android.Support.CustomTabs;md59f70a99687498e7ba187118950981d26.CustomTabsServiceConnectionImpl
+Android.Support.CustomTabs.CustomTabsServiceConnectionImpl, Xamarin.Android.Support.CustomTabs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f70a99687498e7ba187118950981d26.CustomTabsServiceConnectionImpl
+Android.Support.CustomTabs.CustomTabsServiceConnectionImpl;md59f70a99687498e7ba187118950981d26.CustomTabsServiceConnectionImpl
+android.support.customtabs.CustomTabsServiceConnectionImpl;md59f70a99687498e7ba187118950981d26.CustomTabsServiceConnectionImpl

@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.phatware.writepad_sample_xamarin" android:versionName="5.5.160331" android:versionCode="6">
 	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="25" />
-	<application android:label="WritePad SDK Xamarin Sample" android:icon="@drawable/icon"></application>
-	<supports-screens android:resizeable="true"
-                  android:smallScreens="true"
-                  android:normalScreens="true"
-                  android:largeScreens="true"
-                  android:xlargeScreens="true"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	<application android:label="MathAttack" android:icon="@drawable/icon">
+		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+		<activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" />
+	</application>
+	<supports-screens android:resizeable="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
 </manifest>

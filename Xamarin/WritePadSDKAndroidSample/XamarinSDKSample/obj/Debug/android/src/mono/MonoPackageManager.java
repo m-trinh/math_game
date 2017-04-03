@@ -99,7 +99,11 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "WritePad SDK Xamarin Sample.dll" comes first in this list. */
 		"WritePad SDK Xamarin Sample.dll",
-		"System.Drawing.dll",
+		"Bolts.AppLinks.dll",
+		"Bolts.Tasks.dll",
+		"Xamarin.Facebook.dll",
+		"ExoPlayer.dll",
+		"Xamarin.Facebook.AudienceNetwork.dll",
 		"Xamarin.Android.Support.Compat.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
@@ -113,8 +117,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Fragment.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.CardView.dll",
-		"System.Configuration.dll",
-		"System.Runtime.Caching.dll",
+		"Xamarin.Android.Support.CustomTabs.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

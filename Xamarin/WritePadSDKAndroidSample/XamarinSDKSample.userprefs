@@ -1,19 +1,28 @@
 ﻿<Properties StartupConfiguration="{08F40573-8B1B-43C5-AB7F-ED8CC2E34043}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSDKSample/QuestionActivity.cs">
+    <Files>
+      <File FileName="XamarinSDKSample/Activity2.cs" Line="15" Column="1" />
+      <File FileName="XamarinSDKSample/MadMinute.cs" Line="44" Column="3" />
+      <File FileName="XamarinSDKSample/QuestionActivity.cs" Line="49" Column="7" />
+      <File FileName="XamarinSDKSample/ConnectToDatabase.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XamarinSDKSample" expanded="True">
+            <Node name="WritePadXamarinSample" expanded="True">
+              <Node name="QuestionActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.42000b3d9a894375" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.AVD_GalaxyNexus_ToolsForApacheCordova" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSDKSample\QuestionActivity.cs">
-    <Files>
-      <File FileName="XamarinSDKSample\Activity1.cs" Line="82" Column="29" />
-      <File FileName="XamarinSDKSample\Activity2.cs" Line="23" Column="63" />
-      <File FileName="XamarinSDKSample\Resources\Resource.Designer.cs" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\Activity3.cs" Line="13" Column="1" />
-      <File FileName="XamarinSDKSample\QuestionActivity.cs" Line="106" Column="21" />
-      <File FileName="XamarinSDKSample\Question.cs" Line="18" Column="22" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
