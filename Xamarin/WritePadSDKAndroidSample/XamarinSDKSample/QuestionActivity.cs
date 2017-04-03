@@ -31,11 +31,6 @@ namespace WritePadXamarinSample
             SetContentView(Resource.Layout.Question);
 
 			//Connect String here
-			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder ();
-			builder.DataSource = "teamred.database.windows.net";
-			builder.UserID = "teamredadmin";
-			builder.Password = "c$503teamred";
-			builder.InitialCatalog = "TeamRedMath";
 
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
 				connection.Open ();
