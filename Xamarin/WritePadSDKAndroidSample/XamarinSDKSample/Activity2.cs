@@ -19,10 +19,15 @@ namespace WritePadXamarinSample
         {
             base.OnCreate(savedInstanceState);
 			SetContentView(Resource.Layout.Home);
-            var button = FindViewById<Button> (Resource.Id.traininggame);
+            var trainingbutton = FindViewById<Button> (Resource.Id.traininggame);
+			var satbutton = FindViewById<Button> (Resource.Id.satgame);
 
-			button.Click += delegate {
+			trainingbutton.Click += delegate {
 				StartActivity (typeof (Activity1));
+			};
+
+			satbutton.Click += delegate {
+				StartActivity (typeof (Activity3));
 			};
         }
     }

@@ -2,22 +2,15 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.Design\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.MediaRouter\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
-  <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
-  </ResolvedAssetDirectories>
+  <ResolvedAssetDirectories />
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Documents\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.Design.stamp</ResolvedResourceDirectoryStamp>

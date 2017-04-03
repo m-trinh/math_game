@@ -5,13 +5,14 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.AVD_GalaxyNexus_ToolsForApacheCordova" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSDKSample\QuestionActivity.cs">
     <Files>
-      <File FileName="XamarinSDKSample\Activity1.cs" Line="63" Column="35" />
-      <File FileName="XamarinSDKSample\Activity2.cs" Line="25" Column="40" />
-      <File FileName="XamarinSDKSample\Resources\AboutResources.txt" Line="1" Column="1" />
+      <File FileName="XamarinSDKSample\Activity1.cs" Line="82" Column="29" />
+      <File FileName="XamarinSDKSample\Activity2.cs" Line="23" Column="63" />
       <File FileName="XamarinSDKSample\Resources\Resource.Designer.cs" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\Properties\AndroidManifest.xml" Line="9" Column="47" />
+      <File FileName="XamarinSDKSample\Activity3.cs" Line="13" Column="1" />
+      <File FileName="XamarinSDKSample\QuestionActivity.cs" Line="106" Column="21" />
+      <File FileName="XamarinSDKSample\Question.cs" Line="18" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
