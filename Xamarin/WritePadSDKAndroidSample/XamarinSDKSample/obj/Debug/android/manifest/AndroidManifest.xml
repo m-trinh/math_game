@@ -20,6 +20,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="ChallengeQuestionActivity" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.ChallengeQuestionActivity" />
     <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.ads.InterstitialAdActivity" />
     <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.phatware.writepad_sample_xamarin.mono.MonoRuntimeProvider.__mono_init__" />

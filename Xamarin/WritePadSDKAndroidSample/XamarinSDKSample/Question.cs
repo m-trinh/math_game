@@ -15,10 +15,17 @@ namespace WritePadXamarinSample
 		{
 			Row_id = row_id;
 			QuestionImage = questionImage;
-			Correct = correct;
-			Wrong1 = wrong1;
-			Wrong2 = wrong2;
-			Wrong3 = wrong3;
+			Correct = convertUnicode(correct);
+			Wrong1 = convertUnicode(wrong1);
+			Wrong2 = convertUnicode(wrong2);
+			Wrong3 = convertUnicode(wrong3);
+		}
+
+		public string convertUnicode (string answer)
+		{
+			answer = answer.Replace ("\\u221A", "√");
+			answer = answer.Replace ("\\u03C0", "π");
+			return answer;
 		}
 	}
 }

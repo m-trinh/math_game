@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using System.Data;
 using System.Data.SqlClient;
+using WritePadXamarinSample;
 
 public class ConnectToDatabase
 {
@@ -19,7 +19,7 @@ public class ConnectToDatabase
 	{
 
 		try {
-			//Connection string
+			SqlConnectionStringBuilder builder = ConnString.Builder;
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
 				connection.Open ();
 				StringBuilder sb = new StringBuilder ();
