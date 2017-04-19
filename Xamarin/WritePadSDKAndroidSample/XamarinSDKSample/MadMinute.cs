@@ -136,7 +136,7 @@ namespace WritePadXamarinSample
 
 		private void ShowQuestions (bool rightAnswer)
 		{
-			RandomQuestion newQuestion = new RandomQuestion();
+			RandomQuestions newQuestion = new RandomQuestions();
 
 
 			questions_math.Text = newQuestion.FirstOperand.ToString () + " " + newQuestion.Operand + " " + newQuestion.SecondOperand.ToString ();
@@ -150,16 +150,16 @@ namespace WritePadXamarinSample
 			};
 		}
 
-		private RandomQuestion createNewQuestion () {
+		private RandomQuestions createNewQuestion () {
 			questions_math.SetBackgroundColor (Color.AliceBlue);
-			RandomQuestion newQuestion = new RandomQuestion ();
+			RandomQuestions newQuestion = new RandomQuestions ();
 
 			questions_math.Text = newQuestion.FirstOperand.ToString () + " " + newQuestion.Operand + " " + newQuestion.SecondOperand.ToString ();
 			return newQuestion;
 		}
 
 
-		private bool validateAnswer (RandomQuestion question)
+		private bool validateAnswer (RandomQuestions question)
 		{
 			try {
 				string[] answer = readyText.Text.Split ('\n');
@@ -222,23 +222,19 @@ namespace WritePadXamarinSample
 				replayGame.Enabled = true;
 				//Show the layer to say it is done
 
-				ConnectToDatabase insertValues = new ConnectToDatabase ();
-				var storedCorrectly = false;
-				RunOnUiThread(() => storedCorrectly = insertValues.insertToMadMinute (username, totalScore, totalQuestions - totalScore));
-
 				return;
 			}
 		}
 
 	}
 
-	public class RandomQuestion{
+	public class RandomQuestions{
 
 		private int firstOperand;
 		private int secondOperand;
 		private string operand;
 
-		public RandomQuestion () {
+		public RandomQuestions () {
 			Random random = new Random ();
 			firstOperand = random.Next (0, 9);
 			secondOperand = random.Next (0, 9);

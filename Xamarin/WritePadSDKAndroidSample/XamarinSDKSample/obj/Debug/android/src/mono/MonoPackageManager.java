@@ -102,8 +102,16 @@ class MonoPackageManager_Resources {
 		"Bolts.AppLinks.dll",
 		"Bolts.Tasks.dll",
 		"Xamarin.Facebook.dll",
-		"ExoPlayer.dll",
 		"Xamarin.Facebook.AudienceNetwork.dll",
+		"FormsViewGroup.dll",
+		"Xamarin.Forms.Core.dll",
+		"Xamarin.Forms.Platform.Android.dll",
+		"Xamarin.Forms.Platform.dll",
+		"Xamarin.Forms.Xaml.dll",
+		"OxyPlot.Xamarin.Forms.dll",
+		"OxyPlot.Xamarin.Forms.Platform.Android.dll",
+		"OxyPlot.dll",
+		"OxyPlot.Xamarin.Android.dll",
 		"Xamarin.Android.Support.Compat.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
@@ -118,6 +126,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.CardView.dll",
 		"Xamarin.Android.Support.CustomTabs.dll",
+		"Xamarin.Android.Support.Transition.dll",
+		"Xamarin.Android.Support.v7.Palette.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

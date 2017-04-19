@@ -15,12 +15,13 @@ using Xamarin.Facebook.Login.Widget;
 
 namespace WritePadXamarinSample
 {
-    [Activity(Label = "Activity2", MainLauncher = false, Icon = "@drawable/icon")]
+    [Activity(Label = "Home", MainLauncher = false, Icon = "@drawable/icon")]
     public class Activity2 : Activity
     {
 
 		private TextView usernameTextBox;
 		private Button madMinuteGame;
+		private Button statistics;
 		private string username;
 
 		protected override void OnDestroy ()
@@ -80,6 +81,17 @@ namespace WritePadXamarinSample
 
 			satbutton.Click += delegate {
 				StartActivity (typeof (Activity3));
+			};
+
+			/*
+			 * STATISTICS
+			*/
+			statistics = FindViewById<Button>(Resource.Id.profile);
+			statistics.Click += delegate
+			{
+				var statsUsername = new Intent (this, typeof (GenerateStats));
+				statsUsername.PutExtra ("UserName", username);
+				StartActivity(statsUsername);
 			};
         }
     }

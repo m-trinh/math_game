@@ -1,213 +1,316 @@
-﻿/* ************************************************************************************* */
-/* *    PhatWare WritePad SDK                                                          * */
-/* *    Copyright (c) 2008-2015 PhatWare(r) Corp. All rights reserved.                 * */
-/* ************************************************************************************* */
-
-/* ************************************************************************************* *
- *
- * WritePad SDK Xamarin Sample for Android
- *
- * Unauthorized distribution of this code is prohibited. For more information
- * refer to the End User Software License Agreement provided with this
- * software.
- *
- * This source code is distributed and supported by PhatWare Corp.
- * http://www.phatware.com
- *
- * THIS SAMPLE CODE CAN BE USED  AS A REFERENCE AND, IN ITS BINARY FORM,
- * IN THE USER'S PROJECT WHICH IS INTEGRATED WITH THE WRITEPAD SDK.
- * ANY OTHER USE OF THIS CODE IS PROHIBITED.
- *
- * THE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU "AS-IS"
- * AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,
- * INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR
- * FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL PHATWARE CORP.
- * BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT, SPECIAL, INCIDENTAL,
- * INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER,
- * INCLUDING WITHOUT LIMITATION, LOSS OF PROFIT, LOSS OF USE, SAVINGS
- * OR REVENUE, OR THE CLAIMS OF THIRD PARTIES, WHETHER OR NOT PHATWARE CORP.
- * HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON
- * ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE
- * POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.
- *
- * US Government Users Restricted Rights
- * Use, duplication, or disclosure by the Government is subject to
- * restrictions set forth in EULA and in FAR 52.227.19(c)(2) or subparagraph
- * (c)(1)(ii) of the Rights in Technical Data and Computer Software
- * clause at DFARS 252.227-7013 and/or in similar or successor
- * clauses in the FAR or the DOD or NASA FAR Supplement.
- * Unpublished-- rights reserved under the copyright laws of the
- * United States.  Contractor/manufacturer is PhatWare Corp.
- * 1314 S. Grand Blvd. Ste. 2-175 Spokane, WA 99202
- *
- * ************************************************************************************* */
-
+﻿
 using Android.App;
 using Android.Text.Method;
 using Android.Widget;
 using Android.OS;
+using System;
+using System.Timers;
+using System.Threading.Tasks;
+using Android.Graphics;
+using Android.Content;
+using Xamarin.Facebook.Login;
 
 namespace WritePadXamarinSample
 {
-    [Activity(Label = "WritePadXamarinSample")]
-    public class Activity1 : Activity
-    {
-        protected override void OnDestroy()
-        {
-            base.OnDestroy();
-            WritePadAPI.recoFree();                    
-        }
-        
-        protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
+	[Activity(Label = "WritePadXamarinSample")]
+	public class Activity1 : Activity
+	{
+		private LinearLayout topLayerCount;
+		private FrameLayout containerLayer;
+		private bool endTime = false;
+		private TextView countDownStart;
+		private TextView countdownView;
+		private int countVariable;
+		private Timer timer;
+		private TextView ReadyGoStop;
+		private Button button;
+		private TextView questions_math;
+		private TextView readyText;
+		private InkView inkView;
+		private Button submitAnswer;
+		private int totalScore = 0;
+		private int totalQuestions = 0;
+		private TextView finalTotalScore;
+		private Button replayGame;
+		private TextView countDownView;
+		private Button goBack;
+		private string username;
 
-            SetContentView(Resource.Layout.Main);
+		protected override void OnPause()
+		{
+			base.OnDestroy();
+			LoginManager.Instance.LogOut();
+		}
+
+		protected override void OnDestroy()
+		{
+			base.OnDestroy();
+			WritePadAPI.recoFree();
+		}
+
+		protected override void OnCreate(Bundle bundle)
+		{
+			base.OnCreate(bundle);
+
+			SetContentView(Resource.Layout.MadMinute);
+
+			//Get the username
+			username = Intent.GetStringExtra("UserName");
+
 
 			WritePadAPI.recoInit(BaseContext);
-            WritePadAPI.initializeFlags(BaseContext);    
-            
-            var button = FindViewById<Button>(Resource.Id.RecognizeButton);
-            var inkView = FindViewById<InkView>(Resource.Id.ink_view);
-            var readyText = FindViewById<TextView>(Resource.Id.ready_text);
-            var readyTextTitle = FindViewById<TextView>(Resource.Id.ready_text_title);
-            var languageBtn = FindViewById<Button>(Resource.Id.LanguageButton);
-			var optionsBtn = FindViewById<Button>(Resource.Id.OptionsButton);
+			WritePadAPI.initializeFlags(BaseContext);
 
-            readyText.MovementMethod = new ScrollingMovementMethod();
-            readyTextTitle.Text = Resources.GetString(Resource.String.Title) + " (" + WritePadAPI.getLanguageName() + ")";           
-                
-            button.Click += delegate
-            {
-				readyText.Text = inkView.Recognize( false );               
-            };
+			button = FindViewById<Button>(Resource.Id.RecognizeButton);
+			inkView = FindViewById<InkView>(Resource.Id.ink_view);
+			readyText = FindViewById<TextView>(Resource.Id.ready_text);
+			topLayerCount = FindViewById<LinearLayout>(Resource.Id.topLayerCount);
+			containerLayer = FindViewById<FrameLayout>(Resource.Id.containerLayer);
+			countdownView = FindViewById<TextView>(Resource.Id.countdownStart);
+			ReadyGoStop = FindViewById<TextView>(Resource.Id.ReadyGoStop);
+			questions_math = FindViewById<TextView>(Resource.Id.questions_math);
+			submitAnswer = FindViewById<Button>(Resource.Id.submitAnswer);
+			finalTotalScore = FindViewById<TextView>(Resource.Id.finalTotalScore);
+			replayGame = FindViewById<Button>(Resource.Id.replayGame);
+			countDownView = FindViewById<TextView>(Resource.Id.time_countdown);
+			goBack = FindViewById<Button>(Resource.Id.goBack);
 
-			optionsBtn.Click += delegate
+
+			countVariable = 3;
+			//calculateTime (countVariable);
+
+			topLayerCount.Visibility = Android.Views.ViewStates.Invisible;
+			if (endTime)
 			{
-				// show options dialog
-				StartActivity( typeof(WritePadOptions) );
+				return;
+			}
+			ReadyGoStop.Text = "GO!";
+			int minuteTime = 60;
+			StartCountdownTimer(minuteTime);
+			bool rightAnswer = false;
+			ShowQuestions(rightAnswer);
 
+			readyText.MovementMethod = new ScrollingMovementMethod();
+			//readyTextTitle.Text = Resources.GetString (Resource.String.Title) + " (" + WritePadAPI.getLanguageName () + ")";
+
+			button.Click += delegate
+			{
+				readyText.Text = inkView.Recognize(false);
 			};
 
-            languageBtn.Click += delegate
-            {
-                var builder = new AlertDialog.Builder(this);
-                builder.SetTitle("Select language");
-				var languages = new[]{"English", "English (UK)", "German", "French", "Spanish", "Portuguese", 
-					"Portuguese (Brazilian)", "Dutch", "Italian", "Finnish", "Sweddish", "Norwegian", 
-					"Danish", "Indonesian"};
-                var selection = 0;
-                switch (WritePadAPI.language)
-                {
-                    case WritePadAPI.LanguageType.en:
-                        selection = 0;
-                        break;
-                    case WritePadAPI.LanguageType.en_uk:
-                        selection = 1;
-                        break;
-                    case WritePadAPI.LanguageType.de:
-                        selection = 2;
-                        break;
-                    case WritePadAPI.LanguageType.fr:
-                        selection = 3;
-                        break;
-                    case WritePadAPI.LanguageType.es:
-                        selection = 4;
-                        break;
-                    case WritePadAPI.LanguageType.pt_PT:
-                        selection = 5;
-                        break;
-                    case WritePadAPI.LanguageType.pt_BR:
-                        selection = 6;
-                        break;
-                    case WritePadAPI.LanguageType.nl:
-                        selection = 7;
-                        break;
-                    case WritePadAPI.LanguageType.it:
-                        selection = 8;
-                        break;
-                    case WritePadAPI.LanguageType.fi:
-                        selection = 9;
-                        break;
-                    case WritePadAPI.LanguageType.sv:
-                        selection = 10;
-                        break;
-                    case WritePadAPI.LanguageType.nb:
-                        selection = 11;
-                        break;
-					case WritePadAPI.LanguageType.da:
-						selection = 12;
-						break;
-					case WritePadAPI.LanguageType.id:
-						selection = 13;
-						break;
-                }
-                builder.SetSingleChoiceItems(languages, selection, (sender, args) =>
-                {
-                    WritePadAPI.recoFree();
-                    switch (args.Which)
-                    {
-                        case 0:
-                            WritePadAPI.language = WritePadAPI.LanguageType.en;                                                       
-                            break;
-                        case 1:
-                            WritePadAPI.language = WritePadAPI.LanguageType.en_uk;
-                            break;
-                        case 2:
-                            WritePadAPI.language = WritePadAPI.LanguageType.de;
-                            break;
-                        case 3:
-                            WritePadAPI.language = WritePadAPI.LanguageType.fr;
-                            break;
-                        case 4:
-                            WritePadAPI.language = WritePadAPI.LanguageType.es;
-                            break;
-                        case 5:
-                            WritePadAPI.language = WritePadAPI.LanguageType.pt_PT;
-                            break;
-                        case 6:
-                            WritePadAPI.language = WritePadAPI.LanguageType.pt_BR;
-                            break;
-                        case 7:
-                            WritePadAPI.language = WritePadAPI.LanguageType.nl;
-                            break;
-                        case 8:
-                            WritePadAPI.language = WritePadAPI.LanguageType.it;
-                            break;
-                        case 9:
-                            WritePadAPI.language = WritePadAPI.LanguageType.fi;
-                            break;
-                        case 10:
-                            WritePadAPI.language = WritePadAPI.LanguageType.sv;
-                            break;
-                        case 11:
-                            WritePadAPI.language = WritePadAPI.LanguageType.nb;
-                            break;
-                        case 12:
-                            WritePadAPI.language = WritePadAPI.LanguageType.da;
-                            break;                       
-						case 13:
-							WritePadAPI.language = WritePadAPI.LanguageType.id;
-							break;                       
-                    }
-					WritePadAPI.recoInit(BaseContext);
-                    WritePadAPI.initializeFlags(BaseContext);
-                    inkView.cleanView(true);
-                    readyTextTitle.Text = Resources.GetString(Resource.String.Title) + " (" + WritePadAPI.getLanguageName() + ")";           
-                });
-                var alert = builder.Create();
-                alert.Show();               
-            };
-			inkView.OnReturnGesture += () => readyText.Text = inkView.Recognize( true );
+			goBack.Click += delegate
+			{
+				var activity2 = new Intent(this, typeof(Activity2));
+				activity2.PutExtra("UserName", username);
+				//activity2.PutExtra ("UserEmail", e.mProfile.Email);
+				StartActivity(activity2);
+			};
+
+			replayGame.Click += delegate
+			{
+				replayGame.Enabled = false;
+				restartSettings();
+			};
+
+			/* WritePad SDK recognizing what the user wrote.*/
+			inkView.OnReturnGesture += () => readyText.Text = inkView.Recognize(true);
 			inkView.OnReturnGesture += () => inkView.cleanView(true);
-            inkView.OnCutGesture += () => inkView.cleanView(true);
+			inkView.OnCutGesture += () => inkView.cleanView(true);
 			var clearbtn = FindViewById<Button>(Resource.Id.ClearButton);
 			clearbtn.Click += delegate
 			{
 				readyText.Text = "";
 				inkView.cleanView(true);
 			};
-        }
-    }
-}
+		}
 
+		public void restartSettings()
+		{
+			inkView.cleanView(true);
+			topLayerCount.Visibility = Android.Views.ViewStates.Invisible;
+			totalScore = 0;
+			totalQuestions = 0;
+			ReadyGoStop.Text = "Go!";
+			finalTotalScore.Text = "Score: 0";
+			countDownView.Text = "60";
+			int minuteTime = 60;
+			StartCountdownTimer(minuteTime);
+			bool rightAnswer = false;
+			ShowQuestions(rightAnswer);
+		}
+
+		private void ShowQuestions(bool rightAnswer)
+		{
+			RandomQuestion newQuestion = new RandomQuestion();
+
+
+			questions_math.Text = newQuestion.FirstOperand.ToString() + " " + newQuestion.Operand + " " + newQuestion.SecondOperand.ToString();
+
+			submitAnswer.Click += (sender, e) =>
+			{
+				totalQuestions++;
+				readyText.Text = inkView.Recognize(false);
+				rightAnswer = validateAnswer(newQuestion);
+				if (rightAnswer)
+					newQuestion = createNewQuestion();
+			};
+		}
+
+		private RandomQuestion createNewQuestion()
+		{
+			questions_math.SetBackgroundColor(Color.AliceBlue);
+			RandomQuestion newQuestion = new RandomQuestion();
+
+			questions_math.Text = newQuestion.FirstOperand.ToString() + " " + newQuestion.Operand + " " + newQuestion.SecondOperand.ToString();
+			return newQuestion;
+		}
+
+
+		private bool validateAnswer(RandomQuestion question)
+		{
+			try
+			{
+				string[] answer = readyText.Text.Split('\n');
+				//If the user types 11 but the console reads like 1  1 
+				string finalSolution = System.Text.RegularExpressions.Regex.Replace(answer[0], @"\s+", "");
+				int checkAnswer = Int32.Parse(finalSolution);
+				if (checkAnswer == question.Solution)
+				{
+					ReadyGoStop.Text = "CORRECT!";
+					inkView.cleanView(true);
+					totalScore++;
+					finalTotalScore.Text = totalScore.ToString();
+					questions_math.SetBackgroundColor(Color.Green);
+					return true;
+				}
+				else
+				{
+					ReadyGoStop.Text = "TRY AGAIN!";
+					return false;
+				}
+			}
+			catch (FormatException)
+			{
+				return false;
+			}
+		}
+
+		protected void calculateTime(int countVariable)
+		{
+			timer = new Timer();
+			timer.Interval = 1000;
+			timer.Elapsed += Timer_Elapsed;
+			timer.Start();
+			return;
+
+		}
+
+		private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+		{
+
+			if (countVariable > 0)
+			{
+				RunOnUiThread(() => countdownView.Text = countVariable.ToString());
+				countVariable--;
+			}
+			else
+			{
+
+				containerLayer.RemoveView(topLayerCount);
+				timer.Stop();
+				return;
+			}
+		}
+
+		private async void StartCountdownTimer(int startingVal)
+		{
+			while (startingVal >= 0)
+			{
+				RunOnUiThread(() => countDownView.Text = startingVal.ToString());
+				startingVal = startingVal - 1;
+				await Task.Delay(1000);
+			}
+
+			if (startingVal < 0)
+			{
+				ReadyGoStop.Text = "STOP!";
+				topLayerCount.Visibility = Android.Views.ViewStates.Visible;
+				countdownView.Text = "Time is up! Final Score: " + totalScore + " points";
+
+				replayGame.Enabled = true;
+				//Show the layer to say it is done
+
+				ConnectToDatabase insertValues = new ConnectToDatabase();
+				var storedCorrectly = false;
+				RunOnUiThread(() => storedCorrectly = insertValues.insertToMadMinute(username, totalScore, totalQuestions - totalScore));
+
+				return;
+			}
+		}
+
+	}
+
+	public class RandomQuestion
+	{
+
+		private int firstOperand;
+		private int secondOperand;
+		private string operand;
+
+		public RandomQuestion()
+		{
+			Random random = new Random();
+			firstOperand = random.Next(0, 9);
+			secondOperand = random.Next(0, 9);
+			string[] operands = { "+", "-" };
+			operand = operands[random.Next(0, operands.Length - 1)];//Only using addition
+
+		}
+
+		public int FirstOperand
+		{
+			get
+			{
+				return firstOperand;
+			}
+		}
+		public int SecondOperand
+		{
+			get
+			{
+				return secondOperand;
+			}
+		}
+
+		public string Operand
+		{
+			get
+			{
+				return operand;
+			}
+		}
+
+
+		public int Solution
+		{
+			get
+			{
+				//The solution is the first operand the calculate given the operand and the second operator
+				switch (Operand)
+				{
+					case "+":
+						return FirstOperand + SecondOperand;
+					case "-":
+						return FirstOperand - SecondOperand;
+					case "*":
+						return FirstOperand * SecondOperand;
+					case "/":
+						return FirstOperand / SecondOperand;
+				}
+				return 0;
+			}
+		}
+
+	}
+
+}

@@ -10,6 +10,7 @@ public class Activity1
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onDestroy:()V:GetOnDestroyHandler\n" +
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
@@ -23,6 +24,14 @@ public class Activity1
 		if (getClass () == Activity1.class)
 			mono.android.TypeManager.Activate ("WritePadXamarinSample.Activity1, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
+
+
+	public void onPause ()
+	{
+		n_onPause ();
+	}
+
+	private native void n_onPause ();
 
 
 	public void onDestroy ()

@@ -1,27 +1,19 @@
 ﻿<Properties StartupConfiguration="{08F40573-8B1B-43C5-AB7F-ED8CC2E34043}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSDKSample/QuestionActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSDKSample/ConnectToDatabase.cs">
     <Files>
-      <File FileName="XamarinSDKSample/Activity2.cs" Line="15" Column="1" />
-      <File FileName="XamarinSDKSample/MadMinute.cs" Line="44" Column="3" />
-      <File FileName="XamarinSDKSample/QuestionActivity.cs" Line="49" Column="7" />
-      <File FileName="XamarinSDKSample/ConnectToDatabase.cs" Line="1" Column="1" />
+      <File FileName="XamarinSDKSample/GenerateStats.cs" Line="13" Column="57" />
+      <File FileName="XamarinSDKSample/Activity2.cs" Line="97" Column="10" />
+      <File FileName="XamarinSDKSample/LoginActivity.cs" Line="132" Column="4" />
+      <File FileName="XamarinSDKSample/ConnectToDatabase.cs" Line="15" Column="23" />
+      <File FileName="XamarinSDKSample/UserInfo.cs" Line="6" Column="3" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="XamarinSDKSample" expanded="True">
-            <Node name="WritePadXamarinSample" expanded="True">
-              <Node name="QuestionActivity.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.42000b3d9a894375" />
+  <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/LoginActivity.cs" relfile="XamarinSDKSample/LoginActivity.cs" line="102" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

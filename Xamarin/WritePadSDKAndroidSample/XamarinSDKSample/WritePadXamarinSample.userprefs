@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{08F40573-8B1B-43C5-AB7F-ED8CC2E34043}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginActivity.cs">
+    <Files>
+      <File FileName="GenerateStats.cs" Line="22" Column="43" />
+      <File FileName="ConnectToDatabase.cs" Line="111" Column="30" />
+      <File FileName="Activity2.cs" Line="79" Column="37" />
+      <File FileName="Activity1.cs" Line="144" Column="51" />
+      <File FileName="MadMinute.cs" Line="12" Column="1" />
+      <File FileName="LoginActivity.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.42000b3d9a894375" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
