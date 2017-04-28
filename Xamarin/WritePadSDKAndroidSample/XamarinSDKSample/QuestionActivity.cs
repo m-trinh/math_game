@@ -7,6 +7,7 @@ using Android.Widget;
 using Android.Graphics;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using Android.Views;
 
 namespace WritePadXamarinSample
 {
@@ -25,12 +26,13 @@ namespace WritePadXamarinSample
 		private Stopwatch stopwatch = new Stopwatch ();
 		private double elapsedTime;
         protected bool[] individualResults;
+		private int hints = 10;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.GameReady);
-
+			          
             IList<string> details = Intent.GetStringArrayListExtra("details");
             username = details[0];
             category = details[1];
@@ -70,6 +72,7 @@ namespace WritePadXamarinSample
 			{
 				for (int i = 0; i < answerButtons.Length; i++) 
 				{
+					answerButtons [i].Enabled = true;
 					if (i == correctAns) {
 						answerButtons [correctAns].Click -= sendCorrect;
 					} 
@@ -81,6 +84,8 @@ namespace WritePadXamarinSample
 			}
 
 			var questionImage = FindViewById<ImageView> (Resource.Id.questionView);
+			var hintButton = FindViewById<Button> (Resource.Id.hint);
+			hintButton.Enabled = true;
 
 			byte [] imageByte = question.QuestionImage;
 			var image = BitmapFactory.DecodeByteArray (imageByte, 0, imageByte.Length);
@@ -131,6 +136,17 @@ namespace WritePadXamarinSample
 			}
 		}
 
+		//public override Dialog onCreateDialog (Bundle savedInstanceState)
+		//{
+		//	AlertDialog.Builder builder = new AlertDialog.Builder (this);
+		//	var equationsView = LayoutInflater.Inflate (Resource.Layout.Equations, null);
+		//	builder.SetTitle("Equations");
+  //          builder.SetView(equationsView);
+
+		//	builder.SetPositiveButton("Okay", delegate { builder.Dispose(); });
+  //          builder.Show();
+		//}
+
         void startGame(object sender, EventArgs ea)
         {
             SetContentView(Resource.Layout.Question);
@@ -139,7 +155,44 @@ namespace WritePadXamarinSample
             populateButtonsArray();
             stopwatch.Start();
             showQuestion(questions[currentQuestion]);
+
+			var equationButton = FindViewById<Button> (Resource.Id.equations);
+			equationButton.Click += delegate
+            {
+				var equationsView = LayoutInflater.Inflate (Resource.Layout.Equations, null);
+				var equationImage = equationsView.FindViewById<ImageView> (Resource.Id.equationsImage);
+				equationImage.SetImageResource (Resource.Drawable.equations);
+				AlertDialog.Builder builder = new AlertDialog.Builder (this);
+				builder.SetTitle("Equations");
+	            builder.SetView(equationsView);
+
+				builder.SetPositiveButton("Okay", delegate { builder.Dispose(); });
+	            builder.Show();
+            };
+
+			var hintButton = FindViewById<Button> (Resource.Id.hint);
+			hintButton.Click += delegate {
+				AlertDialog.Builder builder = new AlertDialog.Builder (this);
+				builder.SetTitle ("Use a Hint");
+				builder.SetMessage ($"You have {hints} hints left. Do you want to use one to eliminate an answer?");
+				builder.SetPositiveButton ("Okay", delegate { useHint (); hintButton.Enabled = false; builder.Dispose (); });
+				builder.SetNegativeButton ("Cancel", delegate { builder.Dispose (); });
+				builder.Show ();
+			};
         }
+
+		public void useHint ()
+		{
+			int remove = random.Next (0, 3);
+
+			while (remove == correctAns) 
+			{
+				remove = random.Next (0, 3);
+			}
+
+			answerButtons [remove].Enabled = false;
+			hints--;
+		}
 
 		void sendCorrect (object sender, EventArgs ea)
 		{

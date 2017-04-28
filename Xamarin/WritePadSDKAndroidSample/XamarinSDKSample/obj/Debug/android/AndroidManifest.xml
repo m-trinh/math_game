@@ -10,6 +10,7 @@
     <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" />
     <activity android:label="WritePadXamarinSample" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.Activity1" />
     <activity android:icon="@drawable/icon" android:label="Activity2" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.Activity2" />
+    <activity android:label="Leaderboards" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.LeaderboardActivity" />
     <activity android:label="QuestionActivity" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.QuestionActivity" />
     <activity android:label="WritePad Options" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.WritePadOptions" />
     <activity android:label="Activity3" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.Activity3" />

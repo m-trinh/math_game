@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>4/14/2017 7:42:02 PM</xs:documentation>
+    <xs:documentation>4/28/2017 2:18:19 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1333,7 +1333,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -1368,6 +1367,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -2036,7 +2036,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -2071,6 +2070,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -2579,7 +2579,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -2614,6 +2613,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -3122,7 +3122,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -3157,6 +3156,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -6261,7 +6261,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -6296,6 +6295,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -6804,7 +6804,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -6839,6 +6838,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -7484,7 +7484,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -7519,6 +7518,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -8294,7 +8294,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -8329,6 +8328,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -8837,7 +8837,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -8872,6 +8871,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -10498,7 +10498,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -10533,6 +10532,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -11041,7 +11041,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -11076,6 +11075,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -11645,7 +11645,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -11680,6 +11679,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -12188,7 +12188,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -12223,6 +12222,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -12821,7 +12821,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -12856,6 +12855,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -13665,7 +13665,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -13700,6 +13699,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -14287,7 +14287,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -14322,6 +14321,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -15252,7 +15252,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -15287,6 +15286,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -16217,7 +16217,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -16252,6 +16251,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -16760,7 +16760,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -16795,6 +16794,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -17440,7 +17440,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -17475,6 +17474,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -18585,7 +18585,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -18620,6 +18619,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -19265,7 +19265,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -19300,6 +19299,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -19945,7 +19945,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -19980,6 +19979,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -20762,7 +20762,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -20797,6 +20796,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -21515,7 +21515,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -21550,6 +21549,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -22691,7 +22691,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -22726,6 +22725,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -23234,7 +23234,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -23269,6 +23268,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -23959,7 +23959,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -23994,6 +23993,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -24713,7 +24713,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -24748,6 +24747,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -25393,7 +25393,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -25428,6 +25427,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -26147,7 +26147,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -26182,6 +26181,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -27110,7 +27110,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -27145,6 +27144,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -27653,7 +27653,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -27688,6 +27687,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -30538,7 +30538,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -30573,6 +30572,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -33049,7 +33049,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -33084,6 +33083,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -33803,7 +33803,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -33838,6 +33837,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -34346,7 +34346,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -34381,6 +34380,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -35164,7 +35164,6 @@
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
             <xs:enumeration value="@drawable/ad_choices_bg" />
-            <xs:enumeration value="@drawable/algebra_1_0" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/com_facebook_auth_dialog_background" />
@@ -35199,6 +35198,7 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/equations" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
