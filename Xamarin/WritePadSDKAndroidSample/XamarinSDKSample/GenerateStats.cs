@@ -7,6 +7,9 @@ using OxyPlot.Axes;
 using OxyPlot.Series;
 using OxyPlot.Xamarin.Android;
 using System.Collections;
+using Android.Widget;
+using System.Data.SqlClient;
+using System.Text;
 
 namespace WritePadXamarinSample
 {
@@ -35,6 +38,8 @@ namespace WritePadXamarinSample
 			//Create the View
 			view.Model = CreatePlotModel(username);
 
+			//Add leaderboard
+			addLeaderboard ();
 		}
 
 		public PlotModel CreatePlotModel (string username)
@@ -86,6 +91,53 @@ namespace WritePadXamarinSample
 			plotModel.Series.Add (incorrect);
 
 			return plotModel;
+		}
+
+		public void addLeaderboard ()
+		{
+			//Find view that will contain leaderboard information
+			var leaderboardArea = FindViewById<LinearLayout> (Resource.Id.leaderboards);
+
+			int timeframe = 0; //Set how far back you want to go in days. 0 means all-time highest
+			int score;
+
+			//Connect to database
+			SqlConnectionStringBuilder builder = ConnString.Builder;
+            using (SqlConnection connection = new SqlConnection (builder.ConnectionString))
+            {
+                connection.Open();
+                StringBuilder sb = new StringBuilder ();
+				//Use procedure to retrieve highest scored from database
+				sb.Append($"EXEC usp_RetrieveMadMinuteLeaderboard {timeframe}");
+                string query = sb.ToString ();
+				SqlCommand cmd = new SqlCommand (query, connection);
+                using (SqlDataReader reader = cmd.ExecuteReader ())
+                {
+					//Fill the leaderboard view with each high score
+                    int rank = 1;
+                    while (reader.Read())
+                    {
+						//Programmatically create a new textView that will hold high score information
+						var newrow = createNewRow ();
+						score = (int)reader ["Score"];
+                        newrow.Text = $"{rank}. {score}";
+						//Add newly created field to the leaderboard view
+                        leaderboardArea.AddView(newrow);
+                        rank++;
+                    }
+                }
+                connection.Close();
+            }
+		}
+
+		public TextView createNewRow ()
+		{
+			//Generate a new TextView and style it
+			var newrow = new TextView (this);
+			newrow.SetTextSize (Android.Util.ComplexUnitType.Dip, 25f);
+			newrow.SetPadding (30, 10, 30, 10);
+			newrow.SetBackgroundResource (Resource.Drawable.border);
+			return newrow;
 		}
 	}
 }

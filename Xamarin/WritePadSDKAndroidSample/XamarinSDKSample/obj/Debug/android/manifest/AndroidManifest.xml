@@ -13,6 +13,7 @@
     <provider android:authorities="com.facebook.app.FacebookContentProvider1264358966985794" android:name="com.facebook.FacebookContentProvider" android:exported="true" />
     <activity android:label="WritePadXamarinSample" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.Activity1" />
     <activity android:icon="@drawable/icon" android:label="Home" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.Activity2" />
+    <activity android:label="Leaderboards" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.LeaderboardActivity" />
     <activity android:label="QuestionActivity" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.QuestionActivity" />
     <activity android:label="WritePad Options" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.WritePadOptions" />
     <activity android:label="Activity3" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.Activity3" />
@@ -24,6 +25,7 @@
       </intent-filter>
     </activity>
     <activity android:label="Statistics" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.GenerateStats" />
+    <activity android:label="ChallengeQuestionActivity" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.ChallengeQuestionActivity" />
     <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.ads.InterstitialAdActivity" />
     <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.phatware.writepad_sample_xamarin.mono.MonoRuntimeProvider.__mono_init__" />

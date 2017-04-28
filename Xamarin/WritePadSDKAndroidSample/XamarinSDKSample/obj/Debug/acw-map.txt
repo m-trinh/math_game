@@ -10,6 +10,10 @@ WritePadXamarinSample.InkView, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff7
 WritePadXamarinSample.InkView, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.InkView
 WritePadXamarinSample.InkView;md51e5a67ed1fcf13cff747b9ea3148811f.InkView
 writepadxamarinsample.InkView;md51e5a67ed1fcf13cff747b9ea3148811f.InkView
+WritePadXamarinSample.LeaderboardActivity, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.LeaderboardActivity
+WritePadXamarinSample.LeaderboardActivity, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.LeaderboardActivity
+WritePadXamarinSample.LeaderboardActivity;md51e5a67ed1fcf13cff747b9ea3148811f.LeaderboardActivity
+writepadxamarinsample.LeaderboardActivity;md51e5a67ed1fcf13cff747b9ea3148811f.LeaderboardActivity
 WritePadXamarinSample.QuestionActivity, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.QuestionActivity
 WritePadXamarinSample.QuestionActivity, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.QuestionActivity
 WritePadXamarinSample.QuestionActivity;md51e5a67ed1fcf13cff747b9ea3148811f.QuestionActivity
@@ -42,6 +46,38 @@ WritePadXamarinSample.MainApplication, WritePad SDK Xamarin Sample;md51e5a67ed1f
 WritePadXamarinSample.MainApplication, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.MainApplication
 WritePadXamarinSample.MainApplication;md51e5a67ed1fcf13cff747b9ea3148811f.MainApplication
 writepadxamarinsample.MainApplication;md51e5a67ed1fcf13cff747b9ea3148811f.MainApplication
+WritePadXamarinSample.ChallengeQuestionActivity, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.ChallengeQuestionActivity
+WritePadXamarinSample.ChallengeQuestionActivity, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.ChallengeQuestionActivity
+WritePadXamarinSample.ChallengeQuestionActivity;md51e5a67ed1fcf13cff747b9ea3148811f.ChallengeQuestionActivity
+writepadxamarinsample.ChallengeQuestionActivity;md51e5a67ed1fcf13cff747b9ea3148811f.ChallengeQuestionActivity
+OxyPlot.Xamarin.Android.PlotView, OxyPlot.Xamarin.Android;md576548fdf6897b70553b6b405e9653aa0.PlotView
+OxyPlot.Xamarin.Android.PlotView, OxyPlot.Xamarin.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md576548fdf6897b70553b6b405e9653aa0.PlotView
+OxyPlot.Xamarin.Android.PlotView;md576548fdf6897b70553b6b405e9653aa0.PlotView
+oxyplot.xamarin.android.PlotView;md576548fdf6897b70553b6b405e9653aa0.PlotView
+OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer, OxyPlot.Xamarin.Forms.Platform.Android;md5c8feee4b08a9919828f8d567dfe427a4.PlotViewRenderer
+OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer, OxyPlot.Xamarin.Forms.Platform.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c8feee4b08a9919828f8d567dfe427a4.PlotViewRenderer
+OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer;md5c8feee4b08a9919828f8d567dfe427a4.PlotViewRenderer
+oxyplot.xamarin.forms.platform.android.PlotViewRenderer;md5c8feee4b08a9919828f8d567dfe427a4.PlotViewRenderer
+Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
+Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
+Plugin.Geolocator.GeolocationContinuousListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
+plugin.geolocator.GeolocationContinuousListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
+Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
+Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
+Plugin.Geolocator.GeolocationSingleListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
+plugin.geolocator.GeolocationSingleListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
+Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.AdListenerImplementor
+Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.AdListenerImplementor
+Xamarin.Facebook.Ads.IAdListenerImplementor;mono.com.facebook.ads.AdListenerImplementor
+mono.com.facebook.ads.AdListenerImplementor;mono.com.facebook.ads.AdListenerImplementor
+Xamarin.Facebook.Ads.IImpressionListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.ImpressionListenerImplementor
+Xamarin.Facebook.Ads.IImpressionListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.ImpressionListenerImplementor
+Xamarin.Facebook.Ads.IImpressionListenerImplementor;mono.com.facebook.ads.ImpressionListenerImplementor
+mono.com.facebook.ads.ImpressionListenerImplementor;mono.com.facebook.ads.ImpressionListenerImplementor
+Xamarin.Facebook.Ads.NativeAdsManager/IListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
+Xamarin.Facebook.Ads.NativeAdsManager+IListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
+Xamarin.Facebook.Ads.NativeAdsManager.IListenerImplementor;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
+mono.com.facebook.ads.NativeAdsManager_ListenerImplementor;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
 Xamarin.Facebook.Share.Widget.LikeView/IOnErrorListenerImplementor, Xamarin.Facebook;mono.com.facebook.share.widget.LikeView_OnErrorListenerImplementor
 Xamarin.Facebook.Share.Widget.LikeView+IOnErrorListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.share.widget.LikeView_OnErrorListenerImplementor
 Xamarin.Facebook.Share.Widget.LikeView.IOnErrorListenerImplementor;mono.com.facebook.share.widget.LikeView_OnErrorListenerImplementor
@@ -62,18 +98,6 @@ Xamarin.Facebook.Login.Widget.ProfilePictureView/IOnErrorListenerImplementor, Xa
 Xamarin.Facebook.Login.Widget.ProfilePictureView+IOnErrorListenerImplementor, Xamarin.Facebook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor
 Xamarin.Facebook.Login.Widget.ProfilePictureView.IOnErrorListenerImplementor;mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor
 mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor;mono.com.facebook.login.widget.ProfilePictureView_OnErrorListenerImplementor
-Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.AdListenerImplementor
-Xamarin.Facebook.Ads.IAdListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.AdListenerImplementor
-Xamarin.Facebook.Ads.IAdListenerImplementor;mono.com.facebook.ads.AdListenerImplementor
-mono.com.facebook.ads.AdListenerImplementor;mono.com.facebook.ads.AdListenerImplementor
-Xamarin.Facebook.Ads.IImpressionListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.ImpressionListenerImplementor
-Xamarin.Facebook.Ads.IImpressionListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.ImpressionListenerImplementor
-Xamarin.Facebook.Ads.IImpressionListenerImplementor;mono.com.facebook.ads.ImpressionListenerImplementor
-mono.com.facebook.ads.ImpressionListenerImplementor;mono.com.facebook.ads.ImpressionListenerImplementor
-Xamarin.Facebook.Ads.NativeAdsManager/IListenerImplementor, Xamarin.Facebook.AudienceNetwork;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
-Xamarin.Facebook.Ads.NativeAdsManager+IListenerImplementor, Xamarin.Facebook.AudienceNetwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
-Xamarin.Facebook.Ads.NativeAdsManager.IListenerImplementor;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
-mono.com.facebook.ads.NativeAdsManager_ListenerImplementor;mono.com.facebook.ads.NativeAdsManager_ListenerImplementor
 Xamarin.Forms.Platform.Android.CellAdapter, Xamarin.Forms.Platform.Android;md5b60ffeb829f638581ab2bb9b1a7f4f3f.CellAdapter
 Xamarin.Forms.Platform.Android.CellAdapter, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md5b60ffeb829f638581ab2bb9b1a7f4f3f.CellAdapter
 Xamarin.Forms.Platform.Android.CellAdapter;md5b60ffeb829f638581ab2bb9b1a7f4f3f.CellAdapter
@@ -466,22 +490,6 @@ Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Fo
 Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
 Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
 xamarin.forms.platform.android.appcompat.FormsFragmentPagerAdapter_1;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
-OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer, OxyPlot.Xamarin.Forms.Platform.Android;md5c8feee4b08a9919828f8d567dfe427a4.PlotViewRenderer
-OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer, OxyPlot.Xamarin.Forms.Platform.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c8feee4b08a9919828f8d567dfe427a4.PlotViewRenderer
-OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer;md5c8feee4b08a9919828f8d567dfe427a4.PlotViewRenderer
-oxyplot.xamarin.forms.platform.android.PlotViewRenderer;md5c8feee4b08a9919828f8d567dfe427a4.PlotViewRenderer
-OxyPlot.Xamarin.Android.PlotView, OxyPlot.Xamarin.Android;md576548fdf6897b70553b6b405e9653aa0.PlotView
-OxyPlot.Xamarin.Android.PlotView, OxyPlot.Xamarin.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md576548fdf6897b70553b6b405e9653aa0.PlotView
-OxyPlot.Xamarin.Android.PlotView;md576548fdf6897b70553b6b405e9653aa0.PlotView
-oxyplot.xamarin.android.PlotView;md576548fdf6897b70553b6b405e9653aa0.PlotView
-Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
-Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
-Plugin.Geolocator.GeolocationContinuousListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
-plugin.geolocator.GeolocationContinuousListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
-Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
-Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
-Plugin.Geolocator.GeolocationSingleListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
-plugin.geolocator.GeolocationSingleListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
 Android.Support.V4.App.SharedElementCallback/IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback+IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback.IOnSharedElementsReadyListenerImplementor;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor

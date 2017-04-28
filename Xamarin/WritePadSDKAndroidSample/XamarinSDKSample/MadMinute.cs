@@ -206,8 +206,8 @@ namespace WritePadXamarinSample
 				//If the user types 11 but the console reads like 1  1 
 				string finalSolution = System.Text.RegularExpressions.Regex.Replace (answer[0], @"\s+", "");
 
-				string[] badchars = new string[] { "l", "i", "I", "s", "S", " ", "}", "a", "g", "o", "O" };
-				string[] goodchars = new string[] { "1", "1", "1", "5", "S", "", "3", "4", "6", "0", "0" };
+				string[] badchars = new string[] { "l", "i", "I", "s", "S", " ", "}", "a", "g", "o", "O", "r", "f" };
+				string[] goodchars = new string[] { "1", "1", "1", "5", "S", "", "3", "4", "6", "0", "0", "8", "8" };
 
 				for (int i = 0; i < goodchars.Length; i++)
 				{

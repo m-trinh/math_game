@@ -1,4 +1,3 @@
-﻿
 using System;
 using System.Collections;
 using System.Linq;
@@ -20,12 +19,7 @@ public class ConnectToDatabase
 	{
 
 		try {
-			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder ();
-			builder.DataSource = "teamred.database.windows.net";
-			builder.UserID = "teamredadmin";
-			builder.Password = "c$503teamred";
-			builder.InitialCatalog = "TeamRedMath";
-
+			SqlConnectionStringBuilder builder = ConnString.Builder;
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
 				connection.Open ();
 				StringBuilder sb = new StringBuilder ();
@@ -130,7 +124,6 @@ public class ConnectToDatabase
 				}
 				connection.Close();
 			}
-
 		}
 		catch (SqlException)
 		{
@@ -141,6 +134,4 @@ public class ConnectToDatabase
 		}
 		return read;
 	}
-
-
 }

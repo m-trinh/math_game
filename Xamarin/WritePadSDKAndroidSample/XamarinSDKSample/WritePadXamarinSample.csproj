@@ -25,6 +25,7 @@
     </NuGetPackageImportStamp>
     <AndroidTlsProvider>
     </AndroidTlsProvider>
+    <ReleaseVersion>5.5</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -115,9 +116,6 @@
     <Reference Include="System.Drawing">
       <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Drawing.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data">
-      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Data.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Bolts.AppLinks">
       <HintPath>..\packages\Bolts.1.4.0.1\lib\MonoAndroid403\Bolts.AppLinks.dll</HintPath>
@@ -196,6 +194,7 @@
     <Compile Include="Activity2.cs" />
     <Compile Include="InkView.cs" />
     <Compile Include="IOUtils.cs" />
+    <Compile Include="LeaderboardActivity.cs" />
     <Compile Include="QuestionActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -207,9 +206,15 @@
     <Compile Include="MadMinute.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="ConnectToDatabase.cs" />
+
     <Compile Include="GenerateStats.cs" />
     <Compile Include="LocationFinder.cs" />
     <Compile Include="MainApplication.cs" />
+
+    <Compile Include="ConnString.cs" />
+    <Compile Include="ChallengeQuestionActivity.cs" />
+
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -227,10 +232,11 @@
     <AndroidResource Include="Resources\Layout\Training.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\LevelChoose.axml" />
+    <AndroidResource Include="Resources\Layout\LevelChoose.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\drawable\stars0.png" />
     <AndroidResource Include="Resources\Layout\Question.axml" />
-    <AndroidResource Include="Resources\drawable\algebra_1_0.png" />
     <AndroidResource Include="Resources\Layout\MadMinute.axml" />
     <AndroidResource Include="Resources\Layout\LoginPage.axml" />
     <AndroidResource Include="Resources\Layout\Stats.axml">
@@ -238,6 +244,20 @@
     </AndroidResource>
     <AndroidResource Include="Resources\Layout\HomeScreen.axml" />
     <AndroidResource Include="Resources\Layout\Home.axml" />
+
+    <AndroidResource Include="Resources\Layout\GameReady.axml" />
+    <AndroidResource Include="Resources\Layout\SATResults.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\SATChallengeResults.axml" />
+    <AndroidResource Include="Resources\Layout\Equations.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\Leaderboards.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\border.xml" />
+
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\Main.axml" />
@@ -354,6 +374,24 @@
       <Version>7.0.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\stars1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\stars2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\stars3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\stars4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\stars5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\equations.png" />
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
