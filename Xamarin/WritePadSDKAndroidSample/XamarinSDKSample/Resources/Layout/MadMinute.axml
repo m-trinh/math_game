@@ -43,7 +43,7 @@
                 android:id="@+id/questions_math"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="?android:attr/colorAccent"
+                android:background="@android:color/holo_blue_bright"
                 android:textColor="@android:color/black" />
         </LinearLayout>
         <TextView

@@ -50,7 +50,7 @@ namespace WritePadXamarinSample
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
 				connection.Open ();
 				StringBuilder sb = new StringBuilder ();
-				sb.Append ($"EXEC dbo.usp_GetSAT_Questions '{category}', {difficulty}, {username}");
+				sb.Append ($"EXEC dbo.usp_GetSAT_Questions '{category}', {difficulty}, {username}, 0");
 				string query = sb.ToString();
 				SqlCommand cmd = new SqlCommand (query, connection);
 				using (SqlDataReader reader = cmd.ExecuteReader ()) 

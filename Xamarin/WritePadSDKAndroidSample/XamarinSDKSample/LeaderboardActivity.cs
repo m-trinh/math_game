@@ -56,7 +56,7 @@ namespace WritePadXamarinSample
 		public TextView createNewRow ()
 		{
 			var newrow = new TextView (this);
-			newrow.SetTextSize (Android.Util.ComplexUnitType.Dip, 15f);
+			newrow.SetTextSize (Android.Util.ComplexUnitType.Dip, 25f);
 			newrow.SetPadding (30, 10, 30, 10);
 			newrow.SetBackgroundResource (Resource.Drawable.border);
 			return newrow;
