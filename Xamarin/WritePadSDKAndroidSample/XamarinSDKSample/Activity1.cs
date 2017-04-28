@@ -12,15 +12,24 @@ using Xamarin.Facebook.Login;
 
 namespace WritePadXamarinSample
 {
+	/**
+	 * Class Activity1:
+	 * 	Allows the user to train with easy algebraic operations.
+	 * 	It is done so the user gets confident with writepad.
+	 * 	There is no time control.
+	 *	The score won't be saved in the database.
+	*/
 	[Activity(Label = "WritePadXamarinSample")]
 	public class Activity1 : Activity
 	{
+		/*
+			Defining the variables in the class
+		*/
 		private LinearLayout topLayerCount;
 		private FrameLayout containerLayer;
 		private bool endTime = false;
 		private TextView countDownStart;
 		private TextView countdownView;
-		private int countVariable;
 		private Timer timer;
 		private TextView ReadyGoStop;
 		private Button button;
@@ -36,6 +45,10 @@ namespace WritePadXamarinSample
 		private Button goBack;
 		private string username;
 
+		/*
+		 * OnPause()
+		 * Log out the user
+		*/
 		protected override void OnPause()
 		{
 			base.OnDestroy();
@@ -52,41 +65,31 @@ namespace WritePadXamarinSample
 		{
 			base.OnCreate(bundle);
 
-			SetContentView(Resource.Layout.MadMinute);
+			// Load the Training View
+			SetContentView(Resource.Layout.Training);
 
-			//Get the username
+			//Get the username from the home activity.
+			//The values are passed as string
 			username = Intent.GetStringExtra("UserName");
 
-
+			//Initialize the WritePad API
 			WritePadAPI.recoInit(BaseContext);
 			WritePadAPI.initializeFlags(BaseContext);
 
+			//Initialize the variables
 			button = FindViewById<Button>(Resource.Id.RecognizeButton);
 			inkView = FindViewById<InkView>(Resource.Id.ink_view);
 			readyText = FindViewById<TextView>(Resource.Id.ready_text);
-			topLayerCount = FindViewById<LinearLayout>(Resource.Id.topLayerCount);
 			containerLayer = FindViewById<FrameLayout>(Resource.Id.containerLayer);
 			countdownView = FindViewById<TextView>(Resource.Id.countdownStart);
 			ReadyGoStop = FindViewById<TextView>(Resource.Id.ReadyGoStop);
 			questions_math = FindViewById<TextView>(Resource.Id.questions_math);
 			submitAnswer = FindViewById<Button>(Resource.Id.submitAnswer);
 			finalTotalScore = FindViewById<TextView>(Resource.Id.finalTotalScore);
-			replayGame = FindViewById<Button>(Resource.Id.replayGame);
-			countDownView = FindViewById<TextView>(Resource.Id.time_countdown);
 			goBack = FindViewById<Button>(Resource.Id.goBack);
 
-
-			countVariable = 3;
-			//calculateTime (countVariable);
-
-			topLayerCount.Visibility = Android.Views.ViewStates.Invisible;
-			if (endTime)
-			{
-				return;
-			}
+			//Starts the game!
 			ReadyGoStop.Text = "GO!";
-			int minuteTime = 60;
-			StartCountdownTimer(minuteTime);
 			bool rightAnswer = false;
 			ShowQuestions(rightAnswer);
 
@@ -133,12 +136,19 @@ namespace WritePadXamarinSample
 			ReadyGoStop.Text = "Go!";
 			finalTotalScore.Text = "Score: 0";
 			countDownView.Text = "60";
-			int minuteTime = 60;
-			StartCountdownTimer(minuteTime);
 			bool rightAnswer = false;
 			ShowQuestions(rightAnswer);
 		}
 
+		/**
+		 * ShowQuestions: shows to the player a random question.
+		 * @params param name="rightAnswer"
+		 * 	If the user has a correct answer then true will be passed to the method.
+		 * @postcondition:
+		 * 	The method listens for the user to click the button submit.
+		 * 	If the button is clicked then the answer is validated calling the method validadteAnswer().
+		 * 	If the validation is true then show a new question
+		 */
 		private void ShowQuestions(bool rightAnswer)
 		{
 			RandomQuestion newQuestion = new RandomQuestion();
@@ -156,6 +166,13 @@ namespace WritePadXamarinSample
 			};
 		}
 
+		/**
+		 * createNewQuestion:
+		 * 	Generates a new RandomQuestion() class.
+		 * @returns
+		 * 	returns the new RandomQuestion() generated
+		 * 	
+		 */ 
 		private RandomQuestion createNewQuestion()
 		{
 			questions_math.SetBackgroundColor(Color.AliceBlue);
@@ -165,17 +182,38 @@ namespace WritePadXamarinSample
 			return newQuestion;
 		}
 
-
+		/**
+		 * ValidateAnswer: check that the answer introduced by the user is the correct one to the question
+		 * @param name="question"
+		 * 	Class randomQuestion that have the parameters to be able to check if the answer was correct or not.
+		 * @returns
+		 * 	Returns true if the answer was correct
+		 * 	returns false if the answer was incorrect
+		 */
 		private bool validateAnswer(RandomQuestion question)
 		{
 			try
 			{
+				//Get only the first line of the options writepad returns
 				string[] answer = readyText.Text.Split('\n');
 				//If the user types 11 but the console reads like 1  1 
 				string finalSolution = System.Text.RegularExpressions.Regex.Replace(answer[0], @"\s+", "");
+
+				//As writeapad sometimes instead of recognising numbers recognises letters, this are the most common
+				//mistakes writepad did.
+				string[] badchars = new string[] { "l", "i", "I", "s", "S", " ", "}", "a", "g", "o", "O" };
+				string[] goodchars = new string[] { "1", "1", "1", "5", "S", "", "3", "4", "6", "0", "0" };
+
+				for (int i = 0; i<goodchars.Length; i++)
+				{
+					finalSolution = finalSolution.Replace(badchars[i], goodchars[i]);
+				}
+
 				int checkAnswer = Int32.Parse(finalSolution);
+				//If the answer of the user is correct.
 				if (checkAnswer == question.Solution)
 				{
+					//Show the user his answer was correct
 					ReadyGoStop.Text = "CORRECT!";
 					inkView.cleanView(true);
 					totalScore++;
@@ -195,61 +233,14 @@ namespace WritePadXamarinSample
 			}
 		}
 
-		protected void calculateTime(int countVariable)
-		{
-			timer = new Timer();
-			timer.Interval = 1000;
-			timer.Elapsed += Timer_Elapsed;
-			timer.Start();
-			return;
-
-		}
-
-		private void Timer_Elapsed(object sender, ElapsedEventArgs e)
-		{
-
-			if (countVariable > 0)
-			{
-				RunOnUiThread(() => countdownView.Text = countVariable.ToString());
-				countVariable--;
-			}
-			else
-			{
-
-				containerLayer.RemoveView(topLayerCount);
-				timer.Stop();
-				return;
-			}
-		}
-
-		private async void StartCountdownTimer(int startingVal)
-		{
-			while (startingVal >= 0)
-			{
-				RunOnUiThread(() => countDownView.Text = startingVal.ToString());
-				startingVal = startingVal - 1;
-				await Task.Delay(1000);
-			}
-
-			if (startingVal < 0)
-			{
-				ReadyGoStop.Text = "STOP!";
-				topLayerCount.Visibility = Android.Views.ViewStates.Visible;
-				countdownView.Text = "Time is up! Final Score: " + totalScore + " points";
-
-				replayGame.Enabled = true;
-				//Show the layer to say it is done
-
-				ConnectToDatabase insertValues = new ConnectToDatabase();
-				var storedCorrectly = false;
-				RunOnUiThread(() => storedCorrectly = insertValues.insertToMadMinute(username, totalScore, totalQuestions - totalScore));
-
-				return;
-			}
-		}
-
 	}
 
+	/**
+	 * RandomQuestion class generates a random question to the user
+	 * firstOperand: is the first operand in the equation
+	 * secondOperand: is the second operand in the equation
+	 * operand: is the type of ecuation we want to apply to the operands
+	 */ 
 	public class RandomQuestion
 	{
 
@@ -257,12 +248,15 @@ namespace WritePadXamarinSample
 		private int secondOperand;
 		private string operand;
 
+		/**
+		 * Constructor generates the random operands
+		 */ 
 		public RandomQuestion()
 		{
 			Random random = new Random();
 			firstOperand = random.Next(0, 9);
 			secondOperand = random.Next(0, 9);
-			string[] operands = { "+", "-" };
+			string[] operands = { "+", "-" };//Use or addition or substraction
 			operand = operands[random.Next(0, operands.Length - 1)];//Only using addition
 
 		}
@@ -290,7 +284,9 @@ namespace WritePadXamarinSample
 			}
 		}
 
-
+		/**
+		 * Calculates the solution of the random question generated.
+		 */
 		public int Solution
 		{
 			get

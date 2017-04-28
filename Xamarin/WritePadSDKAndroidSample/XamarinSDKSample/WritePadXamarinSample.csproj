@@ -25,7 +25,6 @@
     </NuGetPackageImportStamp>
     <AndroidTlsProvider>
     </AndroidTlsProvider>
-    <ReleaseVersion>5.5</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -169,6 +168,28 @@
     <Reference Include="OxyPlot.Xamarin.Android">
       <HintPath>..\packages\OxyPlot.Xamarin.Android.1.0.0\lib\MonoAndroid10\OxyPlot.Xamarin.Android.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook">
+      <HintPath>Components\facebook-sdk-6.2.2\lib\android\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Plugin.CurrentActivity">
+      <HintPath>packages\Plugin.CurrentActivity.1.0.1\lib\MonoAndroid10\Plugin.CurrentActivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions.Abstractions">
+      <HintPath>packages\Plugin.Permissions.1.1.7\lib\MonoAndroid10\Plugin.Permissions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>packages\Plugin.Permissions.1.1.7\lib\MonoAndroid10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions">
+      <HintPath>packages\Xam.Plugin.Geolocator.3.0.4\lib\MonoAndroid10\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>packages\Xam.Plugin.Geolocator.3.0.4\lib\MonoAndroid10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity1.cs" />
@@ -187,6 +208,8 @@
     <Compile Include="LoginActivity.cs" />
     <Compile Include="ConnectToDatabase.cs" />
     <Compile Include="GenerateStats.cs" />
+    <Compile Include="LocationFinder.cs" />
+    <Compile Include="MainApplication.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -201,7 +224,7 @@
     <None Include="..\libs\mips64\libWritePadReco.so">
       <Link>libs\mips64\libWritePadReco.so</Link>
     </None>
-    <AndroidResource Include="Resources\Layout\Home.axml">
+    <AndroidResource Include="Resources\Layout\Training.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\Layout\LevelChoose.axml" />
@@ -213,6 +236,8 @@
     <AndroidResource Include="Resources\Layout\Stats.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\Layout\HomeScreen.axml" />
+    <AndroidResource Include="Resources\Layout\Home.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\Main.axml" />
@@ -319,6 +344,14 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="oxyplot">
       <Version>2015.1.744</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="facebook-sdk">
+      <Version>6.2.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <Version>7.0.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

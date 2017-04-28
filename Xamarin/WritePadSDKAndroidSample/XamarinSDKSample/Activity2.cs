@@ -83,8 +83,7 @@ namespace WritePadXamarinSample
 				StartActivity (typeof (Activity3));
 			};
 
-			/*
-			 * STATISTICS
+			/*STATISTICS
 			*/
 			statistics = FindViewById<Button>(Resource.Id.profile);
 			statistics.Click += delegate

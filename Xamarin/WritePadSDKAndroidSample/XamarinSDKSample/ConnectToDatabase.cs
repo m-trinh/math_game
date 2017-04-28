@@ -21,10 +21,10 @@ public class ConnectToDatabase
 
 		try {
 			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder ();
-			builder.DataSource = "";
-			builder.UserID = "";
-			builder.Password = "";
-			builder.InitialCatalog = "";
+			builder.DataSource = "teamred.database.windows.net";
+			builder.UserID = "teamredadmin";
+			builder.Password = "c$503teamred";
+			builder.InitialCatalog = "TeamRedMath";
 
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
 				connection.Open ();
@@ -53,11 +53,11 @@ public class ConnectToDatabase
 	public bool saveUser (UserInfo user)
 	{
 		try {
-			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder ();
-			builder.DataSource = "";
-			builder.UserID = "";
-			builder.Password = "";
-			builder.InitialCatalog = "";
+			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+			builder.DataSource = "teamred.database.windows.net";
+			builder.UserID = "teamredadmin";
+			builder.Password = "c$503teamred";
+			builder.InitialCatalog = "TeamRedMath";
 
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString))
 			{
@@ -71,20 +71,16 @@ public class ConnectToDatabase
 				{1},
 				{user.firstName},
 				{user.lastName}*/
-				sb.Append($"execute usp_RetrieveMadMinuteHistory {user.FirstName}");
+				sb.Append($"execute usp_Login '{user.FirstName+user.LastName}','{user.Email}',null,{1},'{user.FirstName}','{user.LastName}','Boston, MA'");
 				String sql = sb.ToString ();
 
 				using (SqlCommand command = new SqlCommand (sql, connection))
 				{
-					using (SqlDataReader reader = command.ExecuteReader ())
-					{
-						while (reader.Read())
-						{
-							string [] values = new String [3];
-							values [0] = reader [0].ToString ();
-							values [1] = (string)reader [1].ToString ();
-							string [] dates = reader [2].ToString ().Split (' ');
-							values [2] = dates [0];
+					using (SqlDataReader reader = command.ExecuteReader()) {
+						while (reader.Read ()) {
+							//Returns
+							//username: username, first name: first_name, level: user_level, experience: experience and location: user_location
+							Console.WriteLine ("");
 						}
 					}
 				}
@@ -105,10 +101,10 @@ public class ConnectToDatabase
 		try
 		{
 			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-			builder.DataSource = "";
-			builder.UserID = "";
-			builder.Password = "";
-			builder.InitialCatalog = "";
+			builder.DataSource = "teamred.database.windows.net";
+			builder.UserID = "teamredadmin";
+			builder.Password = "c$503teamred";
+			builder.InitialCatalog = "TeamRedMath";
 
 			using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
 			{

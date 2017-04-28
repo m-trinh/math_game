@@ -6,6 +6,7 @@
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Xml.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Data.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Net.Http.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Java.Interop.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Runtime.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Bolts.AppLinks.dll
@@ -21,6 +22,13 @@
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/OxyPlot.Xamarin.Forms.Platform.Android.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/OxyPlot.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/OxyPlot.Xamarin.Android.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Facebook.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Newtonsoft.Json.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Plugin.CurrentActivity.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Plugin.Permissions.Abstractions.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Plugin.Permissions.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Plugin.Geolocator.Abstractions.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Plugin.Geolocator.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Xamarin.Android.Support.Compat.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Xamarin.Android.Support.v7.RecyclerView.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Xamarin.Android.Support.Vector.Drawable.dll
@@ -37,7 +45,6 @@
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Xamarin.Android.Support.CustomTabs.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Xamarin.Android.Support.Transition.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/Xamarin.Android.Support.v7.Palette.dll
-/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Net.Http.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Runtime.Serialization.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.ServiceModel.Internals.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Numerics.dll
@@ -63,3 +70,4 @@
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Dynamic.Runtime.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Text.RegularExpressions.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Net.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/android/assets/System.Resources.ResourceManager.dll

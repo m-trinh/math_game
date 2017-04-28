@@ -9,12 +9,29 @@ using System.Threading.Tasks;
 using Android.Graphics;
 using Android.Content;
 using Xamarin.Facebook.Login;
+using Xamarin.Facebook.Share.Widget;
+using Xamarin.Facebook.Share.Model;
 
 namespace WritePadXamarinSample
 {
+	/**
+	 * 
+	 * Mad Minute Game!
+	 * 
+	 * Get ready to answer as many questions as you can in under 1 minute.
+	 * 
+	 * The operations difficulty might increase given the number of correct or incorrect answers.
+	 * 
+	 * Once the game is finished you will have to share your results with your friends on facebook,
+	 * replay to improve your previous score or try other amazing games!
+	 * 
+	 * The structure of this class is very similar to Activity1
+	 * 
+	 */ 
 	[Activity (Label = "WritePadXamarinSample")]
 	public class MadMinute : Activity
 	{
+		//Defining the variables
 		private LinearLayout topLayerCount;
 		private FrameLayout containerLayer;
 		private bool endTime = false;
@@ -35,6 +52,7 @@ namespace WritePadXamarinSample
 		private TextView countDownView;
 		private Button goBack;
 		private string username;
+		private ShareButton sharingButton;
 
 		protected override void OnPause ()
 		{
@@ -61,6 +79,7 @@ namespace WritePadXamarinSample
 			WritePadAPI.recoInit (BaseContext);
 			WritePadAPI.initializeFlags (BaseContext);
 
+			//Initialize the variables with the componens of the View MadMinute
 			button = FindViewById<Button> (Resource.Id.RecognizeButton);
 			inkView = FindViewById<InkView> (Resource.Id.ink_view);
 			readyText = FindViewById<TextView> (Resource.Id.ready_text);
@@ -74,17 +93,22 @@ namespace WritePadXamarinSample
 			replayGame = FindViewById<Button> (Resource.Id.replayGame);
 			countDownView = FindViewById<TextView> (Resource.Id.time_countdown);
 			goBack = FindViewById<Button> (Resource.Id.goBack);
+			sharingButton = FindViewById<ShareButton>(Resource.Id.shareButton);
 
 
 			countVariable = 3;
 			//calculateTime (countVariable);
 
+			//The top layer at the beginning of the game doesn't display
 			topLayerCount.Visibility = Android.Views.ViewStates.Invisible;
 			if (endTime) {
 				return;
 			}
+			//Show the user he has to start playing
 			ReadyGoStop.Text = "GO!";
+			//Initialize the time to 60seconds
 			int minuteTime = 60;
+			//Begins the countdown!
 			StartCountdownTimer (minuteTime);
 			bool rightAnswer = false;
 			ShowQuestions (rightAnswer);
@@ -92,10 +116,20 @@ namespace WritePadXamarinSample
 			readyText.MovementMethod = new ScrollingMovementMethod ();
 			//readyTextTitle.Text = Resources.GetString (Resource.String.Title) + " (" + WritePadAPI.getLanguageName () + ")";
 
+			//This button allows the player to check the answer before submiting.
 			button.Click += delegate {
 				readyText.Text = inkView.Recognize (false);
 			};
 
+			//This allows the player to share the results to his facebook page.
+			ShareLinkContent content = new ShareLinkContent.Builder().
+			                                               SetContentTitle("Mad Minute Mode! MathAttack Game").
+			                                               SetContentDescription("I got " + totalScore + " answers right under a minute."+
+			                                                                    " Can you beat me?").
+			                                               Build();
+			sharingButton.ShareContent = content;
+
+			//Goes back to the menu of the game to play more games!
 			goBack.Click += delegate {
 				var activity2 = new Intent (this, typeof (Activity2));
 				activity2.PutExtra ("UserName", username);
@@ -103,6 +137,7 @@ namespace WritePadXamarinSample
 				StartActivity (activity2);
 			};
 
+			//The user wants to improve the previous score
 			replayGame.Click += delegate {
 				replayGame.Enabled = false;
 				restartSettings ();
@@ -119,6 +154,11 @@ namespace WritePadXamarinSample
 			};
 		}
 
+		/**
+		 * RestartSettings is called when the button replayGame has been clicked.
+		 * @postcondition:
+		 * 	All the variables are set to the predifined values.
+		 */ 
 		public void restartSettings ()
 		{
 			inkView.cleanView (true);
@@ -165,6 +205,15 @@ namespace WritePadXamarinSample
 				string[] answer = readyText.Text.Split ('\n');
 				//If the user types 11 but the console reads like 1  1 
 				string finalSolution = System.Text.RegularExpressions.Regex.Replace (answer[0], @"\s+", "");
+
+				string[] badchars = new string[] { "l", "i", "I", "s", "S", " ", "}", "a", "g", "o", "O" };
+				string[] goodchars = new string[] { "1", "1", "1", "5", "S", "", "3", "4", "6", "0", "0" };
+
+				for (int i = 0; i < goodchars.Length; i++)
+				{
+					finalSolution = finalSolution.Replace(badchars[i], goodchars[i]);
+				}
+
 				int checkAnswer = Int32.Parse (finalSolution);
 				if (checkAnswer == question.Solution) {
 					ReadyGoStop.Text = "CORRECT!";
@@ -206,6 +255,17 @@ namespace WritePadXamarinSample
 			}
 		}
 
+		/**
+		 * StartCountdownTimer is an asyncronous function that counts the time left of the player.
+		 * It had to be created as asyncronous because if not the app only would count down freezing the screen for the player.
+		 * 
+		 * @params startingVal:
+		 * 	Is an integer that gives the amount of time the user has to play.
+		 * 
+		 * @Postcondition
+		 * 	If the time is over, a top layer view will appear to the player, showing him the score and a menu.
+		 * 
+		 */ 
 		private async void StartCountdownTimer (int startingVal)
 		{
 			while (startingVal >= 0) {
@@ -220,7 +280,10 @@ namespace WritePadXamarinSample
 				countdownView.Text = "Time is up! Final Score: " + totalScore + " points";
 
 				replayGame.Enabled = true;
+
 				//Show the layer to say it is done
+				//Add the share button with the results
+
 
 				return;
 			}

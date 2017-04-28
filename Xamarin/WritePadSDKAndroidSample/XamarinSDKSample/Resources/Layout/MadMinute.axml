@@ -111,6 +111,11 @@
             android:layout_weight="0.8"
             android:textColor="@android:color/black"
             android:textSize="40dp" />
+        <com.facebook.share.widget.ShareButton
+            android:id="@+id/shareButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp" />
         <Button
             android:id="@+id/goBack"
             android:layout_width="match_parent"

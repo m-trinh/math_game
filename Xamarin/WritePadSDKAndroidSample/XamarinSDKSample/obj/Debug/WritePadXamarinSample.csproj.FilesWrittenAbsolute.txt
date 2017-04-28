@@ -65,3 +65,14 @@
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/OxyPlot.Xamarin.Forms.Platform.Android.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/OxyPlot.dll
 /Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/OxyPlot.Xamarin.Android.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Facebook.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Newtonsoft.Json.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Geolocator.Plugin.Abstractions.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Geolocator.Plugin.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Plugin.CurrentActivity.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Plugin.Permissions.Abstractions.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Plugin.Permissions.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Plugin.Geolocator.Abstractions.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/bin/Debug/Plugin.Geolocator.dll
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/training.xml
+/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/res/layout/homescreen.xml

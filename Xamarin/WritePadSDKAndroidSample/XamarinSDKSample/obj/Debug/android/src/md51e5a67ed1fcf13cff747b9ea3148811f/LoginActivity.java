@@ -6,7 +6,7 @@ public class LoginActivity
 	implements
 		mono.android.IGCUserPeer,
 		com.facebook.FacebookCallback,
-		com.facebook.GraphRequest.GraphJSONArrayCallback
+		com.facebook.GraphRequest.GraphJSONObjectCallback
 {
 /** @hide */
 	public static final String __md_methods;
@@ -18,7 +18,7 @@ public class LoginActivity
 			"n_onCancel:()V:GetOnCancelHandler:Xamarin.Facebook.IFacebookCallbackInvoker, Xamarin.Facebook\n" +
 			"n_onError:(Lcom/facebook/FacebookException;)V:GetOnError_Lcom_facebook_FacebookException_Handler:Xamarin.Facebook.IFacebookCallbackInvoker, Xamarin.Facebook\n" +
 			"n_onSuccess:(Ljava/lang/Object;)V:GetOnSuccess_Ljava_lang_Object_Handler:Xamarin.Facebook.IFacebookCallbackInvoker, Xamarin.Facebook\n" +
-			"n_onCompleted:(Lorg/json/JSONArray;Lcom/facebook/GraphResponse;)V:GetOnCompleted_Lorg_json_JSONArray_Lcom_facebook_GraphResponse_Handler:Xamarin.Facebook.GraphRequest/IGraphJSONArrayCallbackInvoker, Xamarin.Facebook\n" +
+			"n_onCompleted:(Lorg/json/JSONObject;Lcom/facebook/GraphResponse;)V:GetOnCompleted_Lorg_json_JSONObject_Lcom_facebook_GraphResponse_Handler:Xamarin.Facebook.GraphRequest/IGraphJSONObjectCallbackInvoker, Xamarin.Facebook\n" +
 			"";
 		mono.android.Runtime.register ("WritePadXamarinSample.LoginActivity, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null", LoginActivity.class, __md_methods);
 	}
@@ -80,12 +80,12 @@ public class LoginActivity
 	private native void n_onSuccess (java.lang.Object p0);
 
 
-	public void onCompleted (org.json.JSONArray p0, com.facebook.GraphResponse p1)
+	public void onCompleted (org.json.JSONObject p0, com.facebook.GraphResponse p1)
 	{
 		n_onCompleted (p0, p1);
 	}
 
-	private native void n_onCompleted (org.json.JSONArray p0, com.facebook.GraphResponse p1);
+	private native void n_onCompleted (org.json.JSONObject p0, com.facebook.GraphResponse p1);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

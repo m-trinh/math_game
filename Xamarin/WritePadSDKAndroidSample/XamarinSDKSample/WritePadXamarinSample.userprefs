@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{08F40573-8B1B-43C5-AB7F-ED8CC2E34043}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoginActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Activity2.cs">
     <Files>
-      <File FileName="GenerateStats.cs" Line="22" Column="43" />
-      <File FileName="ConnectToDatabase.cs" Line="111" Column="30" />
-      <File FileName="Activity2.cs" Line="79" Column="37" />
-      <File FileName="Activity1.cs" Line="144" Column="51" />
-      <File FileName="MadMinute.cs" Line="12" Column="1" />
-      <File FileName="LoginActivity.cs" Line="1" Column="1" />
+      <File FileName="Activity1.cs" Line="288" Column="63" />
+      <File FileName="MadMinute.cs" Line="160" Column="58" />
+      <File FileName="LoginActivity.cs" Line="138" Column="1" />
+      <File FileName="GenerateStats.cs" Line="84" Column="35" />
+      <File FileName="Activity2.cs" Line="47" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.42000b3d9a894375" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/LocationFinder.cs" relfile="LocationFinder.cs" line="28" column="1" />
+      <Breakpoint file="/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/LocationFinder.cs" relfile="LocationFinder.cs" line="46" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
