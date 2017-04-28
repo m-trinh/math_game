@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Devices>
-  <Device id="emulator-5554">
+  <Device id="42000b3d9a894375">
     <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>19</SdkVersion>
+    <SdkVersion>23</SdkVersion>
   </Device>
 </Devices>
