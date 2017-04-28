@@ -36,7 +36,7 @@ namespace WritePadXamarinSample
 				//Create a new user
 				userLoggedInInfo = new UserInfo(e.mProfile.FirstName, e.mProfile.LastName, e.mProfile.Name);
 
-				UserInfo newUser = new UserInfo();
+				newUser = new UserInfo();
 				newUser.FirstName = e.mProfile.FirstName;
 				newUser.LastName = e.mProfile.LastName;
 
