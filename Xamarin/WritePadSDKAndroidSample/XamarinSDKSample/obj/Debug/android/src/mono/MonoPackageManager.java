@@ -101,9 +101,10 @@ class MonoPackageManager_Resources {
 		"WritePad SDK Xamarin Sample.dll",
 		"Bolts.AppLinks.dll",
 		"Bolts.Tasks.dll",
-		"Xamarin.Facebook.dll",
 		"ExoPlayer.dll",
+		"System.Drawing.dll",
 		"Xamarin.Facebook.AudienceNetwork.dll",
+		"Xamarin.Facebook.dll",
 		"Xamarin.Android.Support.Compat.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
@@ -118,6 +119,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.CardView.dll",
 		"Xamarin.Android.Support.CustomTabs.dll",
+		"System.Configuration.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

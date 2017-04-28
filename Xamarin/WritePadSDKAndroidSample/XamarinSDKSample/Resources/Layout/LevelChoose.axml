@@ -5,7 +5,7 @@
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1">
     <TextView
-        p1:text="Select a Level"
+        p1:text="Pick a Level"
         p1:textAppearance="?android:attr/textAppearanceLarge"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
@@ -42,14 +42,14 @@
             <ImageView
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
-                p1:id="@+id/imageView1"
+                p1:id="@+id/level1Stars"
                 p1:src="@android:drawable/ic_menu_gallery" />
         </LinearLayout>
         <LinearLayout
             p1:orientation="vertical"
             p1:minWidth="25px"
             p1:minHeight="25px"
-            p1:id="@+id/linearLayout3"
+            p1:id="@+id/level2"
             p1:layout_width="wrap_content"
             p1:layout_height="75dp"
             p1:layout_columnWeight="1"
@@ -67,7 +67,57 @@
             <ImageView
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
-                p1:id="@+id/imageView2"
+                p1:id="@+id/level2Stars"
+                p1:src="@android:drawable/ic_menu_gallery" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/level3"
+            p1:layout_width="wrap_content"
+            p1:layout_height="75dp"
+            p1:layout_columnWeight="1"
+            p1:clickable="true"
+            p1:background="#ff646464"
+            p1:layout_margin="5dp">
+            <TextView
+                p1:text="Level 3: Beginner Trigonometry"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="165dp"
+                p1:layout_height="45.0dp"
+                p1:gravity="center"
+                p1:id="@+id/textView3"
+                p1:layout_gravity="center" />
+            <ImageView
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/level3Stars"
+                p1:src="@android:drawable/ic_menu_gallery" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/level4"
+            p1:layout_width="wrap_content"
+            p1:layout_height="75dp"
+            p1:layout_columnWeight="1"
+            p1:clickable="true"
+            p1:background="#ff646464"
+            p1:layout_margin="5dp">
+            <TextView
+                p1:text="Level 4: Beginner Challenge"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="165dp"
+                p1:layout_height="45.0dp"
+                p1:gravity="center"
+                p1:id="@+id/textView3"
+                p1:layout_gravity="center" />
+            <ImageView
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/level4Stars"
                 p1:src="@android:drawable/ic_menu_gallery" />
         </LinearLayout>
     </GridLayout>

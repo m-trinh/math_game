@@ -16,20 +16,11 @@
             android:layout_height="match_parent"
             android:id="@+id/hint" />
         <Button
-            android:text="Notes"
+            android:text="Equations"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/notes" />
-        <Button
-            android:text="Calculator"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/calc" />
-        <Button
-            android:text="Quit"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/quit" />
+            android:id="@+id/equations"
+            android:layout_gravity="right" />
     </LinearLayout>
     <ScrollView
         android:minWidth="25px"
