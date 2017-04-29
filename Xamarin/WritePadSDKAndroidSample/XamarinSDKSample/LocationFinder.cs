@@ -25,7 +25,7 @@ namespace WritePadXamarinSample
 			if (locator.IsGeolocationEnabled)
 			{
 				// Allow ten seconds for geo-location determination.                    
-				var position = await locator.GetPositionAsync(10000);
+				var position = await locator.GetPositionAsync(15000);
 				string latitude = position.Latitude.ToString();
 				string longitude = position.Longitude.ToString();
 
@@ -44,6 +44,11 @@ namespace WritePadXamarinSample
 
 				//bind the String to GoogleResults using JsonConvert
 				GoogleResults google = JsonConvert.DeserializeObject<GoogleResults>(json.ToString());
+
+				if (google != null && google.results.Count >= 4) {
+					string location = google.results [3].formatted_address;
+					User.location = location;
+				}
 
 				//ADD CONNECTION STRING INFO HERE
 				//

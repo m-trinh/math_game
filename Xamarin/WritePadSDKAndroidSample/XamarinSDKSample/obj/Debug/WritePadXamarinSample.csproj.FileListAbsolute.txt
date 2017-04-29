@@ -246,7 +246,6 @@ F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\R.cs.flag
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\uploadflags.txt
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\WritePad SDK Xamarin Sample.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePadXamarinSample.csprojResolveAssemblyReference.cache
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Java.Interop.dll.mdb
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Mono.Android.dll.mdb
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Mono.Data.Tds.dll.mdb

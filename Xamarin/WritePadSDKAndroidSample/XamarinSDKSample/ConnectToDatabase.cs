@@ -65,7 +65,7 @@ public class ConnectToDatabase
 				{1},
 				{user.firstName},
 				{user.lastName}*/
-				sb.Append($"execute usp_Login '{user.FirstName+user.LastName}','{user.Email}',null,{1},'{user.FirstName}','{user.LastName}','Boston, MA'");
+				sb.Append($"execute usp_Login '{user.FirstName+user.LastName}','{user.Email}',null,{1},'{user.FirstName}','{user.LastName}', '{User.location}'");
 				String sql = sb.ToString ();
 
 				using (SqlCommand command = new SqlCommand (sql, connection))
@@ -74,6 +74,11 @@ public class ConnectToDatabase
 						while (reader.Read ()) {
 							//Returns
 							//username: username, first name: first_name, level: user_level, experience: experience and location: user_location
+							User.username = (string)reader ["USERNAME"];
+							User.firstName = (string)reader ["FIRST_NAME"];
+							User.lastName = (string)reader ["LAST_NAME"];
+							User.level = (int)reader ["USER_LEVEL"];
+							User.experience = (int)reader ["EXPERIENCE"];
 							Console.WriteLine ("");
 						}
 					}

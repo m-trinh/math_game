@@ -1,6 +1,4 @@
-﻿using Android.App;
-
-namespace WritePadXamarinSample
+﻿namespace WritePadXamarinSample
 {
 	public class UserInfo
 	{

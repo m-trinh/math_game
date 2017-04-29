@@ -43,7 +43,7 @@ namespace WritePadXamarinSample
 		private Button replayGame;
 		private TextView countDownView;
 		private Button goBack;
-		private string username;
+		private string username = User.username;
 
 		/*
 		 * OnPause()

@@ -100,6 +100,7 @@ namespace WritePadXamarinSample
 
 			int timeframe = 0; //Set how far back you want to go in days. 0 means all-time highest
 			int score;
+			string player;
 
 			//Connect to database
 			SqlConnectionStringBuilder builder = ConnString.Builder;
@@ -120,7 +121,8 @@ namespace WritePadXamarinSample
 						//Programmatically create a new textView that will hold high score information
 						var newrow = createNewRow ();
 						score = (int)reader ["Score"];
-                        newrow.Text = $"{rank}. {score}";
+						player = (string)reader ["Username"];
+						newrow.Text = $"#{rank}  -  {player}  -  {score}";
 						//Add newly created field to the leaderboard view
                         leaderboardArea.AddView(newrow);
                         rank++;
@@ -135,7 +137,7 @@ namespace WritePadXamarinSample
 			//Generate a new TextView and style it
 			var newrow = new TextView (this);
 			newrow.SetTextSize (Android.Util.ComplexUnitType.Dip, 25f);
-			newrow.SetPadding (30, 10, 30, 10);
+			newrow.SetPadding (40, 10, 40, 10);
 			newrow.SetBackgroundResource (Resource.Drawable.border);
 			return newrow;
 		}

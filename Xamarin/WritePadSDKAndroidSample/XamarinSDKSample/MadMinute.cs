@@ -1,5 +1,4 @@
-﻿
-using Android.App;
+﻿using Android.App;
 using Android.Text.Method;
 using Android.Widget;
 using Android.OS;
@@ -9,29 +8,12 @@ using System.Threading.Tasks;
 using Android.Graphics;
 using Android.Content;
 using Xamarin.Facebook.Login;
-using Xamarin.Facebook.Share.Widget;
-using Xamarin.Facebook.Share.Model;
 
 namespace WritePadXamarinSample
 {
-	/**
-	 * 
-	 * Mad Minute Game!
-	 * 
-	 * Get ready to answer as many questions as you can in under 1 minute.
-	 * 
-	 * The operations difficulty might increase given the number of correct or incorrect answers.
-	 * 
-	 * Once the game is finished you will have to share your results with your friends on facebook,
-	 * replay to improve your previous score or try other amazing games!
-	 * 
-	 * The structure of this class is very similar to Activity1
-	 * 
-	 */ 
 	[Activity (Label = "WritePadXamarinSample")]
 	public class MadMinute : Activity
 	{
-		//Defining the variables
 		private LinearLayout topLayerCount;
 		private FrameLayout containerLayer;
 		private bool endTime = false;
@@ -52,7 +34,10 @@ namespace WritePadXamarinSample
 		private TextView countDownView;
 		private Button goBack;
 		private string username;
-		private ShareButton sharingButton;
+		private int correctAnswers = 0;
+		private string difficulty = "Easy";
+		private int incorrectAnswers = 0;
+
 
 		protected override void OnPause ()
 		{
@@ -79,11 +64,10 @@ namespace WritePadXamarinSample
 			WritePadAPI.recoInit (BaseContext);
 			WritePadAPI.initializeFlags (BaseContext);
 
-			//Initialize the variables with the componens of the View MadMinute
 			button = FindViewById<Button> (Resource.Id.RecognizeButton);
 			inkView = FindViewById<InkView> (Resource.Id.ink_view);
 			readyText = FindViewById<TextView> (Resource.Id.ready_text);
-			topLayerCount= FindViewById<LinearLayout> (Resource.Id.topLayerCount);
+			topLayerCount = FindViewById<LinearLayout> (Resource.Id.topLayerCount);
 			containerLayer = FindViewById<FrameLayout> (Resource.Id.containerLayer);
 			countdownView = FindViewById<TextView> (Resource.Id.countdownStart);
 			ReadyGoStop = FindViewById<TextView> (Resource.Id.ReadyGoStop);
@@ -93,22 +77,17 @@ namespace WritePadXamarinSample
 			replayGame = FindViewById<Button> (Resource.Id.replayGame);
 			countDownView = FindViewById<TextView> (Resource.Id.time_countdown);
 			goBack = FindViewById<Button> (Resource.Id.goBack);
-			sharingButton = FindViewById<ShareButton>(Resource.Id.shareButton);
 
 
 			countVariable = 3;
 			//calculateTime (countVariable);
 
-			//The top layer at the beginning of the game doesn't display
 			topLayerCount.Visibility = Android.Views.ViewStates.Invisible;
 			if (endTime) {
 				return;
 			}
-			//Show the user he has to start playing
 			ReadyGoStop.Text = "GO!";
-			//Initialize the time to 60seconds
 			int minuteTime = 60;
-			//Begins the countdown!
 			StartCountdownTimer (minuteTime);
 			bool rightAnswer = false;
 			ShowQuestions (rightAnswer);
@@ -116,20 +95,10 @@ namespace WritePadXamarinSample
 			readyText.MovementMethod = new ScrollingMovementMethod ();
 			//readyTextTitle.Text = Resources.GetString (Resource.String.Title) + " (" + WritePadAPI.getLanguageName () + ")";
 
-			//This button allows the player to check the answer before submiting.
 			button.Click += delegate {
 				readyText.Text = inkView.Recognize (false);
 			};
 
-			//This allows the player to share the results to his facebook page.
-			ShareLinkContent content = new ShareLinkContent.Builder().
-			                                               SetContentTitle("Mad Minute Mode! MathAttack Game").
-			                                               SetContentDescription("I got " + totalScore + " answers right under a minute."+
-			                                                                    " Can you beat me?").
-			                                               Build();
-			sharingButton.ShareContent = content;
-
-			//Goes back to the menu of the game to play more games!
 			goBack.Click += delegate {
 				var activity2 = new Intent (this, typeof (Activity2));
 				activity2.PutExtra ("UserName", username);
@@ -137,7 +106,6 @@ namespace WritePadXamarinSample
 				StartActivity (activity2);
 			};
 
-			//The user wants to improve the previous score
 			replayGame.Click += delegate {
 				replayGame.Enabled = false;
 				restartSettings ();
@@ -154,11 +122,6 @@ namespace WritePadXamarinSample
 			};
 		}
 
-		/**
-		 * RestartSettings is called when the button replayGame has been clicked.
-		 * @postcondition:
-		 * 	All the variables are set to the predifined values.
-		 */ 
 		public void restartSettings ()
 		{
 			inkView.cleanView (true);
@@ -176,25 +139,41 @@ namespace WritePadXamarinSample
 
 		private void ShowQuestions (bool rightAnswer)
 		{
-			RandomQuestions newQuestion = new RandomQuestions();
+			RandomQuestions newQuestion = new RandomQuestions (difficulty);
 
-
-			questions_math.Text = newQuestion.FirstOperand.ToString () + " " + newQuestion.Operand + " " + newQuestion.SecondOperand.ToString ();
+			questions_math.Text = difficulty == "Easy" ? String.Concat (newQuestion.FirstNumber.ToString (), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString ())
+									: difficulty == "Medium" ? String.Concat (newQuestion.FirstNumber.ToString (), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString (), " ", newQuestion.SecondOperand, " ", newQuestion.ThirdNumber.ToString ())
+									: String.Concat (newQuestion.FirstNumber.ToString (), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString (), " ", newQuestion.SecondOperand, " ", newQuestion.ThirdNumber.ToString (), " ", newQuestion.ThirdOperand, " ", newQuestion.FourthNumber.ToString ());
 
 			submitAnswer.Click += (sender, e) => {
 				totalQuestions++;
 				readyText.Text = inkView.Recognize (false);
 				rightAnswer = validateAnswer (newQuestion);
-				if(rightAnswer)
-					newQuestion = createNewQuestion ();
+				newQuestion = createNewQuestion (rightAnswer);
 			};
 		}
 
-		private RandomQuestions createNewQuestion () {
-			questions_math.SetBackgroundColor (Color.AliceBlue);
-			RandomQuestions newQuestion = new RandomQuestions ();
+		private RandomQuestions createNewQuestion (bool correct)
+		{
 
-			questions_math.Text = newQuestion.FirstOperand.ToString () + " " + newQuestion.Operand + " " + newQuestion.SecondOperand.ToString ();
+			if (correct == true) {
+				correctAnswers = correctAnswers + 1;
+			} else {
+				incorrectAnswers = incorrectAnswers + 1;
+			}
+
+			int total = correctAnswers - incorrectAnswers;
+
+			difficulty = total < 3 ? difficulty
+					   : total >= 3 && total < 6 ? "Medium"
+					   : "Hard";
+			questions_math.SetBackgroundColor (Color.AliceBlue);
+
+			RandomQuestions newQuestion = new RandomQuestions (difficulty);
+			newQuestion.Difficulty = difficulty;
+			questions_math.Text = difficulty == "Easy" ? String.Concat (newQuestion.FirstNumber.ToString (), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString ())
+									: difficulty == "Medium" ? String.Concat (newQuestion.FirstNumber.ToString (), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString (), " ", newQuestion.SecondOperand, " ", newQuestion.ThirdNumber.ToString ())
+									: String.Concat (newQuestion.FirstNumber.ToString (), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString (), " ", newQuestion.SecondOperand, " ", newQuestion.ThirdNumber.ToString (), " ", newQuestion.ThirdOperand, " ", newQuestion.FourthNumber.ToString ());
 			return newQuestion;
 		}
 
@@ -202,24 +181,15 @@ namespace WritePadXamarinSample
 		private bool validateAnswer (RandomQuestions question)
 		{
 			try {
-				string[] answer = readyText.Text.Split ('\n');
+				string [] answer = readyText.Text.Split ('\n');
 				//If the user types 11 but the console reads like 1  1 
-				string finalSolution = System.Text.RegularExpressions.Regex.Replace (answer[0], @"\s+", "");
-
-				string[] badchars = new string[] { "l", "i", "I", "s", "S", " ", "}", "a", "g", "o", "O", "r", "f" };
-				string[] goodchars = new string[] { "1", "1", "1", "5", "S", "", "3", "4", "6", "0", "0", "8", "8" };
-
-				for (int i = 0; i < goodchars.Length; i++)
-				{
-					finalSolution = finalSolution.Replace(badchars[i], goodchars[i]);
-				}
-
+				string finalSolution = System.Text.RegularExpressions.Regex.Replace (answer [0], @"\s+", "");
 				int checkAnswer = Int32.Parse (finalSolution);
 				if (checkAnswer == question.Solution) {
 					ReadyGoStop.Text = "CORRECT!";
 					inkView.cleanView (true);
 					totalScore++;
-					finalTotalScore.Text = totalScore.ToString();
+					finalTotalScore.Text = totalScore.ToString ();
 					questions_math.SetBackgroundColor (Color.Green);
 					return true;
 				} else {
@@ -243,7 +213,7 @@ namespace WritePadXamarinSample
 
 		private void Timer_Elapsed (object sender, ElapsedEventArgs e)
 		{
-			
+
 			if (countVariable > 0) {
 				RunOnUiThread (() => countdownView.Text = countVariable.ToString ());
 				countVariable--;
@@ -255,17 +225,6 @@ namespace WritePadXamarinSample
 			}
 		}
 
-		/**
-		 * StartCountdownTimer is an asyncronous function that counts the time left of the player.
-		 * It had to be created as asyncronous because if not the app only would count down freezing the screen for the player.
-		 * 
-		 * @params startingVal:
-		 * 	Is an integer that gives the amount of time the user has to play.
-		 * 
-		 * @Postcondition
-		 * 	If the time is over, a top layer view will appear to the player, showing him the score and a menu.
-		 * 
-		 */ 
 		private async void StartCountdownTimer (int startingVal)
 		{
 			while (startingVal >= 0) {
@@ -280,67 +239,14 @@ namespace WritePadXamarinSample
 				countdownView.Text = "Time is up! Final Score: " + totalScore + " points";
 
 				replayGame.Enabled = true;
-
 				//Show the layer to say it is done
-				//Add the share button with the results
 
+				ConnectToDatabase insertValues = new ConnectToDatabase ();
+				var storedCorrectly = false;
+				RunOnUiThread (() => storedCorrectly = insertValues.insertToMadMinute (username, totalScore, totalQuestions - totalScore));
 
 				return;
 			}
 		}
-
 	}
-
-	public class RandomQuestions{
-
-		private int firstOperand;
-		private int secondOperand;
-		private string operand;
-
-		public RandomQuestions () {
-			Random random = new Random ();
-			firstOperand = random.Next (0, 9);
-			secondOperand = random.Next (0, 9);
-			string [] operands = { "+", "-" };
-			operand = operands [random.Next (0, operands.Length - 1)];//Only using addition
-
-		}
-
-		public int FirstOperand{
-			get{
-				return firstOperand;
-			}
-		}
-		public int SecondOperand {
-			get {
-				return secondOperand;
-			}
-		}
-
-		public string Operand {
-			get {
-				return operand;
-			}
-		}
-
-
-		public int Solution {
-			get {
-				//The solution is the first operand the calculate given the operand and the second operator
-				switch (Operand) {
-					case "+":
-						return FirstOperand + SecondOperand;
-					case "-":
-						return FirstOperand - SecondOperand;
-					case "*":
-						return FirstOperand * SecondOperand;
-					case "/":
-						return FirstOperand / SecondOperand;
-				}
-				return 0;
-			}
-		}
-
-	}
-
 }

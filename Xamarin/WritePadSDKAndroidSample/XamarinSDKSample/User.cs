@@ -1,12 +1,13 @@
-﻿using System;
-namespace WritePadXamarinSample
+﻿namespace WritePadXamarinSample
 {
 	public static class User
 	{
-		private static string firstName;
-		static User (string firstName, string lastName, string email, int level, int experience)
-		{
-			User.firstName = firstName;
-		}
+		public static string username;
+		public static string firstName;
+		public static string lastName;
+		public static string location;
+		public static int level;
+		public static int experience;
+		public static string email;
 	}
 }

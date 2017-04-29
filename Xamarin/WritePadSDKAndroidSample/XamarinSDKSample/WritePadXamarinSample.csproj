@@ -215,6 +215,7 @@
     <Compile Include="ChallengeQuestionActivity.cs" />
 
     <Compile Include="User.cs" />
+    <Compile Include="RandomQuestions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
