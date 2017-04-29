@@ -25,7 +25,6 @@
     </NuGetPackageImportStamp>
     <AndroidTlsProvider>
     </AndroidTlsProvider>
-    <ReleaseVersion>5.5</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -214,7 +213,7 @@
     <Compile Include="ConnString.cs" />
     <Compile Include="ChallengeQuestionActivity.cs" />
 
-    <Compile Include="User.cs" />
+    <Compile Include="EmptyClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

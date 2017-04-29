@@ -1,5 +1,4 @@
-﻿
-using Android.App;
+﻿using Android.App;
 using Android.Text.Method;
 using Android.Widget;
 using Android.OS;
@@ -9,29 +8,14 @@ using System.Threading.Tasks;
 using Android.Graphics;
 using Android.Content;
 using Xamarin.Facebook.Login;
-using Xamarin.Facebook.Share.Widget;
 using Xamarin.Facebook.Share.Model;
+using Xamarin.Facebook.Share.Widget;
 
 namespace WritePadXamarinSample
 {
-	/**
-	 * 
-	 * Mad Minute Game!
-	 * 
-	 * Get ready to answer as many questions as you can in under 1 minute.
-	 * 
-	 * The operations difficulty might increase given the number of correct or incorrect answers.
-	 * 
-	 * Once the game is finished you will have to share your results with your friends on facebook,
-	 * replay to improve your previous score or try other amazing games!
-	 * 
-	 * The structure of this class is very similar to Activity1
-	 * 
-	 */ 
-	[Activity (Label = "WritePadXamarinSample")]
+	[Activity(Label = "WritePadXamarinSample")]
 	public class MadMinute : Activity
 	{
-		//Defining the variables
 		private LinearLayout topLayerCount;
 		private FrameLayout containerLayer;
 		private bool endTime = false;
@@ -52,116 +36,112 @@ namespace WritePadXamarinSample
 		private TextView countDownView;
 		private Button goBack;
 		private string username;
+		private int correctAnswers = 0;
+		private string difficulty = "Easy";
+		private int incorrectAnswers = 0;
 		private ShareButton sharingButton;
 
-		protected override void OnPause ()
+
+		protected override void OnPause()
 		{
-			base.OnDestroy ();
-			LoginManager.Instance.LogOut ();
+			base.OnDestroy();
+			LoginManager.Instance.LogOut();
 		}
 
-		protected override void OnDestroy ()
+		protected override void OnDestroy()
 		{
-			base.OnDestroy ();
-			WritePadAPI.recoFree ();
+			base.OnDestroy();
+			WritePadAPI.recoFree();
 		}
 
-		protected override void OnCreate (Bundle bundle)
+		protected override void OnCreate(Bundle bundle)
 		{
-			base.OnCreate (bundle);
+			base.OnCreate(bundle);
 
-			SetContentView (Resource.Layout.MadMinute);
+			SetContentView(Resource.Layout.MadMinute);
 
 			//Get the username
-			username = Intent.GetStringExtra ("UserName");
+			username = User.username;
 
 
-			WritePadAPI.recoInit (BaseContext);
-			WritePadAPI.initializeFlags (BaseContext);
+			WritePadAPI.recoInit(BaseContext);
+			WritePadAPI.initializeFlags(BaseContext);
 
-			//Initialize the variables with the componens of the View MadMinute
-			button = FindViewById<Button> (Resource.Id.RecognizeButton);
-			inkView = FindViewById<InkView> (Resource.Id.ink_view);
-			readyText = FindViewById<TextView> (Resource.Id.ready_text);
-			topLayerCount= FindViewById<LinearLayout> (Resource.Id.topLayerCount);
-			containerLayer = FindViewById<FrameLayout> (Resource.Id.containerLayer);
-			countdownView = FindViewById<TextView> (Resource.Id.countdownStart);
-			ReadyGoStop = FindViewById<TextView> (Resource.Id.ReadyGoStop);
-			questions_math = FindViewById<TextView> (Resource.Id.questions_math);
-			submitAnswer = FindViewById<Button> (Resource.Id.submitAnswer);
-			finalTotalScore = FindViewById<TextView> (Resource.Id.finalTotalScore);
-			replayGame = FindViewById<Button> (Resource.Id.replayGame);
-			countDownView = FindViewById<TextView> (Resource.Id.time_countdown);
-			goBack = FindViewById<Button> (Resource.Id.goBack);
+			button = FindViewById<Button>(Resource.Id.RecognizeButton);
+			inkView = FindViewById<InkView>(Resource.Id.ink_view);
+			readyText = FindViewById<TextView>(Resource.Id.ready_text);
+			topLayerCount = FindViewById<LinearLayout>(Resource.Id.topLayerCount);
+			containerLayer = FindViewById<FrameLayout>(Resource.Id.containerLayer);
+			countdownView = FindViewById<TextView>(Resource.Id.countdownStart);
+			ReadyGoStop = FindViewById<TextView>(Resource.Id.ReadyGoStop);
+			questions_math = FindViewById<TextView>(Resource.Id.questions_math);
+			submitAnswer = FindViewById<Button>(Resource.Id.submitAnswer);
+			finalTotalScore = FindViewById<TextView>(Resource.Id.finalTotalScore);
+			replayGame = FindViewById<Button>(Resource.Id.replayGame);
+			countDownView = FindViewById<TextView>(Resource.Id.time_countdown);
+			goBack = FindViewById<Button>(Resource.Id.goBack);
 			sharingButton = FindViewById<ShareButton>(Resource.Id.shareButton);
-
 
 			countVariable = 3;
 			//calculateTime (countVariable);
 
-			//The top layer at the beginning of the game doesn't display
 			topLayerCount.Visibility = Android.Views.ViewStates.Invisible;
-			if (endTime) {
+			if (endTime)
+			{
 				return;
 			}
-			//Show the user he has to start playing
 			ReadyGoStop.Text = "GO!";
-			//Initialize the time to 60seconds
 			int minuteTime = 60;
-			//Begins the countdown!
-			StartCountdownTimer (minuteTime);
+			StartCountdownTimer(minuteTime);
 			bool rightAnswer = false;
-			ShowQuestions (rightAnswer);
+			ShowQuestions(rightAnswer);
 
-			readyText.MovementMethod = new ScrollingMovementMethod ();
+			readyText.MovementMethod = new ScrollingMovementMethod();
 			//readyTextTitle.Text = Resources.GetString (Resource.String.Title) + " (" + WritePadAPI.getLanguageName () + ")";
 
-			//This button allows the player to check the answer before submiting.
-			button.Click += delegate {
-				readyText.Text = inkView.Recognize (false);
+			button.Click += delegate
+			{
+				readyText.Text = inkView.Recognize(false);
+			};
+
+			goBack.Click += delegate
+			{
+				var activity2 = new Intent(this, typeof(Activity2));
+				activity2.PutExtra("UserName", username);
+				//activity2.PutExtra ("UserEmail", e.mProfile.Email);
+				StartActivity(activity2);
+			};
+
+			replayGame.Click += delegate
+			{
+				replayGame.Enabled = false;
+				restartSettings();
+			};
+
+			/* WritePad SDK recognizing what the user wrote.*/
+			inkView.OnReturnGesture += () => readyText.Text = inkView.Recognize(true);
+			inkView.OnReturnGesture += () => inkView.cleanView(true);
+			inkView.OnCutGesture += () => inkView.cleanView(true);
+			var clearbtn = FindViewById<Button>(Resource.Id.ClearButton);
+			clearbtn.Click += delegate
+			{
+				readyText.Text = "";
+				inkView.cleanView(true);
 			};
 
 			//This allows the player to share the results to his facebook page.
 			ShareLinkContent content = new ShareLinkContent.Builder().
-			                                               SetContentTitle("Mad Minute Mode! MathAttack Game").
-			                                               SetContentDescription("I got " + totalScore + " answers right under a minute."+
-			                                                                    " Can you beat me?").
-			                                               Build();
+														   SetContentTitle("Mad Minute Mode! MathAttack Game").
+														   SetContentDescription("I got " + totalScore + " answers right under a minute." +
+																				" Can you beat me?").
+														   Build();
 			sharingButton.ShareContent = content;
 
-			//Goes back to the menu of the game to play more games!
-			goBack.Click += delegate {
-				var activity2 = new Intent (this, typeof (Activity2));
-				activity2.PutExtra ("UserName", username);
-				//activity2.PutExtra ("UserEmail", e.mProfile.Email);
-				StartActivity (activity2);
-			};
-
-			//The user wants to improve the previous score
-			replayGame.Click += delegate {
-				replayGame.Enabled = false;
-				restartSettings ();
-			};
-
-			/* WritePad SDK recognizing what the user wrote.*/
-			inkView.OnReturnGesture += () => readyText.Text = inkView.Recognize (true);
-			inkView.OnReturnGesture += () => inkView.cleanView (true);
-			inkView.OnCutGesture += () => inkView.cleanView (true);
-			var clearbtn = FindViewById<Button> (Resource.Id.ClearButton);
-			clearbtn.Click += delegate {
-				readyText.Text = "";
-				inkView.cleanView (true);
-			};
 		}
 
-		/**
-		 * RestartSettings is called when the button replayGame has been clicked.
-		 * @postcondition:
-		 * 	All the variables are set to the predifined values.
-		 */ 
-		public void restartSettings ()
+		public void restartSettings()
 		{
-			inkView.cleanView (true);
+			inkView.cleanView(true);
 			topLayerCount.Visibility = Android.Views.ViewStates.Invisible;
 			totalScore = 0;
 			totalQuestions = 0;
@@ -169,121 +149,133 @@ namespace WritePadXamarinSample
 			finalTotalScore.Text = "Score: 0";
 			countDownView.Text = "60";
 			int minuteTime = 60;
-			StartCountdownTimer (minuteTime);
+			StartCountdownTimer(minuteTime);
 			bool rightAnswer = false;
-			ShowQuestions (rightAnswer);
+			ShowQuestions(rightAnswer);
 		}
 
-		private void ShowQuestions (bool rightAnswer)
+		private void ShowQuestions(bool rightAnswer)
 		{
-			RandomQuestions newQuestion = new RandomQuestions();
+			RandomQuestions newQuestion = new RandomQuestions(difficulty);
 
+			questions_math.Text = difficulty == "Easy" ? String.Concat(newQuestion.FirstNumber.ToString(), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString())
+									: difficulty == "Medium" ? String.Concat(newQuestion.FirstNumber.ToString(), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString(), " ", newQuestion.SecondOperand, " ", newQuestion.ThirdNumber.ToString())
+									: String.Concat(newQuestion.FirstNumber.ToString(), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString(), " ", newQuestion.SecondOperand, " ", newQuestion.ThirdNumber.ToString(), " ", newQuestion.ThirdOperand, " ", newQuestion.FourthNumber.ToString());
 
-			questions_math.Text = newQuestion.FirstOperand.ToString () + " " + newQuestion.Operand + " " + newQuestion.SecondOperand.ToString ();
-
-			submitAnswer.Click += (sender, e) => {
+			submitAnswer.Click += (sender, e) =>
+			{
 				totalQuestions++;
-				readyText.Text = inkView.Recognize (false);
-				rightAnswer = validateAnswer (newQuestion);
-				if(rightAnswer)
-					newQuestion = createNewQuestion ();
+				readyText.Text = inkView.Recognize(false);
+				rightAnswer = validateAnswer(newQuestion);
+				newQuestion = createNewQuestion(rightAnswer);
+
 			};
 		}
 
-		private RandomQuestions createNewQuestion () {
-			questions_math.SetBackgroundColor (Color.AliceBlue);
-			RandomQuestions newQuestion = new RandomQuestions ();
+		private RandomQuestions createNewQuestion(bool correct)
+		{
 
-			questions_math.Text = newQuestion.FirstOperand.ToString () + " " + newQuestion.Operand + " " + newQuestion.SecondOperand.ToString ();
+			if (correct == true)
+			{
+				correctAnswers = correctAnswers + 1;
+			}
+			else
+			{
+				incorrectAnswers = incorrectAnswers + 1;
+			}
+
+			int total = correctAnswers - incorrectAnswers;
+
+			difficulty = total < 3 ? difficulty
+					   : total >= 3 && total < 6 ? "Medium"
+					   : "Hard";
+			questions_math.SetBackgroundColor(Color.AliceBlue);
+
+			RandomQuestions newQuestion = new RandomQuestions(difficulty);
+			newQuestion.Difficulty = difficulty;
+			questions_math.Text = difficulty == "Easy" ? String.Concat(newQuestion.FirstNumber.ToString(), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString())
+									: difficulty == "Medium" ? String.Concat(newQuestion.FirstNumber.ToString(), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString(), " ", newQuestion.SecondOperand, " ", newQuestion.ThirdNumber.ToString())
+									: String.Concat(newQuestion.FirstNumber.ToString(), " ", newQuestion.FirstOperand, " ", newQuestion.SecondNumber.ToString(), " ", newQuestion.SecondOperand, " ", newQuestion.ThirdNumber.ToString(), " ", newQuestion.ThirdOperand, " ", newQuestion.FourthNumber.ToString());
 			return newQuestion;
 		}
 
 
-		private bool validateAnswer (RandomQuestions question)
+		private bool validateAnswer(RandomQuestions question)
 		{
-			try {
-				string[] answer = readyText.Text.Split ('\n');
+			try
+			{
+				string[] answer = readyText.Text.Split('\n');
 				//If the user types 11 but the console reads like 1  1 
-				string finalSolution = System.Text.RegularExpressions.Regex.Replace (answer[0], @"\s+", "");
-
-				string[] badchars = new string[] { "l", "i", "I", "s", "S", " ", "}", "a", "g", "o", "O", "r", "f" };
-				string[] goodchars = new string[] { "1", "1", "1", "5", "S", "", "3", "4", "6", "0", "0", "8", "8" };
-
-				for (int i = 0; i < goodchars.Length; i++)
+				string finalSolution = System.Text.RegularExpressions.Regex.Replace(answer[0], @"\s+", "");
+				int checkAnswer = Int32.Parse(finalSolution);
+				if (checkAnswer == question.Solution)
 				{
-					finalSolution = finalSolution.Replace(badchars[i], goodchars[i]);
-				}
-
-				int checkAnswer = Int32.Parse (finalSolution);
-				if (checkAnswer == question.Solution) {
 					ReadyGoStop.Text = "CORRECT!";
-					inkView.cleanView (true);
+					inkView.cleanView(true);
 					totalScore++;
 					finalTotalScore.Text = totalScore.ToString();
-					questions_math.SetBackgroundColor (Color.Green);
+					questions_math.SetBackgroundColor(Color.Green);
 					return true;
-				} else {
+				}
+				else
+				{
 					ReadyGoStop.Text = "TRY AGAIN!";
 					return false;
 				}
-			} catch (FormatException) {
+			}
+			catch (FormatException)
+			{
 				return false;
 			}
 		}
 
-		protected void calculateTime (int countVariable)
+		protected void calculateTime(int countVariable)
 		{
-			timer = new Timer ();
+			timer = new Timer();
 			timer.Interval = 1000;
 			timer.Elapsed += Timer_Elapsed;
-			timer.Start ();
+			timer.Start();
 			return;
 
 		}
 
-		private void Timer_Elapsed (object sender, ElapsedEventArgs e)
+		private void Timer_Elapsed(object sender, ElapsedEventArgs e)
 		{
-			
-			if (countVariable > 0) {
-				RunOnUiThread (() => countdownView.Text = countVariable.ToString ());
-				countVariable--;
-			} else {
 
-				containerLayer.RemoveView (topLayerCount);
-				timer.Stop ();
+			if (countVariable > 0)
+			{
+				RunOnUiThread(() => countdownView.Text = countVariable.ToString());
+				countVariable--;
+			}
+			else
+			{
+				containerLayer.RemoveView(topLayerCount);
+				timer.Stop();
 				return;
 			}
 		}
 
-		/**
-		 * StartCountdownTimer is an asyncronous function that counts the time left of the player.
-		 * It had to be created as asyncronous because if not the app only would count down freezing the screen for the player.
-		 * 
-		 * @params startingVal:
-		 * 	Is an integer that gives the amount of time the user has to play.
-		 * 
-		 * @Postcondition
-		 * 	If the time is over, a top layer view will appear to the player, showing him the score and a menu.
-		 * 
-		 */ 
-		private async void StartCountdownTimer (int startingVal)
+		private async void StartCountdownTimer(int startingVal)
 		{
-			while (startingVal >= 0) {
-				RunOnUiThread (() => countDownView.Text = startingVal.ToString ());
+			while (startingVal >= 0)
+			{
+				RunOnUiThread(() => countDownView.Text = startingVal.ToString());
 				startingVal = startingVal - 1;
-				await Task.Delay (1000);
+				await Task.Delay(1000);
 			}
 
-			if (startingVal < 0) {
+			if (startingVal < 0)
+			{
 				ReadyGoStop.Text = "STOP!";
 				topLayerCount.Visibility = Android.Views.ViewStates.Visible;
 				countdownView.Text = "Time is up! Final Score: " + totalScore + " points";
 
 				replayGame.Enabled = true;
-
 				//Show the layer to say it is done
-				//Add the share button with the results
 
+				ConnectToDatabase insertValues = new ConnectToDatabase();
+				var storedCorrectly = false;
+				RunOnUiThread(() => storedCorrectly = insertValues.insertToMadMinute(username, totalScore, totalQuestions - totalScore));
 
 				return;
 			}
@@ -291,53 +283,528 @@ namespace WritePadXamarinSample
 
 	}
 
-	public class RandomQuestions{
+	public class RandomQuestions
+	{
 
-		private int firstOperand;
-		private int secondOperand;
-		private string operand;
+		private int firstNumber;
+		private int secondNumber;
+		private int thirdNumber;
+		private int fourthNumber;
+		private string firstOperand;
+		private string secondOperand;
+		private string thirdOperand;
+		public string difficulty;
+		public decimal solution;
 
-		public RandomQuestions () {
-			Random random = new Random ();
-			firstOperand = random.Next (0, 9);
-			secondOperand = random.Next (0, 9);
-			string [] operands = { "+", "-" };
-			operand = operands [random.Next (0, operands.Length - 1)];//Only using addition
+		public RandomQuestions(string difficulty)
+		{
+			Random random = new Random(Guid.NewGuid().GetHashCode());
+
+			firstNumber = random.Next(1, 10);
+			secondNumber = random.Next(1, 10);
+			thirdNumber = difficulty == "Easy" ? 0
+							: random.Next(1, 16);
+			fourthNumber = difficulty == "Easy" ? 0
+							: difficulty == "Medium" ? 0
+							: random.Next(1, 20);
+
+
+			string[] operands = { "+", "-", "*" /*"/"*/ };
+			firstOperand = operands[random.Next(0, operands.Length)];
+			secondOperand = operands[random.Next(0, operands.Length)];
+			thirdOperand = operands[random.Next(0, operands.Length)];
+			if (difficulty == "Easy")
+			{
+				//The solution is the first operand the calculate given the operand and the second operator
+				switch (firstOperand)
+				{
+					case "/":
+						solution = FirstNumber / SecondNumber;
+						break;
+					case "*":
+						solution = FirstNumber * SecondNumber;
+						break;
+					case "+":
+						solution = FirstNumber + SecondNumber;
+						break;
+					case "-":
+						solution = FirstNumber - SecondNumber;
+						break;
+				}
+			}
+			else if (difficulty == "Medium")
+			{
+				//Determine what the first operand is
+				//Depending on the second operand, we will need to format the expression differently
+				switch (FirstOperand)
+				{
+					case "/":
+						if (SecondOperand == "/")
+						{
+							solution = FirstNumber / SecondNumber / ThirdNumber;
+						}
+						else if (SecondOperand == "*")
+						{
+							solution = FirstNumber / SecondNumber * ThirdNumber;
+						}
+						else if (SecondOperand == "+")
+						{
+							solution = FirstNumber / SecondNumber + ThirdNumber;
+						}
+						else
+						{
+							solution = FirstNumber / SecondNumber - ThirdNumber;
+						}
+						break;
+					case "*":
+						if (SecondOperand == "/")
+						{
+							solution = FirstNumber * SecondNumber / ThirdNumber;
+						}
+						else if (SecondOperand == "*")
+						{
+							solution = FirstNumber * SecondNumber * ThirdNumber;
+						}
+						else if (SecondOperand == "+")
+						{
+							solution = FirstNumber * SecondNumber + ThirdNumber;
+						}
+						else
+						{
+							solution = FirstNumber * SecondNumber - ThirdNumber;
+						}
+						break;
+					case "+":
+						if (SecondOperand == "/")
+						{
+							solution = FirstNumber + SecondNumber / ThirdNumber;
+						}
+						else if (SecondOperand == "*")
+						{
+							solution = FirstNumber + SecondNumber * ThirdNumber;
+						}
+						else if (SecondOperand == "+")
+						{
+							solution = FirstNumber + SecondNumber + ThirdNumber;
+						}
+						else
+						{
+							solution = FirstNumber + SecondNumber - ThirdNumber;
+						}
+						break;
+					case "-":
+						if (SecondOperand == "/")
+						{
+							solution = FirstNumber - SecondNumber / ThirdNumber;
+						}
+						else if (SecondOperand == "*")
+						{
+							solution = FirstNumber - SecondNumber * ThirdNumber;
+						}
+						else if (SecondOperand == "+")
+						{
+							solution = FirstNumber - SecondNumber + ThirdNumber;
+						}
+						else
+						{
+							solution = FirstNumber - SecondNumber - ThirdNumber;
+						}
+						break;
+				}
+			}
+			else
+			{
+				//Determine what the first operand is
+				//Depending on the second operand, we will need to format the expression differently
+				//Hard difficulty also has a third operand, so we will have to determine that before we format the expression            	
+				switch (FirstOperand)
+				{
+					case "/":
+						if (SecondOperand == "/")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber / SecondNumber / ThirdNumber / FourthNumber;
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber / SecondNumber / ThirdNumber * FourthNumber;
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber / SecondNumber / ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber / SecondNumber / ThirdNumber - FourthNumber;
+							}
+						}
+						else if (SecondOperand == "*")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber / SecondNumber * ThirdNumber / FourthNumber;
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber / SecondNumber * ThirdNumber * FourthNumber;
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber / SecondNumber * ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber / SecondNumber * ThirdNumber - FourthNumber;
+							}
+						}
+						else if (SecondOperand == "+")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = (FirstNumber / SecondNumber) + (ThirdNumber / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = (FirstNumber / SecondNumber) + (ThirdNumber * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = (FirstNumber / SecondNumber) + ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = (FirstNumber / SecondNumber) + ThirdNumber - FourthNumber;
+							}
+						}
+						else
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = (FirstNumber / SecondNumber) - (ThirdNumber / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = (FirstNumber / SecondNumber) - (ThirdNumber * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = (FirstNumber / SecondNumber) - ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = (FirstNumber / SecondNumber) - ThirdNumber - FourthNumber;
+							}
+						}
+						break;
+					case "*":
+						if (SecondOperand == "/")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber * SecondNumber / ThirdNumber / FourthNumber;
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber * SecondNumber / ThirdNumber * FourthNumber;
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber * SecondNumber / ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber * SecondNumber / ThirdNumber - FourthNumber;
+							}
+						}
+						else if (SecondOperand == "*")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber * SecondNumber * ThirdNumber / FourthNumber;
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber * SecondNumber * ThirdNumber * FourthNumber;
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber * SecondNumber * ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber * SecondNumber * ThirdNumber - FourthNumber;
+							}
+						}
+						else if (SecondOperand == "+")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = (FirstNumber * SecondNumber) + (ThirdNumber / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = (FirstNumber * SecondNumber) + (ThirdNumber * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = (FirstNumber * SecondNumber) + ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = (FirstNumber * SecondNumber) + ThirdNumber - FourthNumber;
+							}
+						}
+						else
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = (FirstNumber * SecondNumber) - (ThirdNumber / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = (FirstNumber * SecondNumber) - (ThirdNumber * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = (FirstNumber * SecondNumber) - ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = (FirstNumber * SecondNumber) - ThirdNumber - FourthNumber;
+							}
+						}
+						break;
+					case "+":
+						if (SecondOperand == "/")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber + ((SecondNumber / ThirdNumber) / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber + ((SecondNumber / ThirdNumber) * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber + (SecondNumber / ThirdNumber) + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber + (SecondNumber / ThirdNumber) - FourthNumber;
+							}
+						}
+						else if (SecondOperand == "*")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber + ((SecondNumber * ThirdNumber) / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber + ((SecondNumber * ThirdNumber) * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber + (SecondNumber * ThirdNumber) + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber + (SecondNumber * ThirdNumber) - FourthNumber;
+							}
+						}
+						else if (SecondOperand == "+")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber + SecondNumber + (ThirdNumber / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber + SecondNumber + (ThirdNumber * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber + SecondNumber + ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber + SecondNumber + ThirdNumber - FourthNumber;
+							}
+						}
+						else
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber + SecondNumber - (ThirdNumber / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber + SecondNumber - (ThirdNumber * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber + SecondNumber - ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber + SecondNumber - ThirdNumber - FourthNumber;
+							}
+						}
+						break;
+					case "-":
+						if (SecondOperand == "/")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber - ((SecondNumber / ThirdNumber) / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber - ((SecondNumber / ThirdNumber) * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber - (SecondNumber / ThirdNumber) + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber - (SecondNumber / ThirdNumber) - FourthNumber;
+							}
+						}
+						else if (SecondOperand == "*")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber - ((SecondNumber * ThirdNumber) / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber - ((SecondNumber * ThirdNumber) * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber - (SecondNumber * ThirdNumber) + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber - (SecondNumber * ThirdNumber) - FourthNumber;
+							}
+						}
+						else if (SecondOperand == "+")
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber - SecondNumber + (ThirdNumber / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber - SecondNumber + (ThirdNumber * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber - SecondNumber + ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber - SecondNumber + ThirdNumber - FourthNumber;
+							}
+						}
+						else
+						{
+							if (ThirdOperand == "/")
+							{
+								solution = FirstNumber - SecondNumber - (ThirdNumber / FourthNumber);
+							}
+							else if (ThirdOperand == "*")
+							{
+								solution = FirstNumber - SecondNumber - (ThirdNumber * FourthNumber);
+							}
+							else if (ThirdOperand == "+")
+							{
+								solution = FirstNumber - SecondNumber - ThirdNumber + FourthNumber;
+							}
+							else
+							{
+								solution = FirstNumber - SecondNumber - ThirdNumber - FourthNumber;
+							}
+						}
+						break;
+
+				}
+			}
 
 		}
 
-		public int FirstOperand{
-			get{
+		public int FirstNumber
+		{
+			get
+			{
+				return firstNumber;
+			}
+		}
+
+		public int SecondNumber
+		{
+			get
+			{
+				return secondNumber;
+			}
+		}
+
+		public int ThirdNumber
+		{
+			get
+			{
+				return thirdNumber;
+			}
+		}
+
+		public int FourthNumber
+		{
+			get
+			{
+				return fourthNumber;
+			}
+		}
+
+		public string FirstOperand
+		{
+			get
+			{
 				return firstOperand;
 			}
 		}
-		public int SecondOperand {
-			get {
+
+		public string SecondOperand
+		{
+			get
+			{
 				return secondOperand;
 			}
 		}
 
-		public string Operand {
-			get {
-				return operand;
+		public string ThirdOperand
+		{
+			get
+			{
+				return thirdOperand;
 			}
+
+		}
+
+		public string Difficulty
+		{
+			get; set;
 		}
 
 
-		public int Solution {
-			get {
-				//The solution is the first operand the calculate given the operand and the second operator
-				switch (Operand) {
-					case "+":
-						return FirstOperand + SecondOperand;
-					case "-":
-						return FirstOperand - SecondOperand;
-					case "*":
-						return FirstOperand * SecondOperand;
-					case "/":
-						return FirstOperand / SecondOperand;
-				}
-				return 0;
+		public decimal Solution
+		{
+			get
+			{
+				return solution;
 			}
 		}
 

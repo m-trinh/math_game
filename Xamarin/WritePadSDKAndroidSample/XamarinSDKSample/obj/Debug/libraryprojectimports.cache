@@ -2,55 +2,55 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Bolts.AppLinks\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Facebook\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\OxyPlot.Xamarin.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\OxyPlot.Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Plugin.CurrentActivity\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Plugin.Geolocator\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Plugin.Permissions\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Facebook.AudienceNetwork\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Facebook\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.Design\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.MediaRouter\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.Transition\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Bolts.AppLinks/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Facebook/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Facebook.AudienceNetwork/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/OxyPlot.Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/OxyPlot.Xamarin.Android/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Facebook/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Plugin.CurrentActivity/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Plugin.Permissions/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Plugin.Geolocator/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.RecyclerView/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.AppCompat/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.Design/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.MediaRouter/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.CardView/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.Transition/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Bolts.AppLinks\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Facebook\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\OxyPlot.Xamarin.Android\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\OxyPlot.Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.CurrentActivity\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Geolocator\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Permissions\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Facebook.AudienceNetwork\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Facebook\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Bolts.AppLinks/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Facebook/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Facebook.AudienceNetwork/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/OxyPlot.Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/OxyPlot.Xamarin.Android/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Facebook/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.CurrentActivity/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.Permissions/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.Geolocator/library_project_imports/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Bolts.AppLinks.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Facebook.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\OxyPlot.Xamarin.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\OxyPlot.Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Plugin.CurrentActivity.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Plugin.Geolocator.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Plugin.Permissions.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Facebook.AudienceNetwork.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Facebook.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.Design.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.MediaRouter.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\__library_projects__\Xamarin.Android.Support.Transition.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Bolts.AppLinks.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Facebook.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Facebook.AudienceNetwork.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/OxyPlot.Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/OxyPlot.Xamarin.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Facebook.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Plugin.CurrentActivity.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Plugin.Permissions.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Plugin.Geolocator.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.Design.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.MediaRouter.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.CardView.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ignacioojanguren/Documents/Boston University/CS503/math_game/Xamarin/WritePadSDKAndroidSample/XamarinSDKSample/obj/Debug/__library_projects__/Xamarin.Android.Support.Transition.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

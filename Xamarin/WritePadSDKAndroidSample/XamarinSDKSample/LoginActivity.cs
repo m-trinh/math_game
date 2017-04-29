@@ -10,6 +10,8 @@ using Xamarin.Facebook.Login.Widget;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Threading;
+using Plugin.Geolocator;
+using System.Net.Http;
 
 namespace WritePadXamarinSample
 {
@@ -36,9 +38,12 @@ namespace WritePadXamarinSample
 				//Create a new user
 				userLoggedInInfo = new UserInfo(e.mProfile.FirstName, e.mProfile.LastName, e.mProfile.Name);
 
-				newUser = new UserInfo();
-				newUser.FirstName = e.mProfile.FirstName;
-				newUser.LastName = e.mProfile.LastName;
+				User.firstName = e.mProfile.FirstName;
+				User.lastName = e.mProfile.LastName;
+				User.username = e.mProfile.FirstName + e.mProfile.LastName;
+
+				var locator = CrossGeolocator.Current;
+				locator.DesiredAccuracy = 50;
 
 				var docsFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
 				var pathToDatabase = System.IO.Path.Combine(docsFolder, "MathAttackDatabase.db");
@@ -139,8 +144,7 @@ namespace WritePadXamarinSample
 		public void OnCompleted(JSONObject p0, GraphResponse p1)
 		{
 			var obj = JObject.Parse((string)p0);
-
- 			this.newUser.Email = (string)obj["email"];
+ 			User.email = (string)obj["email"];
 			loadNewActivity();
 		}
 		/**
@@ -151,16 +155,12 @@ namespace WritePadXamarinSample
 		private void loadNewActivity()
 		{
 			//In order to pass the information through activities we will have to use JSON. Cast the user to a json document
-			Console.Write(newUser.ToString());
 			//Pass to the new activity the username and the last name of the user
 			var activity2 = new Intent(this, typeof(Activity2));
-			activity2.PutExtra("UserName", newUser.FirstName);
-			activity2.PutExtra("Email", newUser.Email);
-			activity2.PutExtra("UserLastName", newUser.LastName);
 
 			//Save in the database the values of the user
 			ConnectToDatabase saveInfo = new ConnectToDatabase();
-			saveInfo.saveUser(newUser);
+			saveInfo.saveUser();
 
 			//Start the new activity which is the home page.
 			StartActivity(activity2);
@@ -188,5 +188,6 @@ namespace WritePadXamarinSample
 			mProfile = profile;
 		}
 	}
+
 
 }

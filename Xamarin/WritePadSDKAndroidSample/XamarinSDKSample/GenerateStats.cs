@@ -33,7 +33,7 @@ namespace WritePadXamarinSample
 
 			//Getting the view that the stats are going to be plotted
 			PlotView view = FindViewById<PlotView> (Resource.Id.plot_view);
-			string username = Intent.GetStringExtra ("UserName");
+			string username = User.username;
 
 			//Create the View
 			view.Model = CreatePlotModel(username);

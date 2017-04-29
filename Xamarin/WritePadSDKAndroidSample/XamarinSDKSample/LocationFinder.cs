@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using Newtonsoft.Json;
 using System.Net.Http;
 using Plugin.Geolocator;
+using System.Threading.Tasks;
 
 namespace WritePadXamarinSample
 {
@@ -13,7 +14,7 @@ namespace WritePadXamarinSample
 		{
 		}
 
-		public async void findPosition()
+		public async Task findPosition()
 		{
 
 			//Instantiate locator and set desired accuracy
@@ -44,6 +45,11 @@ namespace WritePadXamarinSample
 
 				//bind the String to GoogleResults using JsonConvert
 				GoogleResults google = JsonConvert.DeserializeObject<GoogleResults>(json.ToString());
+
+				if (google != null && google.results.Count >= 4)
+					User.location = google.results[3].formatted_address;
+				else
+					User.location = "Not Working";
 
 				//ADD CONNECTION STRING INFO HERE
 				//

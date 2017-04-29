@@ -5,6 +5,18 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+    <TextView
+        android:text="Your Statistics"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:layout_margin="10dp" />
+    <OxyPlot.Xamarin.Android.PlotView
+        android:id="@+id/plot_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"
@@ -42,18 +54,6 @@
                     android:layout_height="match_parent"
                     android:id="@+id/leaderboards" />
             </ScrollView>
-            <TextView
-                android:text="Your Statistics"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView1"
-                android:gravity="center"
-                android:layout_margin="10dp" />
-            <OxyPlot.Xamarin.Android.PlotView
-                android:id="@+id/plot_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

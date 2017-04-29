@@ -40,8 +40,7 @@ namespace WritePadXamarinSample
 			*/
             usernameTextBox = FindViewById<TextView>(Resource.Id.username);
             //Receiving the information of the user from LoginActivity.
-            username = Intent.GetStringExtra("UserName");
-            usernameTextBox.Text = username;
+			usernameTextBox.Text = User.username;
 
             /*
 			FACEBOOK CONNECTION

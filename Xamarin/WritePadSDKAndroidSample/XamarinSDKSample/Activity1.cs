@@ -89,7 +89,7 @@ namespace WritePadXamarinSample
 			goBack = FindViewById<Button>(Resource.Id.goBack);
 
 			//Starts the game!
-			ReadyGoStop.Text = "GO!";
+			//ReadyGoStop.Text = "GO!";
 			bool rightAnswer = false;
 			ShowQuestions(rightAnswer);
 

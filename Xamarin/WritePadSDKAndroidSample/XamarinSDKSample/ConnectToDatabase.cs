@@ -23,20 +23,17 @@ public class ConnectToDatabase
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
 				connection.Open ();
 				StringBuilder sb = new StringBuilder ();
-				sb.Append ($"EXEC dbo.usp_InsertIntoMadMinuteHistory '{username}', {correctGuesses}, {incorrectGuesses}");
+				sb.Append ($"EXEC dbo.usp_InsertIntoMadMinuteHistory '{User.username}', {correctGuesses}, {incorrectGuesses}, '{User.location}' ");
 				String sql = sb.ToString ();
 
 				using (SqlCommand command = new SqlCommand (sql, connection)) {
-					using (SqlDataReader reader = command.ExecuteReader ()) {
-						while (reader.Read ()) {
-							Console.WriteLine ("{0} {1}", reader.GetString (0), reader.GetString (1));
-						}
-					}
+					command.ExecuteNonQuery();
 				}
 				connection.Close ();
 			}
 
-		} catch (SqlException) {
+		} catch (SqlException e) {
+			string exception = e.ToString();
 			return false;
 		} 
 
@@ -44,7 +41,7 @@ public class ConnectToDatabase
 	}
 
 
-	public bool saveUser (UserInfo user)
+	public bool saveUser ()
 	{
 		try {
 			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
@@ -65,7 +62,7 @@ public class ConnectToDatabase
 				{1},
 				{user.firstName},
 				{user.lastName}*/
-				sb.Append($"execute usp_Login '{user.FirstName+user.LastName}','{user.Email}',null,{1},'{user.FirstName}','{user.LastName}','Boston, MA'");
+				sb.Append($"execute usp_Login '{User.username}','{User.email}',null,{1},'{User.firstName}','{User.lastName}','{User.location}'");
 				String sql = sb.ToString ();
 
 				using (SqlCommand command = new SqlCommand (sql, connection))
