@@ -18,7 +18,7 @@
     <activity android:label="WritePad Options" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.WritePadOptions" />
     <activity android:label="Activity3" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.SATLevelChoose" />
     <activity android:label="WritePadXamarinSample" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.MadMinute" />
-    <activity android:icon="@drawable/icon" android:label="LoginActivity" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.LoginActivity">
+    <activity android:icon="@drawable/icon" android:label="MathAttack" android:name="md51e5a67ed1fcf13cff747b9ea3148811f.LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -54,6 +54,13 @@
                 android:textSize="30dp"
                 android:gravity="center" />
         </LinearLayout>
+        <TextView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ready_text"
+            android:text="recognize"
+            tools:visibility="gone"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:textColor="#01ffffff" />
         <WritePadXamarinSample.InkView
             android:id="@+id/ink_view"
             android:background="#F0F088"

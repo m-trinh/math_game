@@ -2,12 +2,20 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\QuestionActivity.cs" relfile="XamarinSDKSample\QuestionActivity.cs" line="231" column="1" />
+      <Breakpoint file="F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\QuestionActivity.cs" relfile="XamarinSDKSample\QuestionActivity.cs" line="225" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.AVD_GalaxyNexus_ToolsForApacheCordova" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSDKSample\SATLevelChoose.cs">
     <Files>
-      <File FileName="XamarinSDKSample\Resources\drawable\border.xml" Line="3" Column="55" />
+      <File FileName="XamarinSDKSample\Resources\drawable\border.xml" Line="3" Column="58" />
+      <File FileName="XamarinSDKSample\MadMinute.cs" Line="162" Column="34" />
+      <File FileName="XamarinSDKSample\Home.cs" Line="38" Column="50" />
+      <File FileName="XamarinSDKSample\QuestionActivity.cs" Line="225" Column="1" />
+      <File FileName="XamarinSDKSample\LoginActivity.cs" Line="137" Column="1" />
+      <File FileName="XamarinSDKSample\SATLevelChoose.cs" Line="93" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

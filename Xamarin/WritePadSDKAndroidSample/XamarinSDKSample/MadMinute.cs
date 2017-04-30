@@ -104,9 +104,9 @@ namespace WritePadXamarinSample
 			readyText.MovementMethod = new ScrollingMovementMethod ();
 			//readyTextTitle.Text = Resources.GetString (Resource.String.Title) + " (" + WritePadAPI.getLanguageName () + ")";
 
-			button.Click += delegate {
-				readyText.Text = inkView.Recognize (false);
-			};
+			//button.Click += delegate {
+			//	readyText.Text = inkView.Recognize (false);
+			//};
 
 			goBack.Click += delegate {
 				StartActivity (typeof (Home));
@@ -162,7 +162,7 @@ namespace WritePadXamarinSample
 				readyText.Text = inkView.Recognize (false);
 				rightAnswer = validateAnswer (newQuestion);
 				newQuestion = createNewQuestion (rightAnswer);
-
+				inkView.cleanView (true);
 			};
 		}
 

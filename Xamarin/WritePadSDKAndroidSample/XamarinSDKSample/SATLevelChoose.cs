@@ -78,19 +78,19 @@ namespace WritePadXamarinSample
                 designateButton (level1, "Algebra", "Easy", 0);
 			}
 
-			if (starsByLevel [0] == 5) {
+			if (starsByLevel [1] == 5) {
                 chooseMode (level2, "Geometry", "Easy");
 			} else {
 				designateButton (level2, "Geometry", "Easy", 0);
 			}
 
-			if (starsByLevel [0] == 5) {
+			if (starsByLevel [2] == 5) {
                 chooseMode (level3, "Trigonometry", "Easy");
 			} else {
 				designateButton (level3, "Trigonometry", "Easy", 0);
 			}
 
-			if (starsByLevel [0] == 5) {
+			if (starsByLevel [3] == 5) {
                 chooseMode (level4, "Challenge", "Easy");
 			} else {
 				designateButton (level4, "Challenge", "Easy", 0);

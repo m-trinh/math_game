@@ -99,21 +99,21 @@ namespace WritePadXamarinSample
 			{
 				if (i == correctAns) 
 				{
-					RunOnUiThread (() => answerButtons [correctAns].Text = (question.Correct));
+					answerButtons [correctAns].Text = (question.Correct);
 					answerButtons [correctAns].Click += sendCorrect;
 				}
 				else
 				{
-					RunOnUiThread (() => answerButtons [i].Text = (wrongAns[wrongAnsIndex]));
+					answerButtons [i].Text = (wrongAns[wrongAnsIndex]);
 					wrongAnsIndex++;
 					answerButtons [i].Click += sendIncorrect;
 				}
 
-				if (currentQuestion == questions.Count - 2) 
-				{
-					answerButtons [i].Click -= nextQuestion;
-					answerButtons [i].Click += showResults;
-				}
+				//if (currentQuestion == questions.Count - 1) 
+				//{
+				//	answerButtons [i].Click -= nextQuestion;
+				//	answerButtons [i].Click += showResults;
+				//}
 			}
 			currentQuestion++;
 		}
@@ -138,10 +138,10 @@ namespace WritePadXamarinSample
 			answerButtons = new Button [] { buttonA, buttonB, buttonC, buttonD };
 
 
-			for (int i = 0; i < answerButtons.Length; i++) {
-				answerButtons [i].Click += nextQuestion;
-				//userAnswers.Add (answerButtons [i].Text);
-			}
+			//for (int i = 0; i < answerButtons.Length; i++) {
+			//	answerButtons [i].Click += nextQuestion;
+			//	//userAnswers.Add (answerButtons [i].Text);
+			//}
 		}
 
 		//public override Dialog onCreateDialog (Bundle savedInstanceState)
@@ -221,14 +221,35 @@ namespace WritePadXamarinSample
 
 		void sendCorrect (object sender, EventArgs ea)
 		{
-            individualResults[currentQuestion] = true;
+            individualResults[currentQuestion-1] = true;
 			sendData (1);
 		}
 
 		void sendIncorrect (object sender, EventArgs ea)
 		{
-            individualResults[currentQuestion] = false;
+            individualResults[currentQuestion-1] = false;
 			sendData (0);
+		}
+
+		public void sendData (int correct)
+		{
+			elapsedTime = stopwatch.Elapsed.TotalSeconds;
+			stopwatch.Restart ();
+			SqlConnectionStringBuilder builder = ConnString.Builder;
+			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
+				connection.Open ();
+				StringBuilder sb = new StringBuilder ();
+				sb.Append ($"Exec usp_InsertIntoSAT_History {questions [currentQuestion - 1].Row_id}, {username}, {correct}, {elapsedTime}");
+				string query = sb.ToString ();
+				SqlCommand cmd = new SqlCommand (query, connection);
+				cmd.ExecuteNonQuery ();
+			}
+
+			if (currentQuestion == questions.Count) {
+				showResults ();
+			} else {
+				showQuestion (questions [currentQuestion]);
+			}
 		}
 
 		void nextQuestion (object sender, EventArgs ea)
@@ -236,7 +257,7 @@ namespace WritePadXamarinSample
 			showQuestion (questions [currentQuestion]);
 		}
 
-        void showResults(object sender, EventArgs ea)
+        public void showResults()
         {
 			chooseResultView();
 
@@ -340,7 +361,7 @@ namespace WritePadXamarinSample
 
 
 			for (int i = 0; i < individualResults.Length; i++) {
-				results [i].Text = userAnswers [i];
+				//results [i].Text = userAnswers [i];
 				//results [i].Click += delegate {
 				//	ImageView previousQuestion = new ImageView (this);
 				//	setImageView (questions [i], previousQuestion);
@@ -352,10 +373,10 @@ namespace WritePadXamarinSample
 				//};
 				if (individualResults [i]) {
 					correct++;
-					//results [i].Text = "Correct";
+					results [i].Text = "Correct";
 					results [i].SetBackgroundColor (Color.Green);
 				} else {
-					//results [i].Text = "Wrong";
+					results [i].Text = "Wrong";
 					results [i].SetBackgroundColor (Color.Red);
 				}
 			}
@@ -364,21 +385,7 @@ namespace WritePadXamarinSample
 			return correct;
 		}
 
-		public void sendData (int correct)
-		{
-			elapsedTime = stopwatch.Elapsed.TotalSeconds;
-			stopwatch.Restart();
-			SqlConnectionStringBuilder builder = ConnString.Builder;
-			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) 
-			{
-				connection.Open ();
-				StringBuilder sb = new StringBuilder ();
-				sb.Append ($"Exec usp_InsertIntoSAT_History {questions[currentQuestion].Row_id}, {username}, {correct}, {elapsedTime}");
-				string query = sb.ToString ();
-				SqlCommand cmd = new SqlCommand (query, connection);
-				cmd.ExecuteNonQuery ();
-			}
-		}
+
 
 		//public List<Question> shuffleList (List<Question> list)
 		//{

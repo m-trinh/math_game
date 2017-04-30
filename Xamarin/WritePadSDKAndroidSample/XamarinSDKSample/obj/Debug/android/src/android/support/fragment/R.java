@@ -3186,9 +3186,9 @@ containing a value of this type.
         public static final int stars5=0x7f020134;
     }
     public static final class id {
-        public static final int ClearButton=0x7f0800b7;
+        public static final int ClearButton=0x7f0800b6;
         public static final int ReadyGoStop=0x7f0800b1;
-        public static final int RecognizeButton=0x7f0800b6;
+        public static final int RecognizeButton=0x7f0800bd;
         public static final int action0=0x7f0800dc;
         public static final int action_bar=0x7f080070;
         public static final int action_bar_activity_content=0x7f080005;
@@ -3247,7 +3247,7 @@ containing a value of this type.
         public static final int confirmation_code=0x7f080080;
         public static final int containerLayer=0x7f0800af;
         public static final int contentPanel=0x7f08005a;
-        public static final int countdownStart=0x7f0800ba;
+        public static final int countdownStart=0x7f0800b9;
         public static final int custom=0x7f080061;
         public static final int customPanel=0x7f080060;
         public static final int decor_content_parent=0x7f08006e;
@@ -3277,7 +3277,7 @@ containing a value of this type.
         public static final int finalTotalScore=0x7f0800b0;
         public static final int finish=0x7f08010a;
         public static final int fixed=0x7f080029;
-        public static final int goBack=0x7f0800bb;
+        public static final int goBack=0x7f0800ba;
         public static final int gridLayout1=0x7f0800a4;
         public static final int hint=0x7f0800f6;
         public static final int home=0x7f080009;
@@ -3366,7 +3366,7 @@ containing a value of this type.
         public static final int ready=0x7f080099;
         public static final int ready_text=0x7f0800b4;
         public static final int relativeLayout1=0x7f08009a;
-        public static final int replayGame=0x7f0800bc;
+        public static final int replayGame=0x7f0800bb;
         public static final int result1=0x7f080100;
         public static final int result10=0x7f080109;
         public static final int result2=0x7f080101;
@@ -3402,7 +3402,7 @@ containing a value of this type.
         public static final int search_voice_btn=0x7f08007d;
         public static final int select_dialog_listview=0x7f08007e;
         public static final int separate_letters=0x7f0800f0;
-        public static final int shareButton=0x7f0800bd;
+        public static final int shareButton=0x7f0800bc;
         public static final int shortcut=0x7f080068;
         public static final int showCustom=0x7f080034;
         public static final int showHome=0x7f080035;
@@ -3423,7 +3423,7 @@ containing a value of this type.
         public static final int start=0x7f08001d;
         public static final int status_bar_latest_event_content=0x7f0800de;
         public static final int submenuarrow=0x7f08006a;
-        public static final int submitAnswer=0x7f0800b8;
+        public static final int submitAnswer=0x7f0800b7;
         public static final int submit_area=0x7f08007b;
         public static final int tabMode=0x7f080031;
         public static final int text=0x7f0800ee;
@@ -3442,7 +3442,7 @@ containing a value of this type.
         public static final int titleDividerNoCustom=0x7f080065;
         public static final int title_template=0x7f080063;
         public static final int top=0x7f08001e;
-        public static final int topLayerCount=0x7f0800b9;
+        public static final int topLayerCount=0x7f0800b8;
         public static final int topPanel=0x7f080062;
         public static final int touch_outside=0x7f08008c;
         public static final int traininggame=0x7f08009f;

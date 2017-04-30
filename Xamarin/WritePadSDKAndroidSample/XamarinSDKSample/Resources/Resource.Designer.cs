@@ -3037,8 +3037,8 @@ namespace WritePadXamarinSample
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0800b5
-			public const int ClearButton = 2131230901;
+			// aapt resource value: 0x7f0800b6
+			public const int ClearButton = 2131230902;
 			
 			// aapt resource value: 0x7f0800b1
 			public const int ReadyGoStop = 2131230897;
@@ -3220,8 +3220,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08005a
 			public const int contentPanel = 2131230810;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int countdownStart = 2131230904;
+			// aapt resource value: 0x7f0800b9
+			public const int countdownStart = 2131230905;
 			
 			// aapt resource value: 0x7f080061
 			public const int custom = 2131230817;
@@ -3310,8 +3310,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080029
 			public const int @fixed = 2131230761;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int goBack = 2131230905;
+			// aapt resource value: 0x7f0800ba
+			public const int goBack = 2131230906;
 			
 			// aapt resource value: 0x7f0800a4
 			public const int gridLayout1 = 2131230884;
@@ -3340,8 +3340,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f0800e6
 			public const int info = 2131230950;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int ink_view = 2131230900;
+			// aapt resource value: 0x7f0800b5
+			public const int ink_view = 2131230901;
 			
 			// aapt resource value: 0x7f080047
 			public const int inline = 2131230791;
@@ -3571,14 +3571,14 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080099
 			public const int ready = 2131230873;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int ready_text = 2131230908;
+			// aapt resource value: 0x7f0800b4
+			public const int ready_text = 2131230900;
 			
 			// aapt resource value: 0x7f08009a
 			public const int relativeLayout1 = 2131230874;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int replayGame = 2131230906;
+			// aapt resource value: 0x7f0800bb
+			public const int replayGame = 2131230907;
 			
 			// aapt resource value: 0x7f080100
 			public const int result1 = 2131230976;
@@ -3685,8 +3685,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f0800f0
 			public const int separate_letters = 2131230960;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int shareButton = 2131230907;
+			// aapt resource value: 0x7f0800bc
+			public const int shareButton = 2131230908;
 			
 			// aapt resource value: 0x7f080068
 			public const int shortcut = 2131230824;
@@ -3748,8 +3748,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08006a
 			public const int submenuarrow = 2131230826;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int submitAnswer = 2131230902;
+			// aapt resource value: 0x7f0800b7
+			public const int submitAnswer = 2131230903;
 			
 			// aapt resource value: 0x7f08007b
 			public const int submit_area = 2131230843;
@@ -3805,8 +3805,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08001e
 			public const int top = 2131230750;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int topLayerCount = 2131230903;
+			// aapt resource value: 0x7f0800b8
+			public const int topLayerCount = 2131230904;
 			
 			// aapt resource value: 0x7f080062
 			public const int topPanel = 2131230818;
