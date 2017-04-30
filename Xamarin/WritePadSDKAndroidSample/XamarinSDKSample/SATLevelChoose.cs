@@ -131,5 +131,11 @@ namespace WritePadXamarinSample
 
 			return QuestionActivity;
 		}
+
+		public override void OnBackPressed ()
+		{
+			//Make sure back button returns to Home instead of to the SAT activity
+			StartActivity (typeof (Home));
+		}
 	}
 }

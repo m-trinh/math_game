@@ -271,15 +271,23 @@ namespace WritePadXamarinSample
 
 				message += " Think you can beat me?";
 
-				ShareLinkContent content = new ShareLinkContent.Builder ().
-										   SetContentTitle ("Mad Minute Mode! MathAttack Game").
-										   SetContentDescription (message).
-										   Build ();
+				var fbMessage = FindViewById<TextView> (Resource.Id.facebookMessage);
+				fbMessage.Text = message;
+
+				Bitmap returnedBitmap = Bitmap.CreateBitmap (fbMessage.Width, fbMessage.Height, Bitmap.Config.Argb8888);
+				Canvas canvas = new Canvas (returnedBitmap);
+				fbMessage.Draw(canvas);
+
+				SharePhoto photo = (Xamarin.Facebook.Share.Model.SharePhoto) new SharePhoto.Builder ().
+						SetBitmap (returnedBitmap).
+						Build ();
+				SharePhotoContent content = new SharePhotoContent.Builder ()
+						.AddPhoto (photo)
+						.Build();
 				sharingButton.ShareContent = content;
 
 				return;
 			}
 		}
-
 	}
 }

@@ -7,6 +7,9 @@ namespace WritePadXamarinSample
 	[Activity (Label = "ChallengeQuestionActivity")]
 	public class ChallengeQuestionActivity : QuestionActivity
 	{
+		/* This activity inherits from QuestionActivity. It works almost the exact same way, except there is some
+		 * logic to deal with the additional questions
+		 */
 		public override void chooseResultView ()
 		{
 			SetContentView (Resource.Layout.SATChallengeResults);
@@ -84,6 +87,17 @@ namespace WritePadXamarinSample
 					results [i].SetBackgroundColor (Color.Red);
 				}
 			}
+
+			results [0].Click += delegate { showPreviousQuestion (0); };
+			results [1].Click += delegate { showPreviousQuestion (1); };
+			results [2].Click += delegate { showPreviousQuestion (2); };
+			results [3].Click += delegate { showPreviousQuestion (3); };
+			results [4].Click += delegate { showPreviousQuestion (4); };
+			results [5].Click += delegate { showPreviousQuestion (5); };
+			results [6].Click += delegate { showPreviousQuestion (6); };
+			results [7].Click += delegate { showPreviousQuestion (7); };
+			results [8].Click += delegate { showPreviousQuestion (8); };
+			results [9].Click += delegate { showPreviousQuestion (9); };
 
 			return correct;
 		}

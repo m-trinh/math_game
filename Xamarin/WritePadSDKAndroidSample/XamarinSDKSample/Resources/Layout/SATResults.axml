@@ -9,7 +9,7 @@
     <ImageView
         android:src="@android:drawable/ic_menu_gallery"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:id="@+id/starResult"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/resultMessage"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:gravity="center_horizontal" />
     <TextView
         android:text="Experience"
@@ -31,7 +31,8 @@
         android:gravity="center"
         android:padding="5dp"
         android:textColor="#ffffffff"
-        android:background="#fff2bb18" />
+        android:background="#fff2bb18"
+        android:layout_marginBottom="5dp" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -194,5 +195,6 @@
         android:id="@+id/finish"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#ffc33f3f" />
+        android:background="#ffc33f3f"
+        android:layout_marginTop="5dp" />
 </LinearLayout>

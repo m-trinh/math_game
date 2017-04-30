@@ -199,6 +199,7 @@ F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Plugin.Geolocator.pdb
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Plugin.Geolocator.xml
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Plugin.Geolocator.dll.mdb
+F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePadXamarinSample.csprojResolveAssemblyReference.cache
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Compat.dll
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.v7.RecyclerView.dll
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\XbdMerge\Xamarin.Android.Support.Vector.Drawable.dll

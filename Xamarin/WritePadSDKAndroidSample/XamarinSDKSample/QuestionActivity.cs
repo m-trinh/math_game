@@ -293,7 +293,7 @@ namespace WritePadXamarinSample
             var finish = FindViewById<Button>(Resource.Id.finish);
             finish.Click += delegate
             {
-                StartActivity(typeof(Home));
+				StartActivity(typeof(SATLevelChoose));
             };
         }
 
@@ -355,15 +355,7 @@ namespace WritePadXamarinSample
 
 			for (int i = 0; i < individualResults.Length; i++) {
 				//results [i].Text = userAnswers [i];
-				//results [i].Click += delegate {
-				//	ImageView previousQuestion = new ImageView (this);
-				//	setImageView (questions [i], previousQuestion);
-				//	AlertDialog.Builder builder = new AlertDialog.Builder (this);
-				//	builder.SetTitle ("Question");
-				//	builder.SetView (previousQuestion);
-				//	builder.SetPositiveButton ("Okay", delegate { builder.Dispose (); });
-				//	builder.Show ();
-				//};
+				//results [i].Click += showPreviousQuestion;
 				if (individualResults [i]) {
 					correct++;
 					results [i].Text = "Correct";
@@ -374,7 +366,25 @@ namespace WritePadXamarinSample
 				}
 			}
 
+			//This is done in this manner instead of a for loop because I kept getting a ArgumentOutOfBounds exception
+			results [0].Click += delegate { showPreviousQuestion (0); };
+			results [1].Click += delegate { showPreviousQuestion (1); };
+			results [2].Click += delegate { showPreviousQuestion (2); };
+			results [3].Click += delegate { showPreviousQuestion (3); };
+			results [4].Click += delegate { showPreviousQuestion (4); };
+
 			return correct;
+		}
+
+		public void showPreviousQuestion (int num)
+		{
+			ImageView previousQuestion = new ImageView (this);
+			setImageView (questions [num], previousQuestion);
+			AlertDialog.Builder builder = new AlertDialog.Builder (this);
+			builder.SetTitle ("Question");
+			builder.SetView (previousQuestion);
+			builder.SetPositiveButton ("Okay", delegate { builder.Dispose (); });
+			builder.Show ();
 		}
     }
 }

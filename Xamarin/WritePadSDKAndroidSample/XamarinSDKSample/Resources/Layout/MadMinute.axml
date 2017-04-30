@@ -103,12 +103,17 @@
         <TextView
             android:id="@+id/countdownStart"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="150dp"
             android:text="Final Score:"
             android:layout_gravity="center_vertical"
-            android:textColor="@android:color/black"
+            android:textColor="#ffffffff"
             android:textSize="40dp"
-            android:gravity="center" />
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ff3d6ea0" />
         <TextView
             android:id="@+id/experience"
             android:layout_width="match_parent"
@@ -121,21 +126,39 @@
         <Button
             android:id="@+id/goBack"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:text="Go Back"
             android:background="#ffc33f3f"
-            android:layout_marginBottom="5dp" />
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
         <Button
             android:id="@+id/replayGame"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:text="Replay"
             android:background="#ffc33f3f"
-            android:layout_marginBottom="5dp" />
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <TextView
+            android:id="@+id/facebookMessage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Facebook Message"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ff3d6ea0" />
         <com.facebook.share.widget.ShareButton
             android:id="@+id/shareButton"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_margin="10dp" />
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
     </LinearLayout>
 </FrameLayout>
