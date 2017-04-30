@@ -2,10 +2,10 @@ WritePadXamarinSample.Activity1, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cf
 WritePadXamarinSample.Activity1, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.Activity1
 WritePadXamarinSample.Activity1;md51e5a67ed1fcf13cff747b9ea3148811f.Activity1
 writepadxamarinsample.Activity1;md51e5a67ed1fcf13cff747b9ea3148811f.Activity1
-WritePadXamarinSample.Activity2, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.Activity2
-WritePadXamarinSample.Activity2, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.Activity2
-WritePadXamarinSample.Activity2;md51e5a67ed1fcf13cff747b9ea3148811f.Activity2
-writepadxamarinsample.Activity2;md51e5a67ed1fcf13cff747b9ea3148811f.Activity2
+WritePadXamarinSample.Home, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.Home
+WritePadXamarinSample.Home, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.Home
+WritePadXamarinSample.Home;md51e5a67ed1fcf13cff747b9ea3148811f.Home
+writepadxamarinsample.Home;md51e5a67ed1fcf13cff747b9ea3148811f.Home
 WritePadXamarinSample.InkView, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.InkView
 WritePadXamarinSample.InkView, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.InkView
 WritePadXamarinSample.InkView;md51e5a67ed1fcf13cff747b9ea3148811f.InkView
@@ -22,10 +22,10 @@ WritePadXamarinSample.WritePadOptions, WritePad SDK Xamarin Sample;md51e5a67ed1f
 WritePadXamarinSample.WritePadOptions, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.WritePadOptions
 WritePadXamarinSample.WritePadOptions;md51e5a67ed1fcf13cff747b9ea3148811f.WritePadOptions
 writepadxamarinsample.WritePadOptions;md51e5a67ed1fcf13cff747b9ea3148811f.WritePadOptions
-WritePadXamarinSample.Activity3, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.Activity3
-WritePadXamarinSample.Activity3, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.Activity3
-WritePadXamarinSample.Activity3;md51e5a67ed1fcf13cff747b9ea3148811f.Activity3
-writepadxamarinsample.Activity3;md51e5a67ed1fcf13cff747b9ea3148811f.Activity3
+WritePadXamarinSample.SATLevelChoose, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.SATLevelChoose
+WritePadXamarinSample.SATLevelChoose, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.SATLevelChoose
+WritePadXamarinSample.SATLevelChoose;md51e5a67ed1fcf13cff747b9ea3148811f.SATLevelChoose
+writepadxamarinsample.SATLevelChoose;md51e5a67ed1fcf13cff747b9ea3148811f.SATLevelChoose
 WritePadXamarinSample.MadMinute, WritePad SDK Xamarin Sample;md51e5a67ed1fcf13cff747b9ea3148811f.MadMinute
 WritePadXamarinSample.MadMinute, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null;md51e5a67ed1fcf13cff747b9ea3148811f.MadMinute
 WritePadXamarinSample.MadMinute;md51e5a67ed1fcf13cff747b9ea3148811f.MadMinute

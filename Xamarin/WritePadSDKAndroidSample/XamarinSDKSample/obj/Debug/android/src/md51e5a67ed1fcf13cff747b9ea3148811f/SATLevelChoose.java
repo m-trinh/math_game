@@ -1,7 +1,7 @@
 package md51e5a67ed1fcf13cff747b9ea3148811f;
 
 
-public class Activity3
+public class SATLevelChoose
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class Activity3
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("WritePadXamarinSample.Activity3, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null", Activity3.class, __md_methods);
+		mono.android.Runtime.register ("WritePadXamarinSample.SATLevelChoose, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null", SATLevelChoose.class, __md_methods);
 	}
 
 
-	public Activity3 () throws java.lang.Throwable
+	public SATLevelChoose () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == Activity3.class)
-			mono.android.TypeManager.Activate ("WritePadXamarinSample.Activity3, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == SATLevelChoose.class)
+			mono.android.TypeManager.Activate ("WritePadXamarinSample.SATLevelChoose, WritePad SDK Xamarin Sample, Version=1.0.0.27, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -70,7 +70,6 @@ namespace WritePadXamarinSample
 
 			//Get the username from the home activity.
 			//The values are passed as string
-			username = Intent.GetStringExtra("UserName");
 
 			//Initialize the WritePad API
 			WritePadAPI.recoInit(BaseContext);
@@ -89,7 +88,7 @@ namespace WritePadXamarinSample
 			goBack = FindViewById<Button>(Resource.Id.goBack);
 
 			//Starts the game!
-			ReadyGoStop.Text = "GO!";
+			//ReadyGoStop.Text = "GO!";
 			bool rightAnswer = false;
 			ShowQuestions(rightAnswer);
 
@@ -103,10 +102,7 @@ namespace WritePadXamarinSample
 
 			goBack.Click += delegate
 			{
-				var activity2 = new Intent(this, typeof(Activity2));
-				activity2.PutExtra("UserName", username);
-				//activity2.PutExtra ("UserEmail", e.mProfile.Email);
-				StartActivity(activity2);
+				StartActivity(typeof(Home));
 			};
 
 			replayGame.Click += delegate

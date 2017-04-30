@@ -2,37 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\LocationFinder.cs" relfile="XamarinSDKSample\LocationFinder.cs" line="30" column="1" />
-      <Breakpoint file="F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\LocationFinder.cs" relfile="XamarinSDKSample\LocationFinder.cs" line="46" column="1" />
-      <Breakpoint file="F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\LoginActivity.cs" relfile="XamarinSDKSample\LoginActivity.cs" line="104" column="4" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.TA095006YL" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSDKSample\MainApplication.cs">
+  <MonoDevelop.Ide.ItemProperties.WritePadXamarinSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.AVD_GalaxyNexus_ToolsForApacheCordova" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="XamarinSDKSample\WritePadXamarinSample.csproj" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\ChallengeQuestionActivity.cs" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\Activity2.cs" Line="13" Column="30" />
-      <File FileName="XamarinSDKSample\Resources\Resource.Designer.cs" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\GenerateStats.cs" Line="36" Column="19" />
-      <File FileName="XamarinSDKSample\ConnectToDatabase.cs" Line="80" Column="48" />
-      <File FileName="XamarinSDKSample\ConnString.cs" Line="25" Column="1" />
-      <File FileName="XamarinSDKSample\LeaderboardActivity.cs" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\Resources\drawable\border.xml" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\UserInfo.cs" Line="21" Column="2" />
-      <File FileName="XamarinSDKSample\LocationFinder.cs" Line="74" Column="1" />
-      <File FileName="XamarinSDKSample\Activity1.cs" Line="183" Column="4" />
-      <File FileName="XamarinSDKSample\MadMinute.cs" Line="235" Column="4" />
-      <File FileName="XamarinSDKSample\QuestionActivity.cs" Line="240" Column="1" />
-      <File FileName="XamarinSDKSample\User.cs" Line="8" Column="1" />
-      <File FileName="XamarinSDKSample\LoginActivity.cs" Line="130" Column="1" />
-      <File FileName="XamarinSDKSample\RandomQuestions.cs" Line="49" Column="40" />
-      <File FileName="XamarinSDKSample\packages.config" Line="35" Column="12" />
-      <File FileName="XamarinSDKSample\Question.cs" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\Activity3.cs" Line="1" Column="1" />
-      <File FileName="XamarinSDKSample\Properties\AndroidManifest.xml" Line="17" Column="12" />
-      <File FileName="XamarinSDKSample\MainApplication.cs" Line="48" Column="1" />
+      <File FileName="XamarinSDKSample\Resources\drawable\border.xml" Line="3" Column="55" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

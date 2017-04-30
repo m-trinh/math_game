@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Android.Graphics;
 using Android.Content;
 using Xamarin.Facebook.Login;
+using Xamarin.Facebook.Share.Model;
+using Xamarin.Facebook.Share.Widget;
 
 namespace WritePadXamarinSample
 {
@@ -37,7 +39,8 @@ namespace WritePadXamarinSample
 		private int correctAnswers = 0;
 		private string difficulty = "Easy";
 		private int incorrectAnswers = 0;
-
+		private ShareButton sharingButton;
+		private string mode;
 
 		protected override void OnPause ()
 		{
@@ -58,8 +61,7 @@ namespace WritePadXamarinSample
 			SetContentView (Resource.Layout.MadMinute);
 
 			//Get the username
-			username = Intent.GetStringExtra ("UserName");
-
+			username = User.username;
 
 			WritePadAPI.recoInit (BaseContext);
 			WritePadAPI.initializeFlags (BaseContext);
@@ -77,7 +79,7 @@ namespace WritePadXamarinSample
 			replayGame = FindViewById<Button> (Resource.Id.replayGame);
 			countDownView = FindViewById<TextView> (Resource.Id.time_countdown);
 			goBack = FindViewById<Button> (Resource.Id.goBack);
-
+			sharingButton = FindViewById<ShareButton> (Resource.Id.shareButton);
 
 			countVariable = 3;
 			//calculateTime (countVariable);
@@ -86,9 +88,16 @@ namespace WritePadXamarinSample
 			if (endTime) {
 				return;
 			}
+
+			//If it's normal mode, use timer. If it's training, don't have timer
+			mode = Intent.GetStringExtra ("mode");
+			if (mode == "normal") {
+				int minuteTime = 60;
+				StartCountdownTimer (minuteTime);
+			}
+
 			ReadyGoStop.Text = "GO!";
-			int minuteTime = 60;
-			StartCountdownTimer (minuteTime);
+
 			bool rightAnswer = false;
 			ShowQuestions (rightAnswer);
 
@@ -100,10 +109,7 @@ namespace WritePadXamarinSample
 			};
 
 			goBack.Click += delegate {
-				var activity2 = new Intent (this, typeof (Activity2));
-				activity2.PutExtra ("UserName", username);
-				//activity2.PutExtra ("UserEmail", e.mProfile.Email);
-				StartActivity (activity2);
+				StartActivity (typeof (Home));
 			};
 
 			replayGame.Click += delegate {
@@ -120,6 +126,10 @@ namespace WritePadXamarinSample
 				readyText.Text = "";
 				inkView.cleanView (true);
 			};
+
+			//This allows the player to share the results to his facebook page.
+
+
 		}
 
 		public void restartSettings ()
@@ -131,8 +141,10 @@ namespace WritePadXamarinSample
 			ReadyGoStop.Text = "Go!";
 			finalTotalScore.Text = "Score: 0";
 			countDownView.Text = "60";
-			int minuteTime = 60;
-			StartCountdownTimer (minuteTime);
+			if (mode == "normal") {
+				int minuteTime = 60;
+				StartCountdownTimer (minuteTime);
+			}
 			bool rightAnswer = false;
 			ShowQuestions (rightAnswer);
 		}
@@ -150,6 +162,7 @@ namespace WritePadXamarinSample
 				readyText.Text = inkView.Recognize (false);
 				rightAnswer = validateAnswer (newQuestion);
 				newQuestion = createNewQuestion (rightAnswer);
+
 			};
 		}
 
@@ -218,7 +231,6 @@ namespace WritePadXamarinSample
 				RunOnUiThread (() => countdownView.Text = countVariable.ToString ());
 				countVariable--;
 			} else {
-
 				containerLayer.RemoveView (topLayerCount);
 				timer.Stop ();
 				return;
@@ -241,12 +253,31 @@ namespace WritePadXamarinSample
 				replayGame.Enabled = true;
 				//Show the layer to say it is done
 
+				//Insert game statistic into database
 				ConnectToDatabase insertValues = new ConnectToDatabase ();
 				var storedCorrectly = false;
 				RunOnUiThread (() => storedCorrectly = insertValues.insertToMadMinute (username, totalScore, totalQuestions - totalScore));
 
+				//Increase user experience
+				RunOnUiThread (() => storedCorrectly = insertValues.increaseExperience (totalScore));
+
+				string message = "I got " + totalScore + " answers right under a minute.";
+
+				if (User.average <= totalScore && User.location != null) {
+					message += $" The average in {User.location} is {User.average}.";
+				}
+
+				message += " Think you can beat me?";
+
+				ShareLinkContent content = new ShareLinkContent.Builder ().
+										   SetContentTitle ("Mad Minute Mode! MathAttack Game").
+										   SetContentDescription (message).
+										   Build ();
+				sharingButton.ShareContent = content;
+
 				return;
 			}
 		}
+
 	}
 }

@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="#ff3d6ea0">
     <TextView
         android:text="Mad Minute Leaderboards"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -17,10 +18,11 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="match_parent"
         android:id="@+id/scrollView1"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp">
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"

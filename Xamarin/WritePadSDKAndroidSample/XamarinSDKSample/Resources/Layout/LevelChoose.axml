@@ -3,7 +3,8 @@
     p1:orientation="vertical"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:id="@+id/linearLayout1">
+    p1:id="@+id/linearLayout1"
+    p1:background="#ff3d6ea0">
     <TextView
         p1:text="Pick a Level"
         p1:textAppearance="?android:attr/textAppearanceLarge"
@@ -29,8 +30,8 @@
             p1:layout_width="wrap_content"
             p1:layout_columnWeight="1"
             p1:clickable="true"
-            p1:background="#ff646464"
-            p1:layout_margin="5dp">
+            p1:layout_margin="5dp"
+            p1:background="#ff64bd6d">
             <TextView
                 p1:text="Level 1: Beginner Algebra"
                 p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -38,7 +39,8 @@
                 p1:layout_height="45.0dp"
                 p1:gravity="center"
                 p1:id="@+id/textView2"
-                p1:layout_gravity="center" />
+                p1:layout_gravity="center"
+                p1:textColor="#ffffffff" />
             <ImageView
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -54,7 +56,7 @@
             p1:layout_height="75dp"
             p1:layout_columnWeight="1"
             p1:clickable="true"
-            p1:background="#ff646464"
+            p1:background="#ff64bd6d"
             p1:layout_margin="5dp">
             <TextView
                 p1:text="Level 2: Beginner Geometry"
@@ -63,7 +65,8 @@
                 p1:layout_height="45.0dp"
                 p1:gravity="center"
                 p1:id="@+id/textView3"
-                p1:layout_gravity="center" />
+                p1:layout_gravity="center"
+                p1:textColor="#ffffffff" />
             <ImageView
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -79,7 +82,7 @@
             p1:layout_height="75dp"
             p1:layout_columnWeight="1"
             p1:clickable="true"
-            p1:background="#ff646464"
+            p1:background="#ff64bd6d"
             p1:layout_margin="5dp">
             <TextView
                 p1:text="Level 3: Beginner Trigonometry"
@@ -88,7 +91,8 @@
                 p1:layout_height="45.0dp"
                 p1:gravity="center"
                 p1:id="@+id/textView3"
-                p1:layout_gravity="center" />
+                p1:layout_gravity="center"
+                p1:textColor="#ffffffff" />
             <ImageView
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -104,7 +108,7 @@
             p1:layout_height="75dp"
             p1:layout_columnWeight="1"
             p1:clickable="true"
-            p1:background="#ff646464"
+            p1:background="#ff64bd6d"
             p1:layout_margin="5dp">
             <TextView
                 p1:text="Level 4: Beginner Challenge"
@@ -113,7 +117,8 @@
                 p1:layout_height="45.0dp"
                 p1:gravity="center"
                 p1:id="@+id/textView3"
-                p1:layout_gravity="center" />
+                p1:layout_gravity="center"
+                p1:textColor="#ffffffff" />
             <ImageView
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"

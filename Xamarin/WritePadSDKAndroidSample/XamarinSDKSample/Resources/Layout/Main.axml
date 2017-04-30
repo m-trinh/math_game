@@ -2,7 +2,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/containerLayer"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#ff3d6ea0">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -24,7 +25,8 @@
                 android:layout_width="264dp"
                 android:layout_height="50dp"
                 android:text="READY"
-                android:id="@+id/ReadyGoStop" />
+                android:id="@+id/ReadyGoStop"
+                android:textSize="20dp" />
             <TextView
                 android:id="@+id/time_countdown"
                 android:text="1:00"

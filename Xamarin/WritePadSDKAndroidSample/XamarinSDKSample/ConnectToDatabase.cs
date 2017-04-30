@@ -23,35 +23,81 @@ public class ConnectToDatabase
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
 				connection.Open ();
 				StringBuilder sb = new StringBuilder ();
-				sb.Append ($"EXEC dbo.usp_InsertIntoMadMinuteHistory '{username}', {correctGuesses}, {incorrectGuesses}");
+				sb.Append ($"EXEC dbo.usp_InsertIntoMadMinuteHistory '{User.username}', {correctGuesses}, {incorrectGuesses}, '{User.location}' ");
 				String sql = sb.ToString ();
 
 				using (SqlCommand command = new SqlCommand (sql, connection)) {
-					using (SqlDataReader reader = command.ExecuteReader ()) {
-						while (reader.Read ()) {
-							Console.WriteLine ("{0} {1}", reader.GetString (0), reader.GetString (1));
-						}
-					}
+					int average = (int) command.ExecuteScalar();
+					User.average = average;
 				}
 				connection.Close ();
 			}
 
-		} catch (SqlException) {
+		} catch (SqlException e) {
+			string exception = e.ToString();
 			return false;
 		} 
 
 		return true;
 	}
 
-
-	public bool saveUser (UserInfo user)
+	public bool increaseExperience (int correntGuesses)
 	{
 		try {
-			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-			builder.DataSource = "teamred.database.windows.net";
-			builder.UserID = "teamredadmin";
-			builder.Password = "c$503teamred";
-			builder.InitialCatalog = "TeamRedMath";
+			SqlConnectionStringBuilder builder = ConnString.Builder;
+			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
+				connection.Open ();
+				StringBuilder sb = new StringBuilder ();
+				sb.Append ($"Exec usp_IncreaseUserExperience {User.username}, {correntGuesses * 25}");
+				String sql = sb.ToString ();
+
+				SqlCommand command = new SqlCommand (sql, connection);
+				using (SqlDataReader reader = command.ExecuteReader ()) 
+				{
+					while (reader.Read ())
+					{
+						if ((int)reader ["USER_LEVEL"] > User.level) {
+							User.hints = User.hints + ((int)reader ["USER_LEVEL"] - User.level);
+							updateHint ();
+						}
+
+						User.level = (int)reader ["USER_LEVEL"];
+						User.experience = (int)reader ["EXPERIENCE"];
+					}
+				}
+				connection.Close ();
+			}
+		} catch (SqlException e) {
+			string exception = e.ToString ();
+			return false;
+		} 
+		return true;
+	}
+
+	public bool updateHint ()
+	{
+		try {
+				SqlConnectionStringBuilder builder = ConnString.Builder;
+				using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
+				connection.Open ();
+				StringBuilder sb = new StringBuilder ();
+				sb.Append ($"UPDATE USER_ACCESS SET HINTS = {User.hints} WHERE USERNAME = '{User.username}'");
+				string query = sb.ToString ();
+				SqlCommand cmd = new SqlCommand (query, connection);
+				cmd.ExecuteNonQuery ();
+				connection.Close ();
+			}
+		} catch (SqlException e) {
+			string exception = e.ToString ();
+			return false;
+		}
+		return true;
+	}
+
+	public bool saveUser ()
+	{
+		try {
+			SqlConnectionStringBuilder builder = ConnString.Builder;
 
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString))
 			{
@@ -65,7 +111,8 @@ public class ConnectToDatabase
 				{1},
 				{user.firstName},
 				{user.lastName}*/
-				sb.Append($"execute usp_Login '{user.FirstName+user.LastName}','{user.Email}',null,{1},'{user.FirstName}','{user.LastName}', '{User.location}'");
+
+				sb.Append($"execute usp_Login '{User.username}','{User.email}',null,{1},'{User.firstName}','{User.lastName}','{User.location}'");
 				String sql = sb.ToString ();
 
 				using (SqlCommand command = new SqlCommand (sql, connection))
@@ -74,11 +121,9 @@ public class ConnectToDatabase
 						while (reader.Read ()) {
 							//Returns
 							//username: username, first name: first_name, level: user_level, experience: experience and location: user_location
-							User.username = (string)reader ["USERNAME"];
-							User.firstName = (string)reader ["FIRST_NAME"];
-							User.lastName = (string)reader ["LAST_NAME"];
 							User.level = (int)reader ["USER_LEVEL"];
 							User.experience = (int)reader ["EXPERIENCE"];
+							User.hints = (int)reader ["HINTS"];
 							Console.WriteLine ("");
 						}
 					}
@@ -99,11 +144,7 @@ public class ConnectToDatabase
 		ArrayList read = new ArrayList();
 		try
 		{
-			SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-			builder.DataSource = "teamred.database.windows.net";
-			builder.UserID = "teamredadmin";
-			builder.Password = "c$503teamred";
-			builder.InitialCatalog = "TeamRedMath";
+			SqlConnectionStringBuilder builder = ConnString.Builder;
 
 			using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
 			{

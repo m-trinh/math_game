@@ -25,6 +25,7 @@ namespace WritePadXamarinSample
 
             int timeframe = 0;
 			int score;
+			string user;
 
             SqlConnectionStringBuilder builder = ConnString.Builder;
             using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
@@ -41,7 +42,8 @@ namespace WritePadXamarinSample
                     {
 						var newrow = createNewRow();
                         score = (int)reader ["Score"];
-                        newrow.Text = $"{position}. {score}";
+						user = (string)reader ["Username"];
+						newrow.Text = $"{position}  -  {user}  -  {score}";
                         leaderboardArea.AddView(newrow);
                         position++;
                     }
@@ -58,7 +60,6 @@ namespace WritePadXamarinSample
 			newrow.SetTextSize (Android.Util.ComplexUnitType.Dip, 25f);
 			newrow.SetPadding (30, 10, 30, 10);
 			newrow.SetBackgroundResource (Resource.Drawable.border);
-			newrow.SetTextColor (Android.Graphics.Color.Black);
 			return newrow;
 		}
     }

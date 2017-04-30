@@ -16,9 +16,10 @@ namespace WritePadXamarinSample
     {
 		Random random = new Random ();
         private SqlConnectionStringBuilder builder = ConnString.Builder;
-        private string username;
+		private string username = User.username;
 		private string category;
 		private string difficulty;
+		private int mode;
 		protected List<Question> questions = new List<Question> ();
 		private int currentQuestion = 0;
 		private Button [] answerButtons;
@@ -26,17 +27,16 @@ namespace WritePadXamarinSample
 		private Stopwatch stopwatch = new Stopwatch ();
 		private double elapsedTime;
         protected bool[] individualResults;
-		private int hints = 10;
+		private List<string> userAnswers = new List<string>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.GameReady);
 			          
-            IList<string> details = Intent.GetStringArrayListExtra("details");
-            username = details[0];
-            category = details[1];
-            difficulty = details[2];
+			category = Intent.GetStringExtra("category");
+            difficulty = Intent.GetStringExtra("difficulty");
+			mode = Intent.GetIntExtra("mode", 0);
 
             questions = getQuestions();
             var readyButton = FindViewById<Button>(Resource.Id.ready);
@@ -50,10 +50,10 @@ namespace WritePadXamarinSample
 			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
 				connection.Open ();
 				StringBuilder sb = new StringBuilder ();
-				sb.Append ($"EXEC dbo.usp_GetSAT_Questions '{category}', {difficulty}, {username}, 0");
+				sb.Append ($"EXEC dbo.usp_GetSAT_Questions '{category}', '{difficulty}', '{username}', {mode}");
 				string query = sb.ToString();
 				SqlCommand cmd = new SqlCommand (query, connection);
-				using (SqlDataReader reader = cmd.ExecuteReader ()) 
+				using (SqlDataReader reader = cmd.ExecuteReader ())
 				{
 					while (reader.Read ()) 
 					{
@@ -85,14 +85,11 @@ namespace WritePadXamarinSample
 
 			var questionImage = FindViewById<ImageView> (Resource.Id.questionView);
 			var hintButton = FindViewById<Button> (Resource.Id.hint);
-			hintButton.Enabled = true;
+			if (User.hints > 0) {
+				hintButton.Enabled = true;
+			}
 
-			byte [] imageByte = question.QuestionImage;
-			var image = BitmapFactory.DecodeByteArray (imageByte, 0, imageByte.Length);
-			var metrics = Resources.DisplayMetrics;
-			var width = metrics.WidthPixels - 20;
-			var height = image.Height * width / image.Width;
-			questionImage.SetImageBitmap (Bitmap.CreateScaledBitmap (image, width, height, false));
+			setImageView (question, questionImage);
 
 			string [] wrongAns = new string [] {question.Wrong1, question.Wrong2, question.Wrong3};
 			correctAns = random.Next (0, 4);
@@ -105,7 +102,7 @@ namespace WritePadXamarinSample
 					RunOnUiThread (() => answerButtons [correctAns].Text = (question.Correct));
 					answerButtons [correctAns].Click += sendCorrect;
 				}
-				else 
+				else
 				{
 					RunOnUiThread (() => answerButtons [i].Text = (wrongAns[wrongAnsIndex]));
 					wrongAnsIndex++;
@@ -121,6 +118,16 @@ namespace WritePadXamarinSample
 			currentQuestion++;
 		}
 
+		public void setImageView (Question question, ImageView questionImage)
+		{
+			byte [] imageByte = question.QuestionImage;
+			var image = BitmapFactory.DecodeByteArray (imageByte, 0, imageByte.Length);
+			var metrics = Resources.DisplayMetrics;
+			var width = metrics.WidthPixels - 20;
+			var height = image.Height * width / image.Width;
+			questionImage.SetImageBitmap (Bitmap.CreateScaledBitmap (image, width, height, false));
+		}
+
 		public void populateButtonsArray ()
 		{
 			var buttonA = FindViewById<Button> (Resource.Id.answerA);
@@ -130,9 +137,10 @@ namespace WritePadXamarinSample
 
 			answerButtons = new Button [] { buttonA, buttonB, buttonC, buttonD };
 
-			for (int i = 0; i < answerButtons.Length; i++) 
-			{
+
+			for (int i = 0; i < answerButtons.Length; i++) {
 				answerButtons [i].Click += nextQuestion;
+				//userAnswers.Add (answerButtons [i].Text);
 			}
 		}
 
@@ -171,10 +179,13 @@ namespace WritePadXamarinSample
             };
 
 			var hintButton = FindViewById<Button> (Resource.Id.hint);
+			if (User.hints <= 0) {
+				hintButton.Enabled = false;
+			}
 			hintButton.Click += delegate {
 				AlertDialog.Builder builder = new AlertDialog.Builder (this);
 				builder.SetTitle ("Use a Hint");
-				builder.SetMessage ($"You have {hints} hints left. Do you want to use one to eliminate an answer?");
+				builder.SetMessage ($"You have {User.hints} hints left. Do you want to use one to eliminate an answer?");
 				builder.SetPositiveButton ("Okay", delegate { useHint (); hintButton.Enabled = false; builder.Dispose (); });
 				builder.SetNegativeButton ("Cancel", delegate { builder.Dispose (); });
 				builder.Show ();
@@ -191,7 +202,21 @@ namespace WritePadXamarinSample
 			}
 
 			answerButtons [remove].Enabled = false;
-			hints--;
+			User.hints--;
+			updateHint ();
+		}
+
+		public void updateHint ()
+		{
+			using (SqlConnection connection = new SqlConnection (builder.ConnectionString)) {
+				connection.Open ();
+				StringBuilder sb = new StringBuilder ();
+				sb.Append ($"UPDATE USER_ACCESS SET HINTS = {User.hints} WHERE USERNAME = '{username}'");
+				string query = sb.ToString ();
+				SqlCommand cmd = new SqlCommand (query, connection);
+				cmd.ExecuteNonQuery ();
+				connection.Close ();
+			}
 		}
 
 		void sendCorrect (object sender, EventArgs ea)
@@ -232,9 +257,19 @@ namespace WritePadXamarinSample
 				sb.Append ($"Exec usp_IncreaseUserExperience {username}, {correct * 100}");
 				query = sb.ToString ();
 				cmd = new SqlCommand (query, connection);
-				var result = cmd.ExecuteScalar ();
-				connection.Close ();
+				using (SqlDataReader reader = cmd.ExecuteReader ()) 
+				{
+					while (reader.Read ())
+					{
+						if ((int)reader ["USER_LEVEL"] > User.level) {
+							User.hints = User.hints + ((int)reader ["USER_LEVEL"] - User.level);
+							updateHint ();
+						}
 
+						User.level = (int)reader ["USER_LEVEL"];
+						User.experience = (int)reader ["EXPERIENCE"];
+					}
+				}
                 connection.Close();
             }
 
@@ -244,7 +279,7 @@ namespace WritePadXamarinSample
             var finish = FindViewById<Button>(Resource.Id.finish);
             finish.Click += delegate
             {
-                StartActivity(typeof(Activity2));
+                StartActivity(typeof(Home));
             };
         }
 
@@ -263,22 +298,22 @@ namespace WritePadXamarinSample
                 stars.SetImageResource(Resource.Drawable.stars5);
                 resultMessage.Text = "Perfect!";
             }
-            if (correct == 4)
+            else if (correct == 4)
             {
                 stars.SetImageResource(Resource.Drawable.stars4);
                 resultMessage.Text = "Great";
             }
-            if (correct == 3)
+            else if (correct == 3)
             {
                 stars.SetImageResource(Resource.Drawable.stars3);
                 resultMessage.Text = "Good";
             }
-            if (correct == 2)
+            else if (correct == 2)
             {
                 stars.SetImageResource(Resource.Drawable.stars2);
                 resultMessage.Text = "Getting There";
             }
-            if (correct == 1)
+            else if (correct == 1)
             {
                 stars.SetImageResource(Resource.Drawable.stars1);
                 resultMessage.Text = "Give It Another Shot";
@@ -303,20 +338,28 @@ namespace WritePadXamarinSample
             results [3] = FindViewById<TextView>(Resource.Id.result4);
             results [4] = FindViewById<TextView>(Resource.Id.result5);
 
-            for (int i = 0; i<individualResults.Length; i++)
-            {
-                if (individualResults [i])
-                {
-                    correct++;
-                    results [i].Text = "Correct";
-                    results [i].SetBackgroundColor (Color.Green);
-                }
-                else
-                {
-                    results [i].Text = "Wrong";
-                    results [i].SetBackgroundColor (Color.Red);
-                }
-            }
+
+			for (int i = 0; i < individualResults.Length; i++) {
+				results [i].Text = userAnswers [i];
+				//results [i].Click += delegate {
+				//	ImageView previousQuestion = new ImageView (this);
+				//	setImageView (questions [i], previousQuestion);
+				//	AlertDialog.Builder builder = new AlertDialog.Builder (this);
+				//	builder.SetTitle ("Question");
+				//	builder.SetView (previousQuestion);
+				//	builder.SetPositiveButton ("Okay", delegate { builder.Dispose (); });
+				//	builder.Show ();
+				//};
+				if (individualResults [i]) {
+					correct++;
+					//results [i].Text = "Correct";
+					results [i].SetBackgroundColor (Color.Green);
+				} else {
+					//results [i].Text = "Wrong";
+					results [i].SetBackgroundColor (Color.Red);
+				}
+			}
+
 
 			return correct;
 		}

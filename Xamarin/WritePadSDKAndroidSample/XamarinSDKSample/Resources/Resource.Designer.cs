@@ -3037,14 +3037,14 @@ namespace WritePadXamarinSample
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0800b7
-			public const int ClearButton = 2131230903;
+			// aapt resource value: 0x7f0800b5
+			public const int ClearButton = 2131230901;
 			
 			// aapt resource value: 0x7f0800b1
 			public const int ReadyGoStop = 2131230897;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int RecognizeButton = 2131230902;
+			// aapt resource value: 0x7f0800bd
+			public const int RecognizeButton = 2131230909;
 			
 			// aapt resource value: 0x7f0800dc
 			public const int action0 = 2131230940;
@@ -3220,8 +3220,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08005a
 			public const int contentPanel = 2131230810;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int countdownStart = 2131230906;
+			// aapt resource value: 0x7f0800b8
+			public const int countdownStart = 2131230904;
 			
 			// aapt resource value: 0x7f080061
 			public const int custom = 2131230817;
@@ -3310,8 +3310,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080029
 			public const int @fixed = 2131230761;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int goBack = 2131230908;
+			// aapt resource value: 0x7f0800b9
+			public const int goBack = 2131230905;
 			
 			// aapt resource value: 0x7f0800a4
 			public const int gridLayout1 = 2131230884;
@@ -3340,8 +3340,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f0800e6
 			public const int info = 2131230950;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int ink_view = 2131230901;
+			// aapt resource value: 0x7f0800b4
+			public const int ink_view = 2131230900;
 			
 			// aapt resource value: 0x7f080047
 			public const int inline = 2131230791;
@@ -3355,8 +3355,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08008b
 			public const int largeLabel = 2131230859;
 			
-			// aapt resource value: 0x7f0800a2
-			public const int leaderboards = 2131230882;
+			// aapt resource value: 0x7f0800a1
+			public const int leaderboards = 2131230881;
 			
 			// aapt resource value: 0x7f08001b
 			public const int left = 2131230747;
@@ -3394,8 +3394,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f0800a3
 			public const int linearLayout1 = 2131230883;
 			
-			// aapt resource value: 0x7f08010b
-			public const int linearlayout1 = 2131230987;
+			// aapt resource value: 0x7f08010c
+			public const int linearlayout1 = 2131230988;
 			
 			// aapt resource value: 0x7f080030
 			public const int listMode = 2131230768;
@@ -3403,11 +3403,11 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080054
 			public const int list_item = 2131230804;
 			
-			// aapt resource value: 0x7f0800a1
-			public const int login_button = 2131230881;
+			// aapt resource value: 0x7f0800a2
+			public const int login_button = 2131230882;
 			
-			// aapt resource value: 0x7f08009b
-			public const int lvl = 2131230875;
+			// aapt resource value: 0x7f08009c
+			public const int lvl = 2131230876;
 			
 			// aapt resource value: 0x7f08009e
 			public const int madminutegame = 2131230878;
@@ -3544,8 +3544,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080021
 			public const int pin = 2131230753;
 			
-			// aapt resource value: 0x7f08010d
-			public const int plot_view = 2131230989;
+			// aapt resource value: 0x7f08010b
+			public const int plot_view = 2131230987;
 			
 			// aapt resource value: 0x7f0800a0
 			public const int profile = 2131230880;
@@ -3571,14 +3571,14 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080099
 			public const int ready = 2131230873;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int ready_text = 2131230900;
+			// aapt resource value: 0x7f0800bc
+			public const int ready_text = 2131230908;
 			
 			// aapt resource value: 0x7f08009a
 			public const int relativeLayout1 = 2131230874;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int replayGame = 2131230909;
+			// aapt resource value: 0x7f0800ba
+			public const int replayGame = 2131230906;
 			
 			// aapt resource value: 0x7f080100
 			public const int result1 = 2131230976;
@@ -3643,8 +3643,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080096
 			public const int scrollView1 = 2131230870;
 			
-			// aapt resource value: 0x7f08010c
-			public const int scrollView2 = 2131230988;
+			// aapt resource value: 0x7f08010d
+			public const int scrollView2 = 2131230989;
 			
 			// aapt resource value: 0x7f08002a
 			public const int scrollable = 2131230762;
@@ -3748,8 +3748,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08006a
 			public const int submenuarrow = 2131230826;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int submitAnswer = 2131230904;
+			// aapt resource value: 0x7f0800b6
+			public const int submitAnswer = 2131230902;
 			
 			// aapt resource value: 0x7f08007b
 			public const int submit_area = 2131230843;
@@ -3805,8 +3805,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08001e
 			public const int top = 2131230750;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int topLayerCount = 2131230905;
+			// aapt resource value: 0x7f0800b7
+			public const int topLayerCount = 2131230903;
 			
 			// aapt resource value: 0x7f080062
 			public const int topPanel = 2131230818;
@@ -3835,8 +3835,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f0800f4
 			public const int user_dictionary = 2131230964;
 			
-			// aapt resource value: 0x7f08009c
-			public const int username = 2131230876;
+			// aapt resource value: 0x7f08009b
+			public const int username = 2131230875;
 			
 			// aapt resource value: 0x7f080004
 			public const int view_offset_helper = 2131230724;
@@ -4079,133 +4079,130 @@ namespace WritePadXamarinSample
 			public const int Home = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int HomeScreen = 2130968624;
+			public const int Leaderboards = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int Leaderboards = 2130968625;
+			public const int LevelChoose = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int LevelChoose = 2130968626;
+			public const int LoginPage = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int LoginPage = 2130968627;
+			public const int MadMinute = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int MadMinute = 2130968628;
+			public const int Main = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int Main = 2130968629;
+			public const int messenger_button_send_blue_large = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int messenger_button_send_blue_large = 2130968630;
+			public const int messenger_button_send_blue_round = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int messenger_button_send_blue_round = 2130968631;
+			public const int messenger_button_send_blue_small = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int messenger_button_send_blue_small = 2130968632;
+			public const int messenger_button_send_white_large = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int messenger_button_send_white_large = 2130968633;
+			public const int messenger_button_send_white_round = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int messenger_button_send_white_round = 2130968634;
+			public const int messenger_button_send_white_small = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int messenger_button_send_white_small = 2130968635;
+			public const int mr_chooser_dialog = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int mr_chooser_dialog = 2130968636;
+			public const int mr_chooser_list_item = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int mr_chooser_list_item = 2130968637;
+			public const int mr_controller_material_dialog_b = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int mr_controller_material_dialog_b = 2130968638;
+			public const int mr_controller_volume_item = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int mr_controller_volume_item = 2130968639;
+			public const int mr_playback_control = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int mr_playback_control = 2130968640;
+			public const int mr_volume_control = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int mr_volume_control = 2130968641;
+			public const int notification_action = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int notification_action = 2130968642;
+			public const int notification_action_tombstone = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int notification_action_tombstone = 2130968643;
+			public const int notification_media_action = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int notification_media_action = 2130968644;
+			public const int notification_media_cancel_action = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int notification_media_cancel_action = 2130968645;
+			public const int notification_template_big_media = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int notification_template_big_media = 2130968646;
+			public const int notification_template_big_media_custom = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int notification_template_big_media_custom = 2130968647;
+			public const int notification_template_big_media_narrow = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int notification_template_big_media_narrow = 2130968648;
+			public const int notification_template_big_media_narrow_custom = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int notification_template_big_media_narrow_custom = 2130968649;
+			public const int notification_template_custom_big = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int notification_template_custom_big = 2130968650;
+			public const int notification_template_icon_group = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int notification_template_icon_group = 2130968651;
+			public const int notification_template_lines_media = 2130968651;
 			
 			// aapt resource value: 0x7f04004c
-			public const int notification_template_lines_media = 2130968652;
+			public const int notification_template_media = 2130968652;
 			
 			// aapt resource value: 0x7f04004d
-			public const int notification_template_media = 2130968653;
+			public const int notification_template_media_custom = 2130968653;
 			
 			// aapt resource value: 0x7f04004e
-			public const int notification_template_media_custom = 2130968654;
+			public const int notification_template_part_chronometer = 2130968654;
 			
 			// aapt resource value: 0x7f04004f
-			public const int notification_template_part_chronometer = 2130968655;
+			public const int notification_template_part_time = 2130968655;
 			
 			// aapt resource value: 0x7f040050
-			public const int notification_template_part_time = 2130968656;
+			public const int Options = 2130968656;
 			
 			// aapt resource value: 0x7f040051
-			public const int Options = 2130968657;
+			public const int Question = 2130968657;
 			
 			// aapt resource value: 0x7f040052
-			public const int Question = 2130968658;
+			public const int SATChallengeResults = 2130968658;
 			
 			// aapt resource value: 0x7f040053
-			public const int SATChallengeResults = 2130968659;
+			public const int SATResults = 2130968659;
 			
 			// aapt resource value: 0x7f040054
-			public const int SATResults = 2130968660;
+			public const int select_dialog_item_material = 2130968660;
 			
 			// aapt resource value: 0x7f040055
-			public const int select_dialog_item_material = 2130968661;
+			public const int select_dialog_multichoice_material = 2130968661;
 			
 			// aapt resource value: 0x7f040056
-			public const int select_dialog_multichoice_material = 2130968662;
+			public const int select_dialog_singlechoice_material = 2130968662;
 			
 			// aapt resource value: 0x7f040057
-			public const int select_dialog_singlechoice_material = 2130968663;
+			public const int Stats = 2130968663;
 			
 			// aapt resource value: 0x7f040058
-			public const int Stats = 2130968664;
+			public const int support_simple_spinner_dropdown_item = 2130968664;
 			
 			// aapt resource value: 0x7f040059
-			public const int support_simple_spinner_dropdown_item = 2130968665;
-			
-			// aapt resource value: 0x7f04005a
-			public const int Training = 2130968666;
+			public const int Training = 2130968665;
 			
 			static Layout()
 			{

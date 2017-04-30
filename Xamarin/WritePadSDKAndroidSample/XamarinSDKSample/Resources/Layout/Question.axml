@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ff3d6ea0">
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -13,14 +14,20 @@
         <Button
             android:text="Hint"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/hint" />
+            android:layout_height="40dp"
+            android:id="@+id/hint"
+            android:background="#fff2bb18"
+            android:layout_margin="5dp" />
         <Button
             android:text="Equations"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="40dp"
             android:id="@+id/equations"
-            android:layout_gravity="right" />
+            android:layout_gravity="center_vertical"
+            android:background="#ff27967d"
+            android:layout_margin="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp" />
     </LinearLayout>
     <ScrollView
         android:minWidth="25px"
@@ -42,29 +49,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/answerA"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
+                android:background="#ffc33f3f"
+                android:layout_margin="5dp" />
             <Button
                 android:text="Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/answerB"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
+                android:background="#ffc33f3f"
+                android:layout_margin="5dp" />
             <Button
                 android:text="Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/answerC"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
+                android:background="#ffc33f3f"
+                android:layout_margin="5dp" />
             <Button
                 android:text="Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/answerD"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
+                android:background="#ffc33f3f"
+                android:layout_margin="5dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

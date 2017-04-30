@@ -4,16 +4,17 @@ using System.Data.SqlClient;
 using Newtonsoft.Json;
 using System.Net.Http;
 using Plugin.Geolocator;
+using System.Threading.Tasks;
 
 namespace WritePadXamarinSample
 {
 	public class LocationFinder
 	{
-		public LocationFinder()
+		public LocationFinder ()
 		{
 		}
 
-		public async void findPosition()
+		public async Task findPosition ()
 		{
 
 			//Instantiate locator and set desired accuracy
@@ -22,33 +23,32 @@ namespace WritePadXamarinSample
 
 			// Get the current device position. Leave it null if geo-location is disabled,
 			// return position (0, 0) if unable to acquire.
-			if (locator.IsGeolocationEnabled)
-			{
+			if (locator.IsGeolocationEnabled) {
 				// Allow ten seconds for geo-location determination.                    
-				var position = await locator.GetPositionAsync(15000);
-				string latitude = position.Latitude.ToString();
-				string longitude = position.Longitude.ToString();
+				var position = await locator.GetPositionAsync (10000);
+				string latitude = position.Latitude.ToString ();
+				string longitude = position.Longitude.ToString ();
 
 				//Task<string> jsonTask = DownloadDataAsync(latitude, longitude);
 
 				//Set requestURL to call Google API with Lat and Lon from Android app
-				string requestURL = String.Concat("https://maps.googleapis.com/maps/api/geocode/json?latlng=", latitude, ",", longitude, "&key=AIzaSyD1GYcDejuONv-WDSZekARsb48SPc2cwCs");
+				string requestURL = String.Concat ("https://maps.googleapis.com/maps/api/geocode/json?latlng=", latitude, ",", longitude, "&key=AIzaSyD1GYcDejuONv-WDSZekARsb48SPc2cwCs");
 				//string requestURL = String.Concat("https://maps.googleapis.com/maps/api/geocode/json?latlng=42.575001,-70.932122&key=AIzaSyD1GYcDejuONv-WDSZekARsb48SPc2cwCs");
 
 
-				var httpClient = new HttpClient();
-				var response = httpClient.PostAsync(requestURL, new StringContent("")).Result;
+				var httpClient = new HttpClient ();
+				var response = httpClient.PostAsync (requestURL, new StringContent ("")).Result;
 
 				//Store the result of the GOogle API call in a string
-				string json = response.Content.ReadAsStringAsync().Result;
+				string json = response.Content.ReadAsStringAsync ().Result;
 
 				//bind the String to GoogleResults using JsonConvert
-				GoogleResults google = JsonConvert.DeserializeObject<GoogleResults>(json.ToString());
+				GoogleResults google = JsonConvert.DeserializeObject<GoogleResults> (json.ToString ());
 
-				if (google != null && google.results.Count >= 4) {
-					string location = google.results [3].formatted_address;
-					User.location = location;
-				}
+				if (google != null && google.results.Count >= 4)
+					User.location = google.results [3].formatted_address;
+				else
+					User.location = "Not Working";
 
 				//ADD CONNECTION STRING INFO HERE
 				//
@@ -59,7 +59,6 @@ namespace WritePadXamarinSample
 					//
 					//
 					//
-
 					using (SqlConnection conn = new SqlConnection(connectionString))
 					{
 						conn.Open();
@@ -67,13 +66,10 @@ namespace WritePadXamarinSample
 						{
 							sql.ExecuteNonQuery();
 						}
-
 		            	//CLose the connection to the DB completely
 		            	conn.Close();
 					}*/
-			}
-			else
-			{
+			} else {
 				//Do Nothing
 			}
 

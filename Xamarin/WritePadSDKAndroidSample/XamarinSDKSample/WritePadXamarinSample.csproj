@@ -191,7 +191,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity1.cs" />
-    <Compile Include="Activity2.cs" />
+    <Compile Include="Home.cs" />
     <Compile Include="InkView.cs" />
     <Compile Include="IOUtils.cs" />
     <Compile Include="LeaderboardActivity.cs" />
@@ -200,9 +200,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WritePadOptions.cs" />
     <Compile Include="WritePadAPI.cs" />
-    <Compile Include="Activity3.cs" />
+    <Compile Include="SATLevelChoose.cs" />
     <Compile Include="Question.cs" />
-    <Compile Include="UserInfo.cs" />
     <Compile Include="MadMinute.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="ConnectToDatabase.cs" />
@@ -213,7 +212,6 @@
 
     <Compile Include="ConnString.cs" />
     <Compile Include="ChallengeQuestionActivity.cs" />
-
     <Compile Include="User.cs" />
     <Compile Include="RandomQuestions.cs" />
   </ItemGroup>
@@ -243,7 +241,6 @@
     <AndroidResource Include="Resources\Layout\Stats.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\HomeScreen.axml" />
     <AndroidResource Include="Resources\Layout\Home.axml" />
 
     <AndroidResource Include="Resources\Layout\GameReady.axml" />

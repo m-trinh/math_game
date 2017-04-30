@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="#ff3d6ea0">
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"
@@ -38,7 +39,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/experience"
                 android:gravity="center"
-                android:padding="5dp" />
+                android:padding="5dp"
+                android:background="#fff2bb18"
+                android:textColor="#ffffffff" />
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -68,7 +71,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -99,7 +103,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -130,7 +135,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -161,7 +167,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -192,7 +199,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -223,7 +231,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -254,7 +263,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -285,7 +295,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -316,7 +327,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -346,7 +358,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="50dp"
-                    android:paddingRight="50dp" />
+                    android:paddingRight="50dp"
+                    android:clickable="true" />
             </LinearLayout>
             <Button
                 android:text="Finish"
@@ -354,7 +367,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/finish"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="20dp"
+                android:background="#ffc33f3f" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
