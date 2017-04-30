@@ -137,23 +137,11 @@ namespace WritePadXamarinSample
 
 			answerButtons = new Button [] { buttonA, buttonB, buttonC, buttonD };
 
-
 			//for (int i = 0; i < answerButtons.Length; i++) {
 			//	answerButtons [i].Click += nextQuestion;
 			//	//userAnswers.Add (answerButtons [i].Text);
 			//}
 		}
-
-		//public override Dialog onCreateDialog (Bundle savedInstanceState)
-		//{
-		//	AlertDialog.Builder builder = new AlertDialog.Builder (this);
-		//	var equationsView = LayoutInflater.Inflate (Resource.Layout.Equations, null);
-		//	builder.SetTitle("Equations");
-  //          builder.SetView(equationsView);
-
-		//	builder.SetPositiveButton("Okay", delegate { builder.Dispose(); });
-  //          builder.Show();
-		//}
 
         void startGame(object sender, EventArgs ea)
         {
@@ -264,7 +252,7 @@ namespace WritePadXamarinSample
 			int correct = calculateCorrect ();
 
 			int stars = showStars (correct);
-
+			bool levelup = false;
             using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
             {
                 connection.Open();
@@ -285,6 +273,7 @@ namespace WritePadXamarinSample
 						if ((int)reader ["USER_LEVEL"] > User.level) {
 							User.hints = User.hints + ((int)reader ["USER_LEVEL"] - User.level);
 							updateHint ();
+							levelup = true;
 						}
 
 						User.level = (int)reader ["USER_LEVEL"];
@@ -296,6 +285,10 @@ namespace WritePadXamarinSample
 
 			var exp = FindViewById<TextView> (Resource.Id.experience);
 			exp.Text = $"+{correct * 100} EXP";
+
+			if (levelup) {
+				exp.Text += " Level Up!";
+			}
 
             var finish = FindViewById<Button>(Resource.Id.finish);
             finish.Click += delegate
@@ -381,23 +374,7 @@ namespace WritePadXamarinSample
 				}
 			}
 
-
 			return correct;
 		}
-
-
-
-		//public List<Question> shuffleList (List<Question> list)
-		//{
-		//	int randomInt;
-		//	for (int i = list.Count - 1; i >= 0; i--) 
-		//	{
-		//		randomInt = random.Next (0, list.Count);
-		//		Question temp = list [randomInt];
-		//		list [randomInt] = list [i];
-		//		list [i] = temp;
-		//	}
-		//	return list;
-		//}
     }
 }

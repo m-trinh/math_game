@@ -244,55 +244,5 @@ F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\res\drawable\equations.png
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\R.cs.flag
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\uploadflags.txt
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\WritePad SDK Xamarin Sample.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Java.Interop.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Mono.Android.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Mono.Data.Tds.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\Mono.Security.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\mscorlib.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.ComponentModel.Composition.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Core.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Data.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Net.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Net.Http.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Numerics.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Runtime.Serialization.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Security.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.ServiceModel.Internals.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Transactions.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Xml.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\System.Xml.Linq.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\FormsViewGroup.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Java.Interop.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Mono.Android.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Mono.Data.Tds.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Mono.Security.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\mscorlib.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\OxyPlot.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\OxyPlot.Xamarin.Forms.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\OxyPlot.Xamarin.Forms.Platform.Android.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Plugin.Geolocator.Abstractions.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Plugin.Geolocator.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Plugin.Permissions.Abstractions.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Plugin.Permissions.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Core.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Data.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Net.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Net.Http.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Numerics.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Security.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Transactions.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Xml.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\WritePad SDK Xamarin Sample.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePadXamarinSample.csprojResolveAssemblyReference.cache
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\obj\Debug\WritePad SDK Xamarin Sample.dll.mdb
 F:\Documents\GitHub\math_game\Xamarin\WritePadSDKAndroidSample\XamarinSDKSample\bin\Debug\WritePad SDK Xamarin Sample.dll.mdb

@@ -43,7 +43,7 @@ namespace WritePadXamarinSample
 						var newrow = createNewRow();
                         score = (int)reader ["Score"];
 						user = (string)reader ["Username"];
-						newrow.Text = $"{position}  -  {user}  -  {score}";
+						newrow.Text = $"#{position}: {user} - {score} points";
                         leaderboardArea.AddView(newrow);
                         position++;
                     }
@@ -57,9 +57,10 @@ namespace WritePadXamarinSample
 		public TextView createNewRow ()
 		{
 			var newrow = new TextView (this);
-			newrow.SetTextSize (Android.Util.ComplexUnitType.Dip, 25f);
+			newrow.SetTextSize (Android.Util.ComplexUnitType.Dip, 15f);
 			newrow.SetPadding (30, 10, 30, 10);
 			newrow.SetBackgroundResource (Resource.Drawable.border);
+			newrow.SetTextColor (Android.Graphics.Color.Black);
 			return newrow;
 		}
     }

@@ -103,12 +103,21 @@
         <TextView
             android:id="@+id/countdownStart"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="250dp"
             android:text="Final Score:"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.8"
             android:textColor="@android:color/black"
-            android:textSize="40dp" />
+            android:textSize="40dp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="EXP"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:background="#fff2bb18"
+            android:layout_marginBottom="5dp" />
         <Button
             android:id="@+id/goBack"
             android:layout_width="match_parent"

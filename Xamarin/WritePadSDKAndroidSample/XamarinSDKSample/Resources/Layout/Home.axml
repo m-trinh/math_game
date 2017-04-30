@@ -19,7 +19,8 @@
             android:layout_width="wrap_content"
             android:textSize="15sp"
             android:layout_centerVertical="true"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff" />
         <TextView
             android:text="LVL: "
             android:textSize="15sp"
@@ -29,7 +30,8 @@
             android:id="@+id/lvl"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:paddingRight="10dp" />
+            android:paddingRight="10dp"
+            android:textColor="#ffffff" />
     </RelativeLayout>
     <TextView
         android:text="MathAttack!"

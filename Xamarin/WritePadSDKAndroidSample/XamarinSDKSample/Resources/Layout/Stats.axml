@@ -13,11 +13,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
         android:gravity="center"
-        android:layout_margin="10dp" />
+        android:layout_margin="10dp"
+        android:textSize="25dp" />
     <OxyPlot.Xamarin.Android.PlotView
         android:id="@+id/plot_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#ffececec" />
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"

@@ -3043,11 +3043,11 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f0800b1
 			public const int ReadyGoStop = 2131230897;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int RecognizeButton = 2131230909;
+			// aapt resource value: 0x7f0800be
+			public const int RecognizeButton = 2131230910;
 			
-			// aapt resource value: 0x7f0800dc
-			public const int action0 = 2131230940;
+			// aapt resource value: 0x7f0800dd
+			public const int action0 = 2131230941;
 			
 			// aapt resource value: 0x7f080070
 			public const int action_bar = 2131230832;
@@ -3070,17 +3070,17 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08004d
 			public const int action_bar_title = 2131230797;
 			
-			// aapt resource value: 0x7f0800d9
-			public const int action_container = 2131230937;
+			// aapt resource value: 0x7f0800da
+			public const int action_container = 2131230938;
 			
 			// aapt resource value: 0x7f080071
 			public const int action_context_bar = 2131230833;
 			
-			// aapt resource value: 0x7f0800e0
-			public const int action_divider = 2131230944;
+			// aapt resource value: 0x7f0800e1
+			public const int action_divider = 2131230945;
 			
-			// aapt resource value: 0x7f0800da
-			public const int action_image = 2131230938;
+			// aapt resource value: 0x7f0800db
+			public const int action_image = 2131230939;
 			
 			// aapt resource value: 0x7f080007
 			public const int action_menu_divider = 2131230727;
@@ -3097,11 +3097,11 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08004f
 			public const int action_mode_close_button = 2131230799;
 			
-			// aapt resource value: 0x7f0800db
-			public const int action_text = 2131230939;
+			// aapt resource value: 0x7f0800dc
+			public const int action_text = 2131230940;
 			
-			// aapt resource value: 0x7f0800e9
-			public const int actions = 2131230953;
+			// aapt resource value: 0x7f0800ea
+			public const int actions = 2131230954;
 			
 			// aapt resource value: 0x7f080050
 			public const int activity_chooser_view_content = 2131230800;
@@ -3118,26 +3118,26 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08003c
 			public const int always = 2131230780;
 			
-			// aapt resource value: 0x7f0800f9
-			public const int answerA = 2131230969;
-			
 			// aapt resource value: 0x7f0800fa
-			public const int answerB = 2131230970;
+			public const int answerA = 2131230970;
 			
 			// aapt resource value: 0x7f0800fb
-			public const int answerC = 2131230971;
+			public const int answerB = 2131230971;
 			
 			// aapt resource value: 0x7f0800fc
-			public const int answerD = 2131230972;
+			public const int answerC = 2131230972;
+			
+			// aapt resource value: 0x7f0800fd
+			public const int answerD = 2131230973;
 			
 			// aapt resource value: 0x7f080014
 			public const int auto = 2131230740;
 			
-			// aapt resource value: 0x7f0800f2
-			public const int autocorrector = 2131230962;
-			
 			// aapt resource value: 0x7f0800f3
-			public const int autolearner = 2131230963;
+			public const int autocorrector = 2131230963;
+			
+			// aapt resource value: 0x7f0800f4
+			public const int autolearner = 2131230964;
 			
 			// aapt resource value: 0x7f080048
 			public const int automatic = 2131230792;
@@ -3157,8 +3157,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080057
 			public const int buttonPanel = 2131230807;
 			
-			// aapt resource value: 0x7f0800dd
-			public const int cancel_action = 2131230941;
+			// aapt resource value: 0x7f0800de
+			public const int cancel_action = 2131230942;
 			
 			// aapt resource value: 0x7f080083
 			public const int cancel_button = 2131230851;
@@ -3175,8 +3175,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080067
 			public const int checkbox = 2131230823;
 			
-			// aapt resource value: 0x7f0800e5
-			public const int chronometer = 2131230949;
+			// aapt resource value: 0x7f0800e6
+			public const int chronometer = 2131230950;
 			
 			// aapt resource value: 0x7f080022
 			public const int clip_horizontal = 2131230754;
@@ -3250,8 +3250,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080091
 			public const int design_navigation_view = 2131230865;
 			
-			// aapt resource value: 0x7f0800f5
-			public const int dict_words = 2131230965;
+			// aapt resource value: 0x7f0800f6
+			public const int dict_words = 2131230966;
 			
 			// aapt resource value: 0x7f080032
 			public const int disableHome = 2131230770;
@@ -3265,8 +3265,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080019
 			public const int end = 2131230745;
 			
-			// aapt resource value: 0x7f0800ef
-			public const int end_padder = 2131230959;
+			// aapt resource value: 0x7f0800f0
+			public const int end_padder = 2131230960;
 			
 			// aapt resource value: 0x7f08000f
 			public const int enterAlways = 2131230735;
@@ -3274,8 +3274,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080010
 			public const int enterAlwaysCollapsed = 2131230736;
 			
-			// aapt resource value: 0x7f0800f7
-			public const int equations = 2131230967;
+			// aapt resource value: 0x7f0800f8
+			public const int equations = 2131230968;
 			
 			// aapt resource value: 0x7f080097
 			public const int equationsImage = 2131230871;
@@ -3289,8 +3289,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080066
 			public const int expanded_menu = 2131230822;
 			
-			// aapt resource value: 0x7f0800ff
-			public const int experience = 2131230975;
+			// aapt resource value: 0x7f0800ba
+			public const int experience = 2131230906;
 			
 			// aapt resource value: 0x7f080024
 			public const int fill = 2131230756;
@@ -3310,14 +3310,14 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080029
 			public const int @fixed = 2131230761;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int goBack = 2131230906;
+			// aapt resource value: 0x7f0800bb
+			public const int goBack = 2131230907;
 			
 			// aapt resource value: 0x7f0800a4
 			public const int gridLayout1 = 2131230884;
 			
-			// aapt resource value: 0x7f0800f6
-			public const int hint = 2131230966;
+			// aapt resource value: 0x7f0800f7
+			public const int hint = 2131230967;
 			
 			// aapt resource value: 0x7f080009
 			public const int home = 2131230729;
@@ -3328,8 +3328,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080055
 			public const int icon = 2131230805;
 			
-			// aapt resource value: 0x7f0800ea
-			public const int icon_group = 2131230954;
+			// aapt resource value: 0x7f0800eb
+			public const int icon_group = 2131230955;
 			
 			// aapt resource value: 0x7f08003e
 			public const int ifRoom = 2131230782;
@@ -3337,8 +3337,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080052
 			public const int image = 2131230802;
 			
-			// aapt resource value: 0x7f0800e6
-			public const int info = 2131230950;
+			// aapt resource value: 0x7f0800e7
+			public const int info = 2131230951;
 			
 			// aapt resource value: 0x7f0800b5
 			public const int ink_view = 2131230901;
@@ -3385,11 +3385,11 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f0800ae
 			public const int level4Stars = 2131230894;
 			
-			// aapt resource value: 0x7f0800eb
-			public const int line1 = 2131230955;
+			// aapt resource value: 0x7f0800ec
+			public const int line1 = 2131230956;
 			
-			// aapt resource value: 0x7f0800ed
-			public const int line3 = 2131230957;
+			// aapt resource value: 0x7f0800ee
+			public const int line3 = 2131230958;
 			
 			// aapt resource value: 0x7f0800a3
 			public const int linearLayout1 = 2131230883;
@@ -3415,11 +3415,11 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08010f
 			public const int masked = 2131230991;
 			
-			// aapt resource value: 0x7f0800df
-			public const int media_actions = 2131230943;
+			// aapt resource value: 0x7f0800e0
+			public const int media_actions = 2131230944;
 			
-			// aapt resource value: 0x7f0800be
-			public const int messenger_send_button = 2131230910;
+			// aapt resource value: 0x7f0800bf
+			public const int messenger_send_button = 2131230911;
 			
 			// aapt resource value: 0x7f08003b
 			public const int middle = 2131230779;
@@ -3427,80 +3427,80 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080027
 			public const int mini = 2131230759;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int mr_art = 2131230923;
-			
-			// aapt resource value: 0x7f0800c0
-			public const int mr_chooser_list = 2131230912;
-			
-			// aapt resource value: 0x7f0800c3
-			public const int mr_chooser_route_desc = 2131230915;
+			// aapt resource value: 0x7f0800cc
+			public const int mr_art = 2131230924;
 			
 			// aapt resource value: 0x7f0800c1
-			public const int mr_chooser_route_icon = 2131230913;
-			
-			// aapt resource value: 0x7f0800c2
-			public const int mr_chooser_route_name = 2131230914;
-			
-			// aapt resource value: 0x7f0800bf
-			public const int mr_chooser_title = 2131230911;
-			
-			// aapt resource value: 0x7f0800c8
-			public const int mr_close = 2131230920;
-			
-			// aapt resource value: 0x7f0800ce
-			public const int mr_control_divider = 2131230926;
-			
-			// aapt resource value: 0x7f0800d4
-			public const int mr_control_play_pause = 2131230932;
-			
-			// aapt resource value: 0x7f0800d7
-			public const int mr_control_subtitle = 2131230935;
-			
-			// aapt resource value: 0x7f0800d6
-			public const int mr_control_title = 2131230934;
-			
-			// aapt resource value: 0x7f0800d5
-			public const int mr_control_title_container = 2131230933;
-			
-			// aapt resource value: 0x7f0800c9
-			public const int mr_custom_control = 2131230921;
-			
-			// aapt resource value: 0x7f0800ca
-			public const int mr_default_control = 2131230922;
-			
-			// aapt resource value: 0x7f0800c5
-			public const int mr_dialog_area = 2131230917;
+			public const int mr_chooser_list = 2131230913;
 			
 			// aapt resource value: 0x7f0800c4
-			public const int mr_expandable_area = 2131230916;
+			public const int mr_chooser_route_desc = 2131230916;
 			
-			// aapt resource value: 0x7f0800d8
-			public const int mr_group_expand_collapse = 2131230936;
+			// aapt resource value: 0x7f0800c2
+			public const int mr_chooser_route_icon = 2131230914;
 			
-			// aapt resource value: 0x7f0800cc
-			public const int mr_media_main_control = 2131230924;
+			// aapt resource value: 0x7f0800c3
+			public const int mr_chooser_route_name = 2131230915;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int mr_name = 2131230919;
+			// aapt resource value: 0x7f0800c0
+			public const int mr_chooser_title = 2131230912;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int mr_playback_control = 2131230925;
-			
-			// aapt resource value: 0x7f0800c6
-			public const int mr_title_bar = 2131230918;
+			// aapt resource value: 0x7f0800c9
+			public const int mr_close = 2131230921;
 			
 			// aapt resource value: 0x7f0800cf
-			public const int mr_volume_control = 2131230927;
+			public const int mr_control_divider = 2131230927;
+			
+			// aapt resource value: 0x7f0800d5
+			public const int mr_control_play_pause = 2131230933;
+			
+			// aapt resource value: 0x7f0800d8
+			public const int mr_control_subtitle = 2131230936;
+			
+			// aapt resource value: 0x7f0800d7
+			public const int mr_control_title = 2131230935;
+			
+			// aapt resource value: 0x7f0800d6
+			public const int mr_control_title_container = 2131230934;
+			
+			// aapt resource value: 0x7f0800ca
+			public const int mr_custom_control = 2131230922;
+			
+			// aapt resource value: 0x7f0800cb
+			public const int mr_default_control = 2131230923;
+			
+			// aapt resource value: 0x7f0800c6
+			public const int mr_dialog_area = 2131230918;
+			
+			// aapt resource value: 0x7f0800c5
+			public const int mr_expandable_area = 2131230917;
+			
+			// aapt resource value: 0x7f0800d9
+			public const int mr_group_expand_collapse = 2131230937;
+			
+			// aapt resource value: 0x7f0800cd
+			public const int mr_media_main_control = 2131230925;
+			
+			// aapt resource value: 0x7f0800c8
+			public const int mr_name = 2131230920;
+			
+			// aapt resource value: 0x7f0800ce
+			public const int mr_playback_control = 2131230926;
+			
+			// aapt resource value: 0x7f0800c7
+			public const int mr_title_bar = 2131230919;
 			
 			// aapt resource value: 0x7f0800d0
-			public const int mr_volume_group_list = 2131230928;
+			public const int mr_volume_control = 2131230928;
 			
-			// aapt resource value: 0x7f0800d2
-			public const int mr_volume_item_icon = 2131230930;
+			// aapt resource value: 0x7f0800d1
+			public const int mr_volume_group_list = 2131230929;
 			
 			// aapt resource value: 0x7f0800d3
-			public const int mr_volume_slider = 2131230931;
+			public const int mr_volume_item_icon = 2131230931;
+			
+			// aapt resource value: 0x7f0800d4
+			public const int mr_volume_slider = 2131230932;
 			
 			// aapt resource value: 0x7f08002b
 			public const int multiply = 2131230763;
@@ -3520,14 +3520,14 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080028
 			public const int normal = 2131230760;
 			
-			// aapt resource value: 0x7f0800e8
-			public const int notification_background = 2131230952;
+			// aapt resource value: 0x7f0800e9
+			public const int notification_background = 2131230953;
+			
+			// aapt resource value: 0x7f0800e3
+			public const int notification_main_column = 2131230947;
 			
 			// aapt resource value: 0x7f0800e2
-			public const int notification_main_column = 2131230946;
-			
-			// aapt resource value: 0x7f0800e1
-			public const int notification_main_column_container = 2131230945;
+			public const int notification_main_column_container = 2131230946;
 			
 			// aapt resource value: 0x7f080041
 			public const int open_graph = 2131230785;
@@ -3559,8 +3559,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08000b
 			public const int progress_horizontal = 2131230731;
 			
-			// aapt resource value: 0x7f0800f8
-			public const int questionView = 2131230968;
+			// aapt resource value: 0x7f0800f9
+			public const int questionView = 2131230969;
 			
 			// aapt resource value: 0x7f0800b3
 			public const int questions_math = 2131230899;
@@ -3577,8 +3577,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08009a
 			public const int relativeLayout1 = 2131230874;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int replayGame = 2131230907;
+			// aapt resource value: 0x7f0800bc
+			public const int replayGame = 2131230908;
 			
 			// aapt resource value: 0x7f080100
 			public const int result1 = 2131230976;
@@ -3610,17 +3610,17 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080108
 			public const int result9 = 2131230984;
 			
-			// aapt resource value: 0x7f0800fe
-			public const int resultMessage = 2131230974;
+			// aapt resource value: 0x7f0800ff
+			public const int resultMessage = 2131230975;
 			
 			// aapt resource value: 0x7f08001c
 			public const int right = 2131230748;
 			
-			// aapt resource value: 0x7f0800e7
-			public const int right_icon = 2131230951;
+			// aapt resource value: 0x7f0800e8
+			public const int right_icon = 2131230952;
 			
-			// aapt resource value: 0x7f0800e3
-			public const int right_side = 2131230947;
+			// aapt resource value: 0x7f0800e4
+			public const int right_side = 2131230948;
 			
 			// aapt resource value: 0x7f08009d
 			public const int satgame = 2131230877;
@@ -3682,11 +3682,11 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08007e
 			public const int select_dialog_listview = 2131230846;
 			
-			// aapt resource value: 0x7f0800f0
-			public const int separate_letters = 2131230960;
+			// aapt resource value: 0x7f0800f1
+			public const int separate_letters = 2131230961;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int shareButton = 2131230908;
+			// aapt resource value: 0x7f0800bd
+			public const int shareButton = 2131230909;
 			
 			// aapt resource value: 0x7f080068
 			public const int shortcut = 2131230824;
@@ -3700,8 +3700,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080036
 			public const int showTitle = 2131230774;
 			
-			// aapt resource value: 0x7f0800f1
-			public const int single_word = 2131230961;
+			// aapt resource value: 0x7f0800f2
+			public const int single_word = 2131230962;
 			
 			// aapt resource value: 0x7f08004c
 			public const int small = 2131230796;
@@ -3736,14 +3736,14 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080046
 			public const int standard = 2131230790;
 			
-			// aapt resource value: 0x7f0800fd
-			public const int starResult = 2131230973;
+			// aapt resource value: 0x7f0800fe
+			public const int starResult = 2131230974;
 			
 			// aapt resource value: 0x7f08001d
 			public const int start = 2131230749;
 			
-			// aapt resource value: 0x7f0800de
-			public const int status_bar_latest_event_content = 2131230942;
+			// aapt resource value: 0x7f0800df
+			public const int status_bar_latest_event_content = 2131230943;
 			
 			// aapt resource value: 0x7f08006a
 			public const int submenuarrow = 2131230826;
@@ -3757,11 +3757,11 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080031
 			public const int tabMode = 2131230769;
 			
-			// aapt resource value: 0x7f0800ee
-			public const int text = 2131230958;
+			// aapt resource value: 0x7f0800ef
+			public const int text = 2131230959;
 			
-			// aapt resource value: 0x7f0800ec
-			public const int text2 = 2131230956;
+			// aapt resource value: 0x7f0800ed
+			public const int text2 = 2131230957;
 			
 			// aapt resource value: 0x7f08005e
 			public const int textSpacerNoButtons = 2131230814;
@@ -3787,8 +3787,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080003
 			public const int textinput_error = 2131230723;
 			
-			// aapt resource value: 0x7f0800e4
-			public const int time = 2131230948;
+			// aapt resource value: 0x7f0800e5
+			public const int time = 2131230949;
 			
 			// aapt resource value: 0x7f0800b2
 			public const int time_countdown = 2131230898;
@@ -3832,8 +3832,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f080037
 			public const int useLogo = 2131230775;
 			
-			// aapt resource value: 0x7f0800f4
-			public const int user_dictionary = 2131230964;
+			// aapt resource value: 0x7f0800f5
+			public const int user_dictionary = 2131230965;
 			
 			// aapt resource value: 0x7f08009b
 			public const int username = 2131230875;
@@ -3844,8 +3844,8 @@ namespace WritePadXamarinSample
 			// aapt resource value: 0x7f08010e
 			public const int visible = 2131230990;
 			
-			// aapt resource value: 0x7f0800d1
-			public const int volume_item_container = 2131230929;
+			// aapt resource value: 0x7f0800d2
+			public const int volume_item_container = 2131230930;
 			
 			// aapt resource value: 0x7f080040
 			public const int withText = 2131230784;

@@ -41,6 +41,7 @@ namespace WritePadXamarinSample
 		private int incorrectAnswers = 0;
 		private ShareButton sharingButton;
 		private string mode;
+		private TextView experience;
 
 		protected override void OnPause ()
 		{
@@ -80,6 +81,7 @@ namespace WritePadXamarinSample
 			countDownView = FindViewById<TextView> (Resource.Id.time_countdown);
 			goBack = FindViewById<Button> (Resource.Id.goBack);
 			sharingButton = FindViewById<ShareButton> (Resource.Id.shareButton);
+			experience = FindViewById<TextView>(Resource.Id.experience);
 
 			countVariable = 3;
 			//calculateTime (countVariable);
@@ -249,7 +251,7 @@ namespace WritePadXamarinSample
 				ReadyGoStop.Text = "STOP!";
 				topLayerCount.Visibility = Android.Views.ViewStates.Visible;
 				countdownView.Text = "Time is up! Final Score: " + totalScore + " points";
-
+				experience.Text = $"+{totalScore * 25} EXP";
 				replayGame.Enabled = true;
 				//Show the layer to say it is done
 
